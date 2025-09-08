@@ -1,0 +1,166 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                   ----[ClientDetectorPlus]----                                    #
+#                                     ----[By Loving11ish]----                                      #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                  ----[Plugin Messages File]----                                   #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#ClientDetectorPlus messages config for 1.0.1
+
+#Prefix for all messages.
+prefix: "&7[&3CDPlus&7]"
+
+lockdown:
+  #Message that will be sent when the server is in lockdown mode.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["Server is currently in lockdown mode! Please try again later!"]
+  lockdown-message: "Server is currently in lockdown mode! Please try again later!"
+  #Message that will be sent when a player is allowed to bypass the server lockdown.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&aYou are allowed to bypass the server lockdown!"]
+  bypass-lockdown: "&aYou are allowed to bypass the server lockdown!"
+  #Message that will be sent when the server lockdown is activated.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&aServer lockdown has been activated!"]
+  lockdown-activated: "&aServer lockdown has been activated!"
+  #Message that will be sent when the server lockdown is deactivated.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&aServer lockdown has been deactivated!"]
+  lockdown-deactivated: "&aServer lockdown has been deactivated!"
+  #Message that will be sent when the server lockdown is already active.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&cServer lockdown is already active!"]
+  lockdown-already-active: "&cServer lockdown is already active!"
+  #Message that will be sent when the server lockdown is not active.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&cServer lockdown is not active!"]
+  lockdown-not-active: "&cServer lockdown is not active!"
+
+detection:
+  #Message that will be sent when a player's client (and client version) was detected.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%', '%client_name%', '%client_version%', '%channel_name%'], DEFAULT: ["&c%player_name% &7joined using &c%client_name% &7on channel &c%channel_name% &7(&8version: &c%client_version%&7)"]
+  client-detection-message-with-version: "&c%player_name% &7joined using &c%client_name% &7on channel &c%channel_name% &7(&8version: &c%client_version%&7)"
+  #Message that will be sent when a player's client was detected.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%', '%client_name%', '%channel_name%'], DEFAULT: ["&c%player_name% &7joined using &c%client_name% &7on channel &c%channel_name%"]
+  client-detection-message-without-version: "&c%player_name% &7joined using &c%client_name% &7on channel &c%channel_name%"
+  #Message that will be sent when a bedrock player joins your server.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%', '%client_version%'], DEFAULT: ["&c%player_name% &7joined using &cMinecraft Bedrock Edition &7(&8version: &c%client_version%&7)"]
+  geyser-detection-message-with-version: "&c%player_name% &7joined using &cMinecraft Bedrock Edition &7(&8version: &c%client_version%&7)"
+
+error:
+  #Answer to command when the player is not online.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%', '%player_uuid%'], DEFAULT: ["&c%player_name% &7is not online!"]
+  player-not-found: "&c%player_name% &7is not online!"
+  #Answer to command when the player has no permission to execute it.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&cYou do not have permission to do that!"]
+  no-permission: "&cYou do not have permission to do that!"
+  #Answer to command when it was executed through the console, but the command can only be used by players.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&cThis command can only be used by players!"]
+  only-player-command: "&cThis command can only be used by players!"
+  #Answer to command when the player is not online.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&cCurrently there are no players online!"]
+  no-players-online: "&cCurrently there are no players online!"
+  #Message sent to a player if they attempt to use a GUI feature that has been disabled by an admin.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&cThis feature has been disabled by an admin!"]
+  disabled-gui-feature: "&cThis feature has been disabled by an admin!"
+  #Message sent to a player if they attempt to use a command that does not exist.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&cUnknown command! Use &3/cdp &cfor help."]
+  unknown-command: "&cUnknown command! Use &3/cdp &cfor help."
+
+whitelisted-players:
+  #Message that will be sent when a player is whitelisted.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&a%player_name% &7has been temporarily whitelisted!"]
+  added: "&a%player_name% &7has been temporarily whitelisted!"
+  #Message that will be sent when a player is removed from the whitelist.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&c%player_name% &7has been removed from the whitelist!"]
+  removed: "&c%player_name% &7has been removed from the whitelist!"
+  #Message that will be sent when a player is already whitelisted.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&c%player_name% &7is already whitelisted!"]
+  already-whitelisted: "&c%player_name% &7is already whitelisted!"
+  #Message that will be sent when a player is not whitelisted.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&c%player_name% &7is not whitelisted!"]
+  not-whitelisted: "&c%player_name% &7is not whitelisted!"
+
+reload:
+  #Message that will be sent when the plugin begins reloaded.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&aReloading the plugin..."]
+  started: "&aReloading the plugin..."
+  #Message that will be broadcast when the plugin is being reloaded.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&aThe plugin is being reloaded!\n&aPlease do not use any CDPlus features until complete!"]
+  broadcast-started: "&aThe plugin is being reloaded!\n&aPlease do not use any CDPlus features until complete!"
+  #Message that will be sent when the plugin has been reloaded.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&aReload complete!"]
+  complete: "&aReload complete!"
+
+actions:
+  #Message that will be sent when the player uses the kick action in the Actions GUI.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&c%player_name% &7has been kicked from the server!"]
+  kick-successful: "&c%player_name% &7has been kicked from the server!"
+  #Message that will be sent when the player uses the ban action in the Actions GUI.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&c%player_name% &7has been banned from the server!"]
+  ban-successful: "&c%player_name% &7has been banned from the server!"
+  #Message that will be sent when the player uses the mute action in the Actions GUI.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&c%player_name% &7has been muted!"]
+  mute-successful: "&c%player_name% &7has been muted!"
+  #Message that will be sent when the player uses the unmute action in the Actions GUI.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&c%player_name% &7has been unmuted!"]
+  unmute-successful: "&c%player_name% &7has been unmuted!"
+  #Message that will be sent when the player uses the op action in the Actions GUI.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&c%player_name% &7has been made an operator!"]
+  op-successful: "&c%player_name% &7has been made an operator!"
+  #Message that will be sent when the player uses the deop action in the Actions GUI.
+  #OPTIONS: "anyString", PLACEHOLDERS: ['%player_name%'], DEFAULT: ["&c%player_name% &7has been removed from the operator list!"]
+  deop-successful: "&c%player_name% &7has been removed from the operator list!"
+
+commands:
+  #Message that will be sent when the player uses the /cdp command incorrectly.
+  #OPTIONS: "anyStringList", PLACEHOLDERS: none
+  cdp-command-incorrect-usage:
+    - "&7----- &7[&3CDPlus&7] &7-----&r\n"
+    - "&6CDP command usage:\n"
+    - "&3/cdp list <java|bedrock>\n"
+    - "&3/cdp lookup <player>\n"
+    - "&3/cdp lockdown <enable|disable>"
+    - "&3/cdp tempwhitelist <add|remove> <player>\n"
+    - "&3/cdp reload\n"
+    - "&7----- &7[&3CDPlus&7] &7-----&r"
+
+  cdp-console-list:
+    #Message that will be sent when the console uses the /cdp list command.
+    #OPTIONS: "anyStringList", PLACEHOLDERS: ['%java_client%', '%bedrock_client%']
+    java:
+      - "&7----- &7[&3CDPlus&7] &7-----&r\n"
+      - "&7- &6Java clients: &d%java_client%\n"
+      - "&7----- &7[&3CDPlus&7] &7-----&r\n"
+    bedrock:
+      - "&7----- &7[&3CDPlus&7] &7-----&r\n"
+      - "&7- &6Bedrock clients: &d%bedrock_client%\n"
+      - "&7----- &7[&3CDPlus&7] &7-----&r\n"
+
+  cdp-lookup:
+    #Message that will be sent when the console uses the /cdp lookup command.
+    #OPTIONS: "anyStringList", PLACEHOLDERS: ['%player_name%', '%client_uuid%', '%client_name%', '%client_version%', '%channel_name%']
+    client:
+      - "&7----- &7[&3CDPlus&7] &7-----&r\n"
+      - "&7- &6Player Name: &d%player_name%\n"
+      - "&7- &6Client UUID: &d%client_uuid%\n"
+      - "&7- &6Client Name: &d%client_name%\n"
+      - "&7- &6Channel Name: &d%channel_name%\n"
+      - "&7- &6Client Version: &d%client_version%\n"
+      - "&7----- &7[&3CDPlus&7] &7-----&r\n"
+
+update:
+  #Message that will be sent when the plugin is unable to check for updates.
+  #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&4Unable to check for updates! - &c"]
+  update-check-failure: "&4Unable to check for updates! - &c"
+  update-available:
+    #Message that will be sent when a new version is available.
+    #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&4*-------------------------------------------*"]
+    1: "&4*-------------------------------------------*"
+    #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&cA new version is available!"]
+    2: "&cA new version is available!"
+    #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&4*-------------------------------------------*"]
+    3: "&4*-------------------------------------------*"
+  no-update-available:
+    #Message that will be sent when the plugin is up to date.
+    #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&a*-------------------------------------------*"]
+    1: "&a*-------------------------------------------*"
+    #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&aPlugin is up to date!"]
+    2: "&aPlugin is up to date!"
+    #OPTIONS: "anyString", PLACEHOLDERS: none, DEFAULT: ["&a*-------------------------------------------*"]
+    3: "&a*-------------------------------------------*"

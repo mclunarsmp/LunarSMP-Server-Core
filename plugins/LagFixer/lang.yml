@@ -1,0 +1,59 @@
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░██╗░░░░░░█████╗░░██████╗░░░███████╗██╗██╗░░██╗███████╗██████╗░░
+# ░██║░░░░░██╔══██╗██╔════╝░░░██╔════╝██║╚██╗██╔╝██╔════╝██╔══██╗░
+# ░██║░░░░░███████║██║░░██╗░░░█████╗░░██║░╚███╔╝░█████╗░░██████╔╝░
+# ░██║░░░░░██╔══██║██║░░╚██╗░░██╔══╝░░██║░██╔██╗░██╔══╝░░██╔══██╗░
+# ░███████╗██║░░██║╚██████╔╝░░██║░░░░░██║██╔╝╚██╗███████╗██║░░██║░
+# ░╚══════╝╚═╝░░╚═╝░╚═════╝░░░╚═╝░░░░░╚═╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝░
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+# -----------------> TUTORIALS <-----------------#
+#
+# Hex colors and gradients usage:
+# - https://docs.advntr.dev/minimessage/format.html
+#
+# (SOON) PlaceholderAPI usage:
+# - Format: <papi:[papi_placeholder]>
+# - Example: <papi:luckperms_prefix>
+#
+# -----------------> TUTORIALS <-----------------#
+
+# soon it will be possible to translate all messages
+messages:
+  Main:
+    no_access: '<gray>Thiếu quyền truy cập vào mô-đun: <yellow><permission>'
+    disabled_module: <gray>Mô-đun <yellow><module> <gray>đã bị vô hiệu hóa, quản trị
+      viên cần kích hoạt tính năng này!
+    player_only: <gray>Lệnh này chỉ có thể được thực thi bởi người chơi!
+  
+  RedstoneLimiter:
+    alert: <gray>Đã chặn <yellow><ticks> <gray>tick redstone tại chunk ở <gradient:#c48d00:#fffb00><location></gradient><gray>!
+    cooldown: <gray>Bạn có thể sử dụng <material> lại sau <gradient:#c48d00:#fffb00><cooldown></gradient><gray>ms.
+  
+  WorldCleaner:
+    countingdown: # Message format -> "second=message"
+      - 15=<gradient:#ff3c00:#ffff00>Cảnh báo!</gradient> <gray>Trong <color:#ff8800><remaining>
+        <gray>giây nữa, máy chủ sẽ xóa sạch thực thể và vật phẩm!
+      - 10=<gradient:#ff3c00:#ffff00>Cảnh báo!</gradient> <gray>Trong <color:#ff8800><remaining>
+        <gray>giây nữa, máy chủ sẽ xóa sạch thực thể và vật phẩm!
+      - 5=<gradient:#ff3c00:#ffff00>Cảnh báo!</gradient> <gray>Trong <color:#ff8800><remaining>
+        <gray>giây nữa, máy chủ sẽ xóa sạch thực thể và vật phẩm!
+      - 4=<gradient:#ff3c00:#ffff00>Cảnh báo!</gradient> <gray>Trong <color:#ff8800><remaining>
+        <gray>giây nữa, máy chủ sẽ xóa sạch thực thể và vật phẩm!
+      - 3=<gradient:#ff3c00:#ffff00>Cảnh báo!</gradient> <gray>Trong <color:#ff8800><remaining>
+        <gray>giây nữa, máy chủ sẽ xóa sạch thực thể và vật phẩm!
+      - 2=<gradient:#ff3c00:#ffff00>Cảnh báo!</gradient> <gray>Trong <color:#ff8800><remaining>
+        <gray>giây nữa, máy chủ sẽ xóa sạch thực thể và vật phẩm!
+      - 1=<gradient:#ff3c00:#ffff00>Cảnh báo!</gradient> <gray>Trong <color:#ff8800><remaining>
+        <gray>giây nữa, máy chủ sẽ xóa sạch thực thể và vật phẩm!
+      - 0=<gray>Đã xóa thành công <color:#ff8800><items>x <gray>vật phẩm, <color:#ff8800><creatures>x
+        <gray>sinh vật và <color:#ff8800><projectiles>x <gray>thực thể bay!
+    items:
+      abyss: # abyss is the place where all deleted items go, and players can get them back by typing the /abyss command
+        gui: <color:white>Vực thẳm! <color:dark_gray>(<yellow>LagFixer<color:dark_gray>)
+        close: <gray>Vực thẳm đã được đóng thành công!
+        open: '<gray>Vực thẳm đã được mở, hãy khôi phục vật phẩm của bạn bằng lệnh:
+          <yellow>/abyss'
+        closed: <gray>Vực thẳm hiện đang <color:red>đóng<gray>, vui lòng đợi để mở
+          lại!
+        opened: <gray>Kho vực thẳm đã được <color:green>mở<gray> thành công!

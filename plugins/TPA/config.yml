@@ -1,0 +1,173 @@
+## TPA Plugin Configuration File
+## Github: https://github.com/WarSkyGod/TPA
+
+# Plugin version, do not modify manually
+version: 3.2.4
+
+# Server display language; comes with zh_CN and en_US. You can add other languages following the same format.
+# The client will automatically select the appropriate language script based on its own language. If the script doesn't exist, it will use the one set here by default.
+language: vi_VN
+
+# When enabled, detailed error information will be shown in the console for debugging purposes.
+# Do not enable if there are no issues, as it will generate a large amount of log spam.
+debug: false
+
+# Plugin update check
+# If disabled, the server console and players with tpa.version or tpa.admin permissions will not receive update notifications.
+update_check: true
+
+# Force teleport to spawn every time a player joins the server or dies
+force_spawn: true
+
+# Enable title-based teleport messages (automatically disabled for versions below 1.12)
+enable_title_message: true
+
+# Enable teleport sound effects (requires enable_title_message to be true)
+enable_sound: true
+
+# Delay settings (in seconds)
+delay:
+  # How long does the target player have to accept the request? (Minimum 3 seconds)
+  accept: 30
+
+  # Enable teleport delay (players must wait before teleporting)
+  enable_teleport: true
+
+  # Enable cooldown between command uses (players must wait before using the command again)
+  enable_command: true
+
+  # Allow warp, home, spawn, back commands to bypass delay check
+  non_tpa_or_tphere_disable_check: false
+
+  # Players without any permission
+  default:
+    # Time to wait before teleporting (0 to disable)
+    teleport: 5
+
+    # Cooldown after using command (0 to disable)
+    command: 60
+
+  # Players with tpa.vip permission
+  vip:
+    teleport: 5
+    command: 25
+
+  # Players with tpa.vip+ permission
+  vip+:
+    teleport: 5
+    command: 20
+
+  # Players with tpa.mvp permission
+  mvp:
+    teleport: 5
+    command: 15
+
+  # Players with tpa.mvp+ permission
+  mvp+:
+    teleport: 5
+    command: 10
+
+  # Players with tpa.mvp++ permission
+  mvp++:
+    teleport: 5
+    command: 5
+
+  # Players with tpa.admin permission
+  admin:
+    teleport: 0
+    command: 0
+
+# TPA command settings
+tpa:
+  # Enable tpa command
+  # If both tpa and tphere are disabled, /tpaccept, /tpdeny, and /denys will also be disabled automatically
+  enable: true
+
+  # Enable permission check
+  # permission: tpa.tpa
+  permission: false
+
+# TPHERE command settings
+tphere:
+  # Enable tphere command
+  # If both tpa and tphere are disabled, /tpaccept, /tpdeny, and /denys will also be disabled automatically
+  enable: true
+
+  # Enable permission check
+  # permission: tpa.tphere
+  permission: false
+
+# DENYS command settings
+denys:
+  # Enable permission check
+  # permission: tpa.denys
+  permission: false
+
+# RTP command settings
+rtp:
+  # Enable rtp command
+  enable: true
+
+  # Enable permission check
+  # permission: tpa.rtp
+  permission: false
+
+  # Worlds where this command is disabled
+  disable_worlds:
+    - disableWorld1
+    - disableWorld2
+
+  # Maximum range for random teleport (radius)
+  # Centered around the player using the command
+  limit:
+    x: 500
+    z: 500
+
+# WARP command settings
+warp:
+  # Enable warp command
+  # Affects /warp, /setwarp, /delwarp
+  enable: true
+
+  # Enable permission check
+  # permission: tpa.warp
+  permission: false
+
+# HOME command settings
+home:
+  # Enable home command
+  # Affects /home, /homes, /sethome, /setdefaulthome, /delhome
+  enable: true
+
+  # Enable permission check
+  # permission: tpa.home
+  permission: false
+
+  # Maximum number of homes that can be set (-1 for unlimited)
+  amount:
+    default: 3
+    vip: 5
+    vip+: 10
+    mvp: 15
+    mvp+: 20
+    mvp++: 25
+    admin: -1
+
+# SPAWN command settings
+spawn:
+  # Enable spawn command
+  # Affects /spawn, /setspawn, /delspawn
+  enable: true
+
+  # Enable permission check
+  # permission: tpa.spawn
+  permission: false
+
+# BACK command settings
+back:
+  # Enable back command
+  enable: true
+
+  # Enable permission check
+  # permission: tpa.back
+  permission: false

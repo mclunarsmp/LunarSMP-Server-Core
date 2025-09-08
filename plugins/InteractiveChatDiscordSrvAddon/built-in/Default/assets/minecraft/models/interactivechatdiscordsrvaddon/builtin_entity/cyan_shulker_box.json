@@ -1,0 +1,7 @@
+{
+	"credit": "Created by LOOHP",
+	"parent": "interactivechatdiscordsrvaddon/builtin_entity/template_shulker_box",
+	"textures": {
+		"texture": "entity/shulker/shulker_cyan"
+	}
+}

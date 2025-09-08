@@ -1,0 +1,180 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                   ----[ClientDetectorPlus]----                                    #
+#                                     ----[By Loving11ish]----                                      #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                   ----[Plugin Config File]----                                    #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#ClientDetectorPlus config for 1.0.1
+
+#  ┌─────────────────────────────┐
+#  │  Client detection settings  │
+#  └─────────────────────────────┘
+client:
+  lockdown:
+    bypass-uuids:
+      #Do you want to have any UUID's bypass the server lockdown?
+      #List of bypassed players' UUIDs.
+      #THIS FEATURE ONLY FUNCTIONS CORRECTLY ON ONLINE MODE SERVERS AS IT USES OFFLINE PLAYER UUID CHECKS WITH MOJANG!
+      #OPTIONS: 'anyList', PLACEHOLDERS: none, DEFAULT: ["UUID1", "UUID2", "UUID3"]
+      list:
+      - "fd205a7a-701b-3fa0-9c65-b8e406e6431d"
+      - "UUID2"
+      - "UUID3"
+
+  detection:
+    delay-detections:
+      #Should the plugin delay the client detection systems?
+      #This feature should ONLY need to be altered if you have slow network connections
+      #or if your server uses a custom resource pack.
+      #THIS SETTING SHOULD ONLY BE CHANGED IF ABSOLUTELY NEEDED!
+      #This value is in ticks.
+      #20 ticks = 1 second
+      #OPTIONS: 'anyInt', PLACEHOLDERS: none, DEFAULT:'40'
+      ticks: 40
+    whitelisted-players:
+      #Do you want to have any players bypass ALL checks?
+      #List of whitelisted players.
+      #OPTIONS: 'anyList', PLACEHOLDERS: none, DEFAULT: ["Player1", "Player2", "Player3"]
+      list:
+      - "Player1"
+      - "Player2"
+      - "Player3"
+
+    whitelisted-clients:
+      enabled: false
+      list:
+      - "fabric"
+      - "forge"
+      - "lunar"
+      - "badlion"
+      - "labymod"
+      - "cosmic"
+      - "pvpLounge"
+      - "batmod"
+      - "salwyrr"
+      - "feather"
+      - "optifine"
+      - "sodium"
+
+      use-strict-client-matching:
+        #Should the plugin use strict client matching?
+        #This will only allow the client to be detected if the client name matches the list exactly (including case).
+        #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'false'
+        enabled: true
+      commands:
+        #Should the plugin execute commands if the player is not using a whitelisted client?
+        #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'false'
+        enabled: true
+        #Commands that will be executed through the console if the player is not using a whitelisted client.
+        #OPTIONS: 'anyList', PLACEHOLDERS: ['%player_name%', '%client_name%', '%player_uuid%', '%client_version%']
+        #DEFAULT:'kick %player_name% You are not using a whitelisted client!'
+        list:
+        - 'kick %player_name% Bạn đang xài client không được cho phép của server!'
+
+    blacklisted-clients:
+      enabled: true
+      list:
+      - "LiquidBounce"
+      - "LiquidBounce\\+"
+      - "LiquidBounce\\+\\+"
+      - "Meteor Client"
+      - "Wurst"
+      - "Inertia"
+      - "Rise"
+      - "SmartClient"
+      - "Sulfur"
+      - "Raven B\\+"
+      - "Raven B\\+\\+"
+      - "Raven N\\+"
+      - "FDPClient"
+      - "Impact Client"
+      - "Akira"
+      - "Noise"
+      - "NightX"
+      - "Azura"
+      - "Doomsday"
+      - "ThunderHack"
+      - "Prestige"
+      - "Grim Client"
+      - "Valiant Client"
+      - "Xenon Client"
+      - "Scrim Client"
+      - "Weed Hack Premium Beta"
+
+      use-strict-client-matching:
+        #Should the plugin use strict client matching?
+        #This will only allow the client to be detected if the client name matches the list exactly (including case).
+        #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'false'
+        enabled: true
+      commands:
+        #Should the plugin execute commands if the player is using a blacklisted client?
+        #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'false'
+        enabled: true
+        #Commands that will be executed through the console if the player is using a blacklisted client.
+        #OPTIONS: 'anyList', PLACEHOLDERS: ['%player_name%', '%client_name%', '%player_uuid%', '%client_version%']
+        #DEFAULT:'kick %player_name% You are using a blacklisted client! <%client_name%> is not allowed on this server!'
+        list:
+        - 'kick %player_name% Này %player_name%, đừng có xài %client_name% chứ :V'
+
+#  ┌─────────────────────────────┐
+#  │        Client Control       │
+#  └─────────────────────────────┘
+client-control:
+  use-client-control:
+    #Should the plugin control the player's client?
+    #This feature is still in development and may not work as expected.
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enabled: true
+  delay-detection:
+    #Should the plugin delay the client detection?
+    #This feature should only need to be altered if you have slow network connections
+    #or if your server uses a custom resource pack.
+    #This should only be changed if absolutely needed.
+    #This value is in ticks.
+    #20 ticks = 1 second
+    #OPTIONS: 'anyInt', PLACEHOLDERS: none, DEFAULT:'40'
+    ticks: 40
+  run-fallback-event-detection:
+    #Should the plugin run the fallback event detection?
+    #This feature is intended to only be tried if you discover that client control features are not working.
+    #This should only be used as a last resort.
+    #If this still does not work, please report the issue to the developer (Loving11ish) on Discord.
+    #https://discord.gg/crapticraft
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'false'
+    enabled: false
+
+#  ┌─────────────────────────────┐
+#  │       Alerts settings       │
+#  └─────────────────────────────┘
+alerts:
+  join-notifications:
+    #Should the notifications be sent when a player's client are detected?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enabled: true
+    notify-joining-player-with-permission:
+      #Should the player with the permission 'clientdetectorplus.notify.join' be notified when they join?
+      #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+      enabled: true
+  limit-Notifications:
+    #Should only important notifications be sent to the player's to avoid spamming?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'false'
+    enabled: false
+  #ClientDetector update system
+  plugin-update-notifications:
+    #Do you want to enable in game plugin update notifications? (Permission:'clientdetectorplus.update').
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enabled: true
+  developer-debug-mode:
+    #Do you want to see a lot of debug messages in console when most actions are performed?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'false'
+    enabled: false
+
+#  ┌─────────────────────────────┐
+#  │    Placeholder settings     │
+#  └─────────────────────────────┘
+placeholderAPI:
+  #Should placeholder be enabled?
+  #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+  enable-Placeholders: true

@@ -1,0 +1,13 @@
+{
+  "biome": "minecraft:the_void",
+  "lakes": false,
+  "features": true,
+  "decoration": false,
+  "layers": [
+    {
+      "block": "minecraft:air",
+      "height": 1
+    }
+  ],
+  "structure_overrides": []
+}

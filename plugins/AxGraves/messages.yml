@@ -1,0 +1,37 @@
+hologram:
+- '&#FF0000☠ &#FF0000&l%player% &#FF0000☠'
+- '&#00CC00⌛ &#00FF00%despawn-time% &#00CC00⌛'
+- '&#00AAFF%item% &fᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ &8| &#00AAFF%xp% &fxᴘ'
+
+help:
+- ' '
+- '&#FF00FF&lAxGraves &7» '
+- ' &7- &f/axgraves reload &7| &#FF00FFTải lại plugin'
+- ' &7- &f/axgraves list &7| &#FF00FFLiệt kê các mộ đã sinh ra'
+- ' '
+
+gui-name: '&0Mộ của %player%'
+
+# nếu bạn khởi động lại máy chủ, đôi khi không thể tìm thấy tên người chơi, đây sẽ là tên thay thế
+unknown-player: Không rõ rõ người chơi
+
+reload:
+  success: '&#33FF33Đã tải lại plugin thành công!'
+  failed: '&#FF3333Không thể tải lại plugin! Có lỗi trong tệp &f%file%&#FF3333, kiểm tra console hoặc sử dụng trình kiểm tra YAML để sửa lỗi!'
+
+interact:
+  not-your-grave: '&#FFAAFFBạn chỉ có thể mở mộ của chính mình!'
+
+death-message:
+  enabled: false
+  message: '&#FFAAAABạn đã chết tại &f%world% %x%, %y%, %z%&#FFAAAA!'
+
+grave-list:
+  header: '&#FF00FF&l=== DANH SÁCH MỘ ==='
+  grave: '&#FF00FF[DỊCH CHUYỂN] &#FFAAFF%player% &7- &#FFAAFF%world% %x%, %y%, %z% &7(%time%)'
+  no-graves: '&#FFAAFFKhông có mộ nào cả!'
+
+update-notifier: '&#FF88FFĐã có phiên bản mới của AxGraves! &#DDDDDD(&#FFFFFFhiện tại: &#FF0000%current% &#DDDDDD| &#FFFFFFmới nhất: &#00FF00%latest%&#DDDDDD)'
+
+# không chỉnh sửa
+version: 5

@@ -1,0 +1,520 @@
+# Bất kỳ placeholder nào từ placeholder API sẽ hoạt động trong file này
+invalidArg: '&4Tham số không hợp lệ, help'
+inTeam: '&4Bạn phải ở trong một đội để làm điều đó'
+internalError: '&4Đã xảy ra lỗi khi thực hiện lệnh, vui lòng báo cáo cho quản trị viên máy chủ'
+notInTeam: '&4Bạn phải rời khỏi đội trước khi làm điều đó'
+needOwner: '&4Bạn phải là chủ sở hữu của đội để làm điều đó'
+needAdmin: '&4Bạn phải là quản trị viên hoặc chủ sở hữu của đội để làm điều đó'
+needPlayer: '&4Bạn phải là người chơi để làm điều đó'
+noPlayer: '&4Không tìm thấy người chơi được chỉ định'
+notTeam: '&6&4Đội đó không tồn tại, thử &b/team create <tên>'
+needSameTeam: '&6Bạn không cùng đội với người đó'
+noPerm: '&4Bạn không có quyền để làm điều đó'
+prefixSyntax: '&7[{0}&7] &r{1}'
+bannedChar: '&4Một ký tự bạn đã sử dụng bị cấm'
+noTeam: '&4Đội đó không tồn tại'
+loading: '&6Đang tải'
+cooldown:
+  wait: '&4Bạn cần chờ thêm {0} giây trước khi chạy lệnh đó!'
+cost:
+  tooPoor: '&4Bạn quá nghèo để chạy lệnh đó'
+  run: '&4&l-{0}'
+placeholder:
+  noTeam: ''
+  noDescription: ''
+  money: '{0}'
+  owner: Chủ sở hữu
+  admin: Quản trị viên
+  default: Mặc định
+  name: '{0}'
+  tag: '{0}'
+  displayname: '{0}'
+  inteam: 'có'
+  notinteam: 'không'
+  noTitle: ''
+prefix:
+  owner: ' **'
+  admin: ' *'
+  default: ' '
+create:
+  exists: '&6Đội đó đã tồn tại'
+  success: '&6Đội của bạn đã được tạo'
+  banned: '&4Tên đội đó bị cấm'
+  maxLength: '&4Tên đội đó quá dài'
+leave:
+  success: '&6Bạn đã rời khỏi đội'
+  lastOwner: '&6Bạn là chủ sở hữu duy nhất trong đội, Hãy thăng chức cho người khác hoặc sử dụng &b/team disband &6để giải tán đội'
+announce:
+  join: '&3{0} &7đã tham gia đội {1}'
+  leave: '&3{0} &7đã rời khỏi đội {1}'
+  disband: '&7Đội {0} &7đã được giải tán'
+rank:
+  noTeam: '&4Không tìm thấy đội'
+  info: '&6Vị trí đội:'
+  infos: '&6Cấp bậc đội: &b{0} &7({1} điểm cần để thăng hạng tiếp theo)'
+  infom: '&6Cấp bậc đội: &b{0} &7(${1} cần để thăng hạng tiếp theo)'
+  infomm: '&6Cấp bậc đội: &b{0} &7(Bạn đã đạt cấp tối đa)'
+  syntax: '&b{0}: &6{1} &7({2})'
+delhome:
+  success: '&6Nhà của đội bạn đã bị xóa'
+  noHome: '&4Đội của bạn chưa đặt nhà'
+disband:
+  success: '&6Bạn đã giải tán đội'
+  confirm: '&6Gõ &b/team disband &6lần nữa để xác nhận'
+description:
+  success: '&6Bạn đã thay đổi mô tả đội'
+  view: '&6Mô tả đội: {0}'
+  noDesc: '&6Chưa có mô tả đội nào được đặt'
+  noPerm: '&4Bạn không có quyền chỉnh sửa mô tả'
+name:
+  success: '&6Bạn đã thay đổi tên đội'
+  view: '&6Tên đội: {0}'
+  exists: '&4Đội đó đã tồn tại'
+  noPerm: '&4Bạn không có quyền thay đổi tên đội'
+invite:
+  success: '&6Người chơi đó đã được mời'
+  invite: '&6Bạn đã được mời tham gia đội {0}, gõ &b/team join {0} &6để tham gia đội'
+  hover: '&6Nhấp để tham gia &b{0}'
+  inTeam: '&6Người chơi đó đã ở trong một đội'
+  banned: '&6Người chơi đó bị cấm khỏi đội của bạn'
+  full: '&6Đội của bạn đã đầy, đuổi ai đó ra trước khi mời thêm người'
+  expired: '&4Lời mời từ &b{0} &4đã hết hạn'
+join:
+  success: '&6Bạn đã tham gia đội đó'
+  notify: '&6Chào mừng &b{0} &6đến với đội!'
+  notInvited: '&6&4Bạn chưa được mời vào đội đó'
+  banned: '&6&4Bạn bị cấm khỏi đội đó'
+  full: '&4Đội đó đã đầy'
+open:
+  successopen: '&6Đội của bạn bây giờ mở cho mọi người'
+  successclose: '&6Đội của bạn bây giờ chỉ theo lời mời'
+title:
+  change: '&6Danh hiệu của bạn đã được thay đổi thành &b{0}'
+  remove: '&6Danh hiệu của bạn đã bị xóa'
+  success: '&6Danh hiệu đó đã được thay đổi'
+  tooLong: '&4Danh hiệu đó quá dài'
+  noFormat: '&4Bạn không có quyền định dạng danh hiệu'
+  noColor: '&4Bạn không có quyền tô màu danh hiệu'
+  reset: '&6Danh hiệu của bạn đã được đặt lại'
+  noPerm: '&4Bạn không có quyền thay đổi danh hiệu đội'
+info:
+  needTeam: '&6Không tìm thấy đội hoặc người chơi nào với tên đó'
+  name: '&6Tên: &b{0}'
+  description: '&6Mô tả: &b{0}'
+  open: '&6Mở: &b{0}'
+  level: '&6Cấp độ: &b{0}'
+  owner: '&6Chủ sở hữu: &b{0}'
+  admin: '&6Quản trị viên: &b{0}'
+  default: '&6Thành viên: &b{0}'
+  tag: '&6Thẻ: &b{0}'
+  fail: '&6Không tìm thấy đội hoặc người chơi nào với tên đó'
+  score: '&6Điểm: &b{0}'
+  money: '&6Số dư: &b{0}'
+  ally: '&6Đồng minh: &b{0}'
+  online: '&a'
+  offline: '&c'
+kick:
+  success: '&6Người chơi đó đã bị đuổi'
+  notify: '&6Bạn đã bị đuổi khỏi đội {0}'
+  title: '&4Bạn đã bị đuổi khỏi đội'
+  noPerm: '&6Bạn không có quyền đuổi người đó'
+ban:
+  success: '&6Người chơi đó đã bị cấm'
+  notify: '&6Bạn đã bị cấm khỏi đội {0}'
+  title: '&4Bạn đã bị cấm khỏi đội'
+  noPerm: '&6Bạn không có quyền cấm người đó'
+  already: '&6Người chơi đó đã bị cấm'
+unban:
+  success: '&6Người chơi đó đã được bỏ cấm'
+  notify: '&6Bạn đã được bỏ cấm khỏi đội {0}'
+  noPerm: '&6Bạn không có quyền bỏ cấm người đó'
+  not: '&6Người chơi đó không bị cấm'
+promote:
+  success: '&6Người chơi đó đã được thăng chức'
+  noPerm: '&6Bạn không có quyền thăng chức cho người đó'
+  max: '&6Người đó đã được thăng lên tối đa!'
+  notify: '&6Bạn đã được thăng chức!'
+  maxAdmins: '&4Đội của bạn đã có số lượng quản trị viên tối đa, hạ chức ai đó hoặc nâng cấp đội'
+  maxOwners: '&4Đội của bạn đã có số lượng chủ sở hữu tối đa, hạ chức ai đó hoặc nâng cấp đội'
+demote:
+  success: '&6Người chơi đó đã bị hạ chức'
+  noPerm: '&6Bạn không có quyền hạ chức người đó'
+  min: '&6Người đó đã ở cấp bậc thấp nhất'
+  notify: '&6Bạn đã bị hạ chức'
+  lastOwner: '&6Bạn không thể hạ chức chủ sở hữu cuối cùng, hãy thăng chức cho người khác trước'
+  maxAdmins: '&4Đội của bạn đã có số lượng quản trị viên tối đa, loại bỏ một quản trị viên hoặc nâng cấp đội'
+home:
+  success: '&6Bạn đã được dịch chuyển'
+  noHome: '&6Đội của bạn chưa đặt nhà'
+  world: '&4Không thể tìm thấy nhà của đội bạn'
+sethome:
+  success: '&6Nhà của đội bạn đã được đặt'
+  noPerm: '&6Bạn không đủ cấp bậc để đặt nhà cho đội'
+chat:
+  enabled: '&6Tin nhắn của bạn bây giờ sẽ gửi đến chat đội'
+  disabled: '&6Tin nhắn của bạn bây giờ sẽ gửi đến chat toàn cầu'
+  syntax: '&b[Đội]&f{0}&f: {1}'
+color:
+  success: '&6Màu đội của bạn đã được thay đổi'
+  fail: '&6Đó không phải là mã màu được nhận diện'
+  banned: '&4Mã màu đó bị cấm'
+deposit:
+  tooLittle: '&4Bạn không thể gửi số âm'
+  fail: '&4Việc gửi tiền thất bại'
+  success: '&6Tiền đã được gửi'
+  max: '&4Điều đó sẽ vượt quá số dư tối đa cho phép của đội'
+withdraw:
+  tooLittle: '&4Bạn không thể rút số âm'
+  fail: '&4Việc rút tiền thất bại'
+  success: '&6Tiền đã được rút'
+  notEnough: '&6Đội của bạn không có đủ tiền'
+ally:
+  already: '&4Bạn đã là đồng minh'
+  success: '&6Các đội của bạn bây giờ là đồng minh'
+  ally: '&6Đội của bạn bây giờ đồng minh với &b{0}'
+  requested: '&6Yêu cầu đồng minh đã được gửi đến đội đó'
+  request: '&b{0} &6đã gửi yêu cầu đồng minh, sử dụng &b/team ally <đội> &6để chấp nhận'
+  self: '&4Bạn không thể đồng minh với đội của chính mình'
+  from: '&6Bạn có yêu cầu đồng minh từ: {0}'
+  noRequests: '&4Bạn không có yêu cầu đồng minh nào'
+  onJoin: '&6Bạn có yêu cầu đồng minh mới, gõ &b/team ally &6để xem'
+  limit: '&4Giới hạn đồng minh đã đạt tới'
+  alreadyrequest: '&4Bạn đã yêu cầu đồng minh với đội đó'
+allychat:
+  disabled: '&6Tin nhắn của bạn không còn gửi đến chat đồng minh'
+  enabled: '&6Tin nhắn của bạn bây giờ sẽ gửi đến chat đồng minh'
+  syntax: '&d[{0}]&f{1}&f: {2}'
+neutral:
+  self: '&6Đó là đội của chính bạn'
+  requestremove: '&6Yêu cầu đồng minh đó đã bị xóa'
+  reject: '&4Yêu cầu đồng minh của bạn với &b{0} &4đã bị từ chối'
+  notAlly: '&4Bạn không đồng minh với đội đó'
+  success: '&4Bạn không còn đồng minh với đội đó'
+  remove: '&4Bạn không còn đồng minh với &b{0}'
+list:
+  noPage: '&6Trang đó không được tìm thấy'
+  header: '&7--- &bDanh sách đội trang {0} &7---'
+  body: '&6{0}: &b{1}'
+  footer: '&7--- &6gõ &b/team list [trang] &6để xem thêm &7---'
+setowner:
+  use: '&6Bạn không thể thăng chức người chơi đó, sử dụng &b/team setowner <người chơi> &6để thăng chức người chơi đó lên chủ sở hữu'
+  success: '&6Người chơi đó bây giờ là chủ sở hữu'
+  notify: '&6Bạn bây giờ là chủ sở hữu đội'
+  max: '&4Người chơi đó đã là chủ sở hữu'
+setwarp:
+  exist: '&4Điểm dịch chuyển đó đã tồn tại'
+  max: '&4Đội của bạn đã có số lượng điểm dịch chuyển tối đa'
+  success: '&6Điểm dịch chuyển đó đã được tạo'
+  char: '&4Tên điểm dịch chuyển đó chứa ký tự bị cấm'
+warp:
+  nowarp: '&4Điểm dịch chuyển đó không tồn tại'
+  invalidPassword: '&4Mật khẩu không đúng cho điểm dịch chuyển đó'
+  success: '&6Bạn đã được dịch chuyển'
+  world: '&4Không thể tìm thấy vị trí của điểm dịch chuyển đó'
+warps:
+  syntax: '&6Điểm dịch chuyển: &b{0}'
+  none: '&4Đội của bạn chưa đặt điểm dịch chuyển nào'
+delwarp:
+  success: '&4Điểm dịch chuyển đó đã bị xóa'
+teleport:
+  fail: '&4Việc dịch chuyển thất bại'
+  wait: '&6Chờ &b{0} &6giây'
+chest:
+  claim:
+    noChest: '&4Bạn không đứng trên rương'
+    limit: '&4Đội của bạn đã nhận số lượng rương tối đa'
+    claimed: '&4Rương đó đã được nhận'
+    success: '&6Bạn đã nhận rương đó'
+  remove:
+    noChest: '&4Bạn không đứng trên rương'
+    notClaimed: '&4Đội của bạn chưa nhận rương đó'
+    success: '&4Đội của bạn không còn quyền sở hữu rương đó'
+  all:
+    success: '&6Đã bỏ nhận tất cả rương'
+  claimed: '&4Rương đó được nhận bởi &a{0}'
+echest:
+  echest: Rương Ender
+pvp:
+  enabled: '&6Pvp đã được bật cho đội của bạn'
+  disabled: '&6Pvp đã được tắt cho đội của bạn'
+rankup:
+  max: '&4Bạn đã ở cấp bậc tối đa'
+  score: '&4Bạn cần {0} điểm để thăng hạng'
+  money: '&4Bạn cần {0} tiền trong số dư đội để thăng hạng'
+  success: '&6Đội của bạn đã lên cấp'
+tag:
+  banned: '&4Thẻ đó bị cấm'
+  success: '&6Thẻ của bạn đã được thay đổi thành công'
+  maxLength: '&4Thẻ đó quá dài'
+  noPerm: '&4Bạn không có quyền thay đổi thẻ đội'
+admin:
+  cancel: '&4Lệnh đã bị hủy bởi plugin khác'
+  tag:
+    success: '&6Thẻ của đội đó đã được thay đổi thành công'
+  setrank:
+    success: '&6Cấp bậc của đội đó đã được đặt'
+    'no': '&4Cấp bậc đó không tồn tại hoặc không được thiết lập đúng'
+  config:
+    reload: '&6BetterTeams đã được tải lại (Nếu bạn gặp vấn đề khi sử dụng lệnh này, hãy khởi động lại máy chủ)'
+  holo:
+    create:
+      success: '&6Hologram đã được tạo'
+    remove:
+      noHolo: '&4Không tìm thấy hologram'
+      success: '&6Hologram đã bị xóa'
+  title:
+    success: '&6Danh hiệu của người chơi đó đã được thay đổi'
+    reset: '&6Danh hiệu của người chơi đó đã được đặt lại'
+  version: '&6Phiên bản plugin hiện tại: &b{0}'
+  versionstorage: '&6Phương thức lưu trữ: &b{0}'
+  versionversion: '&6Phiên bản Minecraft: &b{0}'
+  versionlanguage: '&6Ngôn ngữ đã chọn: &b{0}'
+  versiononline: '&6Chế độ trực tuyến: &b{0}'
+  versionplayers: '&6Số lượng người chơi: &b{0}'
+  noTeam: '&4Đó không phải là một đội'
+  home:
+    success: '&6Bạn đã được dịch chuyển đến nhà của đội đó'
+    noHome: '&4Đội đó chưa đặt nhà'
+  name:
+    success: '&6Tên đội đã được thay đổi'
+  description:
+    success: '&6Tên của đội đó đã được thay đổi'
+  open:
+    successopen: '&6Đội đó bây giờ mở cho mọi người'
+    successclose: '&6Đội đó bây giờ chỉ theo lời mời'
+  invite:
+    success: '&6Người chơi đó đã được mời vào đội đó'
+  create:
+    success: '&6Đội đó đã được tạo'
+  join:
+    banned: '&4Người chơi đó bị cấm khỏi đội đó'
+    success: '&6Người chơi đó đã tham gia đội'
+    notify: '&6Bạn đã tham gia đội &b{0}'
+    full: '&4Đội đó đã đầy'
+  notInTeam: '&6Người chơi đó không thể ở trong đội trước khi làm điều đó'
+  inTeam: '&4Người chơi đó không ở trong đội'
+  leave:
+    success: '&6Người chơi đó đã rời khỏi đội đó'
+    notify: '&6Bạn đã rời khỏi đội đó'
+  demote:
+    notify: '&6Bạn đã bị hạ chức'
+    success: '&6Người chơi đó đã bị hạ chức'
+    min: '&4Người chơi đó không thể bị hạ chức thêm'
+    maxAdmins: '&4Đội đó đã có số lượng quản trị viên tối đa, loại bỏ một người trước khi hạ chức người chơi này'
+  promote:
+    max: '&6Người chơi đó đã ở cấp bậc tối đa'
+    notify: '&6Bạn đã được thăng chức'
+    success: '&6Người chơi đó đã được thăng chức'
+    owner: '&6Được cấu hình rằng các đội chỉ có thể có một chủ sở hữu duy nhất, gõ &b/teama setowner <người chơi> &6để đặt người chơi làm chủ sở hữu'
+    maxAdmins: '&4Đội đó đã có số lượng quản trị viên tối đa, loại bỏ một người trước khi thăng chức người đó'
+    maxOwners: '&4Đội đó đã có số lượng chủ sở hữu tối đa, loại bỏ một người trước khi thăng chức người đó'
+  setowner:
+    already: '&4Người chơi đó đã là chủ sở hữu'
+    nonotify: '&6Bạn không còn là chủ sở hữu đội'
+    success: '&6Người chơi đó là chủ sở hữu đội mới'
+    notify: '&6Bạn bây giờ là chủ sở hữu đội'
+  warps:
+    none: '&4Đội đó chưa đặt điểm dịch chuyển nào'
+  setwarp:
+    success: '&6Điểm dịch chuyển đó đã được đặt'
+    max: '&6Đội đó đã đặt số lượng điểm dịch chuyển tối đa'
+  purge:
+    confirm: '&6Chạy lệnh đó trong 10 giây tới để xác nhận, &4ĐIỀU NÀY KHÔNG THỂ HOÀN TÁC VÀ SẼ ĐẶT LẠI ĐIỂM CHO TẤT CẢ CÁC ĐỘI'
+    success: '&6Các đội đã được thanh lọc'
+  score:
+    tooSmall: '&4Điểm phải lớn hơn 0'
+    success: '&6Điểm của đội đó đã được thay đổi'
+  bal:
+    toSmall: '&4Số dư phải lớn hơn 0'
+    success: '&6Số dư của đội đó đã được thay đổi'
+  update: '&4Có phiên bản mới của better teams đã phát hành, cập nhật tại đây: https://www.spigotmc.org/resources/better-teams.17129/'
+  disband:
+    success: '&6Đội đó đã được giải tán thành công'
+  color:
+    success: '&6Màu của đội đó đã được thay đổi'
+  chest:
+    claim:
+      success: '&6Bạn đã nhận rương đó thay mặt cho đội'
+    remove:
+      success: '&6Bạn đã xóa thành công quyền sở hữu khỏi rương đó'
+      notClaimed: '&4Không có đội nào đã nhận rương đó'
+    all:
+      success: '&6Tất cả quyền sở hữu đã được xóa khỏi đội đó'
+    disable:
+      already: '&4Việc nhận rương đã bị vô hiệu hóa'
+      success: '&6Việc nhận rương đã bị vô hiệu hóa'
+    disabled:
+      bc: '&6&lTất cả rương đã nhận có thể được mở'
+    enable:
+      already: '&4Việc nhận rương đã được kích hoạt'
+      success: '&6Việc nhận rương đã được kích hoạt'
+    enabled:
+      bc: '&6&lTất cả rương đã nhận đều bị khóa'
+  teleport:
+    noWorld: '&4Không tìm thấy thế giới được chỉ định'
+    success: '&6Tất cả thành viên trực tuyến của đội đó đã được dịch chuyển'
+    player:
+      success: '&6Người chơi đó đã được dịch chuyển'
+    all:
+      success: '&6Tất cả thành viên trực tuyến của tất cả các đội đã được dịch chuyển'
+      home:
+        success: '&6Tất cả thành viên trực tuyến của tất cả các đội có nhà đã được dịch chuyển'
+  ally:
+    same: '&4Bạn không thể làm một đội đồng minh với chính nó'
+    already: '&4Những đội đó đã là đồng minh'
+    success: '&6Hai đội đó bây giờ là đồng minh'
+  neutral:
+    same: '&4Bạn không thể nhập cùng một đội hai lần'
+    not: '&4Những đội đó không phải đồng minh'
+    success: '&6Những đội đó không còn là đồng minh'
+nametag:
+  syntax: '&6&l{0}&r '
+holo:
+  leaderboard: '&6Bảng xếp hạng'
+  syntax: '&6{0}: &b{1}'
+  msyntax: '&6{0}: &b${1}'
+top:
+  leaderboard: '&6Bảng xếp hạng'
+  syntax: '&b{0}: &6{1} &7({2})'
+  divide: '&f...'
+baltop:
+  leaderboard: '&6Bảng xếp hạng'
+  syntax: '&b{0}: &6{1} &7({2})'
+  divide: '&f...'
+spy:
+  stop: '&6Bạn không còn theo dõi tin nhắn đội'
+  start: '&6Bạn đang theo dõi tin nhắn đội'
+  team: '&7[&b{0}&7]&f{1}&f: {2}'
+  ally: '&7[&d{0}&7]&f{1}&f: {2}'
+uclaim:
+  team: '&4Bạn phải ở trong một đội để tạo quyền sở hữu'
+  member: '&4Bạn không thể rời khỏi quyền sở hữu của đội mình'
+  kick: '&4Bạn không thể đuổi thành viên đội mình khỏi quyền sở hữu'
+  ban: '&4Bạn không thể cấm thành viên đội mình khỏi quyền sở hữu'
+  dissolve: '&4Đội của bạn đã bị giải tán nên quyền sở hữu đã bị hủy bỏ'
+help:
+  header: '&6---- &bTrợ giúp BetterTeams &6----'
+  footer: '&6---- &bTrang {0}/{1} - /{2} help <trang> &6----'
+  description: Xem và thay đổi mô tả đội của bạn
+  ban: Cấm người chơi được chỉ định khỏi đội của bạn
+  home: Dịch chuyển bạn đến nhà của đội
+  help: Xem trang trợ giúp này
+  promote: Thăng chức người chơi được chỉ định trong đội
+  demote: Hạ chức người chơi được chỉ định trong đội
+  unban: Bỏ cấm người chơi được chỉ định khỏi đội
+  kick: Đuổi người chơi đó khỏi đội
+  leave: Rời khỏi đội hiện tại
+  chat: Gửi tin nhắn chỉ đến đội của bạn
+  name: Xem và thay đổi tên đội
+  sethome: Đặt nhà cho đội
+  create: Tạo một đội với tên được chỉ định
+  invite: Mời người chơi được chỉ định vào đội
+  disband: Giải tán đội hiện tại
+  open: Chuyển đổi nếu đội chỉ theo lời mời
+  info: Xem thông tin về người chơi / đội được chỉ định
+  color: Thay đổi màu đội
+  deposit: Gửi tiền vào số dư đội
+  bal: Xem số dư đội
+  withdraw: Rút tiền từ số dư đội
+  title: Thay đổi danh hiệu của người chơi đó trong đội
+  top: Xem các đội hàng đầu
+  rank: Xem cấp bậc của một đội
+  join: Tham gia đội được chỉ định
+  delhome: Xóa nhà của đội
+  ally: Được sử dụng để yêu cầu liên minh với đội khác
+  neutral: Xóa đồng minh và từ chối yêu cầu đồng minh
+  allychat: Gửi tin nhắn chỉ đến đồng minh
+helpArg:
+  delhome: ''
+  echest: ''
+  color: <mã màu>
+  allychat: '[tin nhắn]'
+  description: '[mô tả]'
+  setwarp: <tên> [mật khẩu]
+  title: '[người chơi/tôi] [danh hiệu]'
+  bal: ''
+  ban: <người chơi>
+  promote: <người chơi>
+  warps: ''
+  top: ''
+  ally: <đội>
+  rankup: ''
+  leave: ''
+  sethome: ''
+  create: <tên> [thẻ]
+  rank: '[đội]'
+  join: <đội>
+  tag: '[thẻ]'
+  disband: ''
+  info: '[đội/người chơi]'
+  delwarp: <tên> [mật khẩu]
+  chest: ''
+  neutral: <đội>
+  pvp: ''
+  baltop: ''
+  list: '[trang]'
+  home: ''
+  help: ''
+  unban: <người chơi>
+  demote: <người chơi>
+  kick: <người chơi>
+  chat: '[tin nhắn]'
+  name: <tên>
+  deposit: <số tiền>
+  invite: <người chơi>
+  open: ''
+  warp: <tên>
+  withdraw: <số tiền>
+command:
+  create: tao
+  leave: roi
+  disband: giaitsan
+  description: mota
+  invite: moi
+  join: thamgia
+  name: ten
+  open: mo
+  info: thongtin
+  kick: duoi
+  promote: thangchuc
+  demote: hachuc
+  home: nha
+  sethome: datnha
+  ban: cam
+  unban: bocam
+  chat: chat
+  color: mau
+  title: danhhieu
+  top: xephang
+  baltop: xephangtiendoi
+  rank: capbac
+  delhome: xoanhai
+  ally: dongminh
+  neutral: trungtinh
+  allychat: chatdongminh
+  list: danhsach
+  warp: dichhuyen
+  setwarp: datdichhuyen
+  delwarp: xoadichhuyen
+  warps: cacdiemdichuyen
+  echest: ruongender
+  rankup: lenbacp
+  tag: the
+  pvp: pvp
+  claim: nhan
+  remove: xoa
+  removeall: xoatatca
+  chest: ruong
+  reload: tailai
+  chatspy: theodoi
+  version: phienban
+  purge: thanhloc
+  setrank: datcapbac
+  add: them
+  set: dat
+  score: diem
+  enableclaims: batsohuu
+  disableclaims: tatsohuu
+  debug: debug
+  teleport: dichhuyen
+  money: tien

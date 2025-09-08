@@ -1,0 +1,16 @@
+Activator:
+  Name: '&aBlank Kit Ability &7(Right Click)'
+  Material: EMERALD
+Message:
+  Message: '%prefix% &7You have used your ability.'
+Sound:
+  Sound: BLOCK.NOTE_BLOCK.PLING
+  Pitch: 1
+  Volume: 1
+Effects:
+  SPEED:
+    Amplifier: 1
+    Duration: 10
+Commands:
+- 'console: This command is run from the console, you can use %player%'
+- 'player: This command is run from the player, you can use %player%'

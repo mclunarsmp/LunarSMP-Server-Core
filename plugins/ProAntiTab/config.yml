@@ -1,0 +1,302 @@
+#      ____             ___          __  _ ______      __
+#     / __ \_________  /   |  ____  / /_(_)_  __/___ _/ /_
+#    / /_/ / ___/ __ \/ /| | / __ \/ __/ / / / / __ `/ __ \
+#   / ____/ /  / /_/ / ___ |/ / / / /_/ / / / / /_/ / /_/ /
+#  /_/   /_/   \____/_/  |_/_/ /_/\__/_/ /_/  \__,_/_.___/
+#  config.yml (Phiên bản Bukkit/Spigot)
+
+# Phần này không thực sự cần thay đổi,
+# nhưng một số người dường như không thích thiết kế thông báo cập nhật tùy chỉnh của tôi...
+# Chà... đó về cơ bản là toàn bộ lý do cho phần này ở đây. xd
+updater:
+  enabled: true
+  period: 10000
+  auto-update-config: true
+  updated:
+  - '&8[&2PAT &7| &2Bukkit&8] &aBạn đang sử dụng phiên bản mới nhất! ^^'
+  outdated:
+  - '&8[&4PAT &7| &4Bukkit&8] &cCó phiên bản mới có sẵn! (%newest_version%)'
+  - '&8[&4PAT &7| &4Bukkit&8] &cBạn vẫn đang sử dụng %current_version%.'
+  - '&8[&4PAT &7| &4Bukkit&8] &cTải phiên bản mới nhất tại đây:'
+  - '&8[&4PAT &7| &4Bukkit&8] &ehttps://www.rayzs.de/products/AntiCommand/page'
+
+# (!) Cảnh báo: Nếu bạn có máy chủ Bungeecord/Velocity, vui lòng bật tùy chọn này!
+# (!) Cách sử dụng đúng có thể xem tại trang sau:
+# (!) https://www.spigotmc.org/resources/113172/field?field=documentation
+# (!) Tại phần đầu tiên ("Cách thiết lập") có các spoiler với các tình huống máy chủ khác nhau.
+# (!) Mở spoiler phù hợp với tình huống máy chủ của bạn và làm theo các bước hướng dẫn ở đó.
+# Bật tính năng này cho phép các máy chủ Bungeecord/Velocity và backend giao tiếp với nhau.
+# Thông tin được truyền đạt bao gồm các cài đặt của một số tính năng nhất định, cũng như dữ liệu quan trọng
+# về nhóm, lệnh và nhiều hơn nữa, rất quan trọng cho tab-completion & gợi ý!
+# Các tính năng bị ảnh hưởng được đồng bộ hóa hoặc ghi đè bởi proxy được đánh dấu là ">> HTP".
+handle-through-proxy:
+  enabled: false
+  token: chèn-token-của-proxy-vào-đây
+
+# >> HTP
+# Đây là một tính năng rất cần thiết nếu bạn có quá nhiều lệnh để chặn và thay vào đó quyết định
+# đưa các lệnh cụ thể vào danh sách trắng.
+# Bật tính năng này sẽ vô hiệu hóa TẤT CẢ các lệnh ngoại trừ những lệnh có trong danh sách (nhóm).
+turn-blacklist-to-whitelist: true
+
+# Tại đây bạn có thể tùy chỉnh phiên bản máy chủ được hiển thị khi ping. (Văn bản tại số lượng người chơi)
+# (!) Cảnh báo: Bắt buộc phải sử dụng Paper hoặc Purpur để sử dụng tính năng này!
+# (!) Phiên bản máy chủ được hỗ trợ: 1.12.2 - mới nhất
+custom-protocol-ping:
+  enabled: false
+
+  # Thông thường nó chỉ hiển thị khi ai đó ping máy chủ với phiên bản sai.
+  # Bật tính năng này sẽ luôn hiển thị giao thức và thay thế bằng số lượng người chơi bình thường.
+  always-show: false
+
+  # Số này ở đây xác định kết quả cho placeholder %online_extended%.
+  # Đó là số lượng người chơi hiện tại tăng thêm bởi số này.
+  # Ví dụ: 5/20 trở thành 6/20
+  extend-online-count: 10000000
+  # true: Sử dụng số lượng online được tính toán mới (%online_extended%) làm số người chơi tối đa.
+  # false: Sử dụng số người chơi tối đa mặc định.
+  use-as-maxplayers: false
+
+  # Bật tùy chọn này sẽ ẩn danh sách người chơi trên máy chủ của bạn,
+  # khi bạn di chuột qua số lượng người chơi.
+  hide-players: true
+
+  # Thông điệp giao thức được hiển thị
+  # Các placeholder có sẵn:
+  # %online%            - số lượng người chơi online hiện tại
+  # %online_extended%   - số lượng người chơi online được điều chỉnh
+  # %max%               - số lượng người chơi tối đa
+  protocol: '&f&lAntiCommand &7(&a%online%&7/&c%max%&7)'
+  custom-playerlist:
+    list:
+    - '&8> &7Người chơi online: &f%online%&7/&c%max%'
+    - '&8> &7Đang sử dụng &fAntiCommand'
+
+# >> HTP (Đồng bộ)
+# Tính năng này cho phép bạn tạo thông báo 'Lệnh không xác định.' của riêng mình.
+# Nó rất hữu ích xét đến thực tế bạn có thể phải đặt cùng một thông báo
+# cho việc một lệnh bị chặn hoặc thực sự không tồn tại. ^^
+# Tốt để ẩn các lệnh thật và không thật khỏi người chơi của bạn.
+custom-unknown-command:
+  enabled: false
+  message:
+  - '&cLệnh này không tồn tại!'
+
+# >> HTP (Ghi đè)
+# Cài đặt này quyết định xem một lệnh được liệt kê có nên bị hủy thực thi hay không.
+# Như bạn có thể thấy nó được bật theo mặc định, đó cũng là lý do tại sao mọi lệnh được liệt kê
+# đều bị chặn hoàn toàn.
+cancel-blocked-commands:
+  enabled: true
+  base-command-message:
+  - '%prefix% &cLệnh này &8(&4%command%&8) &cbị chặn!'
+  sub-command-message:
+  - '&cLệnh &8(&4%command%&8) &cvới tham số phụ được cung cấp không được phép!'
+
+# >> HTP (Ghi đè)
+# Tại đây bạn có thể tùy chỉnh lệnh '/plugins' giả của riêng mình.
+custom-plugins:
+  enabled: true
+
+  # Nếu điều này được đặt thành true, lệnh sẽ luôn có thể tab-complete,
+  # ngay cả khi lệnh được cho là bị chặn
+  always-tab-completable: false
+
+  commands:
+  - pl
+  - plugins
+  message:
+  - '&x&F&F&F&F&F&FC&x&F&F&F&F&F&Fá&x&F&F&F&F&F&Fc &x&F&F&F&F&F&Fp&x&F&F&F&F&F&Fl&x&F&F&F&F&F&Fu&x&F&F&F&F&F&Fg&x&F&F&F&F&F&Fi&x&F&F&F&F&F&Fn &x&F&F&F&F&F&Fđ&x&F&F&F&F&F&Fa&x&F&F&F&F&F&Fn&x&F&F&F&F&F&Fg &x&F&F&F&F&F&Fc&x&F&F&F&F&F&Fh&x&F&F&F&F&F&Fạ&x&F&F&F&F&F&Fy &x&F&F&F&F&F&Ft&x&F&F&F&F&F&Fr&x&F&F&F&F&F&Fê&x&F&F&F&F&F&Fn &x&F&F&F&F&F&Fs&x&F&F&F&F&F&Fe&x&F&F&F&F&F&Fr&x&F&F&F&F&F&Fv&x&F&F&F&F&F&Fe&x&F&F&F&F&F&Fr &x&F&F&F&F&F&F(&x&F&F&F&F&F&F0&x&F&F&F&F&F&F)&x&F&F&F&F&F&F: &x&F&F&F&F&F&Fd&x&F&F&F&F&F&Fs&x&F&F&F&F&F&Fc&x&F&F&F&F&F&F.&x&F&F&F&F&F&Fg&x&F&F&F&F&F&Fg&x&F&F&F&F&F&F/&x&F&F&F&F&F&Fm&x&F&F&F&F&F&Fc&x&F&F&F&F&F&Fl&x&F&F&F&F&F&Fu&x&F&F&F&F&F&Fn&x&F&F&F&F&F&Fa&x&F&F&F&F&F&Fr&x&F&F&F&F&F&Fs&x&F&F&F&F&F&Fm&x&F&F&F&F&F&Fp'
+
+# >> HTP (Ghi đè)
+# Tại đây bạn có thể tùy chỉnh lệnh '/version' giả của riêng mình.
+custom-version:
+  enabled: true
+
+  # Nếu điều này được đặt thành true, lệnh sẽ luôn có thể tab-complete,
+  # ngay cả khi lệnh được cho là bị chặn
+  always-tab-completable: false
+
+  commands:
+  - icanhasbukkit
+  - version
+  - ver
+  message:
+  - '&fMáy chủ này đang chạy CraftBukkit phiên bản git-NasaSpigot-294 (MC: X)'
+
+# >> HTP (Ghi đè)
+# Tại đây bạn có thể vô hiệu hóa tất cả các lệnh namespace.
+# Lệnh namespace là các lệnh như plugin:command (ví dụ: essentials:warp)
+# Bạn có thể bỏ qua hạn chế này với quyền AntiCommand.namespace.
+block-namespace-commands:
+  enabled: false
+
+# Vá một lỗ hổng nhỏ gây lag máy chủ.
+# Do thực tế PAT tương tác trực tiếp với Tab-Completions và các gói tin của chúng,
+# sẽ lãng phí nếu không cung cấp một số bản vá đơn giản như thế này. ^^
+patch-exploits:
+  enabled: true
+  alert-message: '%prefix% &4%player% &cđã cố gắng crash/lag máy chủ.'
+  kick-message: '&cKhông thể đọc gói tin! Vui lòng kết nối lại.'
+
+# >> HTP (Ghi đè)
+# Tính năng này cho phép bạn tùy chỉnh thương hiệu máy chủ mà bạn thấy khi nhấn F3.
+# Thông thường có cái gì đó như 'Purpur', hoặc 'Spigot'.
+# Với tính năng này, bạn có thể thay đổi và thậm chí tạo hoạt ảnh cho nó.
+custom-server-brand:
+  enabled: true
+
+  # Xác định tốc độ hoạt ảnh diễn ra.
+  # Đặt thành -1 để vô hiệu hóa hoạt ảnh.
+  # Vô hiệu hóa hoạt ảnh sẽ chỉ hiển thị
+  # thương hiệu đầu tiên của danh sách này.
+  # Cảnh báo:
+  # Bằng cách vô hiệu hóa hoạt ảnh, bạn cũng vô hiệu hóa
+  # cập nhật tự động thông tin.
+  # Điều đó có nghĩa là các placeholder sẽ không cập nhật trừ khi
+  # người chơi tham gia lại máy chủ.
+  repeat-delay: 3
+
+  # Đây là danh sách của hoạt ảnh
+  # Các placeholder có thể:
+  # %player%        - tên của người chơi
+  # %displayname%   - tên hiển thị của người chơi
+  # %world%         - tên của thế giới nơi người chơi đang ở
+  # và các placeholder khác từ PlaceholderAPI.
+  brands:
+  - 'LunarSMP SS25-EP1'
+
+# ------------------------------------------------------------------------------
+#       __  ___
+#      /  |/  /__  ______________ _____ ____  _____
+#     / /|_/ / _ \/ ___/ ___/ __ `/ __ `/ _ \/ ___/
+#    / /  / /  __(__  |__  ) /_/ / /_/ /  __(__  )
+#   /_/  /_/\___/____/____/\__,_/\__, /\___/____/
+#                               /____/
+# Đây là tất cả các thông điệp còn lại cho các lệnh InGame.
+# Chúc vui vẻ khi chỉnh sửa chúng theo ý thích của bạn! ^^
+# Nhớ rằng: PlaceholderAPI & MiniMessage hoạt động trên tất cả các thông điệp này! ^^
+# Đây là một số placeholder khác có thể được sử dụng trong bất kỳ thông điệp nào ở đây:
+# %prefix%            - tiền tố plugin
+# %executor%          - tên của người thực thi (lệnh được chỉ định)
+# %newest_version%    - tên phiên bản của bản cập nhật plugin mới nhất
+# %current_version%   - tên phiên bản của plugin đang được cài đặt ngay bây giờ
+
+prefix: '&8[&4AntiCommand&8]'
+only-for-proxy: '&cLệnh này chỉ hoạt động trên máy chủ Bungeecord/Velocity!'
+no-permissions: '&cBạn không được phép thực thi lệnh này! Thiếu quyền: &4%permission%'
+command-failed: '&cKhông thể thực thi lệnh này! Sử dụng "/pat" để xem tất cả các lệnh có sẵn.'
+
+update-permissions:
+  all-players: '&aĐã cập nhật quyền!'
+  specific-player: '&aĐã cập nhật quyền của %target%!'
+  player-not-online: '&c%target% không online!'
+
+post-debug:
+  success: '&aĐã tải lên log debug thành công: &e%link% &8(<click:open_url:%link%><gray>NHẤP</click>&8)'
+  failed: '&cKhông thể tải lên log debug!'
+
+reload:
+  loading: '&eĐang tải lại tất cả file cấu hình...'
+  done: '&aĐã tải lại thành công tất cả file cấu hình!'
+
+perms-check:
+  message: '&7Tất cả quyền liên quan đến PAT của &e%player%&7: &e%permissions%'
+  player-is-missing: '&cVui lòng chỉ định người chơi mà bạn muốn kiểm tra quyền.'
+  player-not-online: '&c%player% không online!'
+
+help:
+- '&7Các lệnh có sẵn là: &f/%label%&7... &8[&fBUKKIT&8]'
+- '&7Định dạng: &8<tùy chọn> (bắt buộc)'
+- '&f  reload &7để tải lại plugin'
+- '&f  notify &7để nhận thông báo'
+- '&f  info &7để lấy một số thông tin'
+- '&f  postdebug &7để đăng log PAT'
+- '&f  update <player> &7để cập nhật quyền người chơi'
+- '&f  perms <player> &7để kiểm tra quyền của người chơi'
+- '&f  add/rem (command) &8<group> &7để quản lý danh sách'
+- '&f  clear &8<group> &7để xóa danh sách'
+- '&f  creategroup (group) &7để tạo nhóm'
+- '&f  deletegroup (group) &7để xóa nhóm'
+- '&f  setpriority (group) (priority) &7để đặt độ ưu tiên'
+- '&f  list &8(group) &7để xem tất cả lệnh được liệt kê'
+- '&f  listgroups &7Liệt kê tất cả nhóm'
+- '&f  listpriorities &7để liệt kê tất cả độ ưu tiên nhóm'
+
+info:
+  version:
+    updated: '&aĐã cập nhật'
+    outdated: '&cLỗi thời (%newest_version%)'
+
+  proxy-sync:
+    time: '&e%time%'
+    disabled: '&cĐã vô hiệu hóa!'
+
+  message:
+  - '&7Thông tin cần thiết về &fPAT&8:'
+  - '&7  Phiên bản: &e%current_version%'
+  - '&7  Trạng thái: %version_status%'
+  - '&7  Đồng bộ cuối cùng với proxy: %sync_time%'
+  - '&7  Token đồng bộ proxy: &e%token%'
+  - '&7  Tên máy chủ nhận từ proxy: &e%sync_server_name%'
+
+notification:
+  enabled: '&aĐã bật thông báo'
+  disabled: '&cĐã tắt thông báo'
+  alert:
+  - '&8[&4CẢNH BÁO&8] &c%player% &8(&7thế giới: &e%world%&8) &cđã cố gắng thực thi lệnh bị chặn sau: &4%command%'
+
+blacklist:
+  clear: '&aDanh sách đã được xóa!'
+  clear-confirmation: '&4Cảnh báo! &7Lệnh này sẽ &cxóa toàn bộ danh sách&7! &7Lặp lại &elệnh tương tự &7để xác nhận hành động này.'
+
+  list:
+    message: '&7Các lệnh được liệt kê (&f%size%&7)&8: &f%commands%'
+    splitter: '&7, '
+    command: '&f%command%'
+
+  add:
+    success: '&aĐã thêm thành công %command% vào danh sách!'
+    failed: '&c%command% đã có trong danh sách!'
+
+  remove:
+    success: '&aĐã xóa thành công %command% khỏi danh sách!'
+    failed: '&c%command% không có trong danh sách!'
+
+group:
+  create: '&aNhóm %group% đã được tạo!'
+  already-exist: '&cNhóm %group% đã tồn tại!'
+  does-not-exist: '&cNhóm %group% không tồn tại!'
+
+  delete: '&cNhóm %group% đã bị xóa!'
+  delete-confirmation: '&4Cảnh báo! &7Lệnh này sẽ &cxóa nhóm với toàn bộ danh sách&7 của nhóm này! &7Lặp lại &elệnh tương tự &7để xác nhận hành động này.'
+
+  clear: '&aDanh sách của nhóm %group% đã được xóa!'
+  clear-confirmation: '&4Cảnh báo! &7Lệnh này sẽ &cxóa toàn bộ danh sách&7 của nhóm này! &7Lặp lại &elệnh tương tự &7để xác nhận hành động này.'
+
+  priority:
+    success: '&aĐã đặt thành công độ ưu tiên của nhóm &e%group% &athành &e%priority%&a!'
+    failed: '&cĐộ ưu tiên không hợp lệ! Vui lòng chọn một số lớn hơn 0.'
+
+  list:
+    message: '&7Các lệnh được liệt kê của nhóm %group% (&f%size%&7)&8: &f%commands%'
+    splitter: '&7, '
+    command: '&f%command%'
+
+  list-groups:
+    message: '&7Tất cả nhóm (&f%size%&7)&8: &f%groups%'
+    splitter: '&7, '
+    command: '&f%group%'
+
+  list-priorities:
+    message: '&7Danh sách tất cả độ ưu tiên nhóm (&f%size%&7)&8: \n&f%groups%'
+    splitter: \n
+    group: '&8- &e%priority%&8: &f%group%'
+
+  add:
+    success: '&aĐã thêm thành công %command% vào danh sách của nhóm %group%!'
+    failed: '&c%command% đã có trong danh sách của nhóm %group%!'
+
+  remove:
+    success: '&aĐã xóa thành công %command% khỏi danh sách của nhóm %group%!'
+    failed: '&c%command% không có trong danh sách của nhóm %group%!'

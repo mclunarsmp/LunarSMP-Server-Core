@@ -1,0 +1,180 @@
+## TPA Plugin Language File
+
+#=======================
+# Basic Configuration
+#=======================
+prefix: "&a&l> "
+console_prefix: "&7&l[TPA] "
+not_online_players: "Không có người chơi nào trực tuyến"
+not_warps: "Không có warp nào được đặt!"
+not_homes: "Không có nhà nào được đặt!" 
+spawn_name: "Điểm hồi sinh"
+rtp_name: "Dịch chuyển ngẫu nhiên"
+last_location: "Vị trí cuối cùng"
+lang.set_success: "&a&lNgôn ngữ máy khách đã đặt thành &6&l<target>"
+
+#=======================
+# Button Interactions
+#=======================
+## Button Texts
+accept_button: "&a&l[Chấp nhận]"
+deny_button: "&c&l[Từ chối]"
+blacklist.add_button: "&c&l[Từ chối và chặn]"
+blacklist.remove_button: "&a&l[Gỡ chặn]"
+teleport_button: "&a&l[Dịch chuyển]"
+location_set_button: "&6&l[Đặt vị trí]"
+default_home_set_button: "&e&l[Đặt nhà mặc định]"
+delete_button: "&c&l[Xoá]"
+
+## Button Hints
+accept_click_hint: "&a&lNhấn để chấp nhận dịch chuyển"
+deny_click_hint: "&c&lNhấn để từ chối dịch chuyển"
+blacklist.add_hint: "&c&lNhấn để từ chối và chặn"
+blacklist.remove_hint: "&a&lNhấn để gỡ khỏi danh sách chặn"
+teleport_click_hint: "&a&lNhấn để dịch chuyển"
+set_location_hint: "&6&lNhấn để đặt vị trí hiện tại"
+set_default_home_hint: "&e&lNhấn để đặt làm home mặc định"
+delete_click_hint: "&c&lNhấn để xoá"
+
+#=======================
+# Teleport Requests
+#=======================
+request.to_here: "&a&lNgười chơi &6&l<target>&a&l muốn dịch chuyển đến vị trí của bạn! Lời mời sẽ hết hạn sau &6&l<seconds>&a&l giây!"
+request.to_target: "&a&lNgười chơi &6&l<target>&a&l muốn mời bạn đến vị trí của họ! Lời mời sẽ hết hạn sau &6&l<seconds>&a&l giây!"
+request.sent_success: "&a&lĐã gửi yêu cầu đã gửi đến &6&l<target>&a&l!"
+request.timeout_notice: "&a&lYêu cầu có hiệu lực trong &6&l<seconds>&a&l giây!"
+request.expired_from: "&c&lYêu cầu từ &6&l<target>&c&l đã hết hạn!"
+request.expired_to: "&c&lYêu cầu của bạn đến &6&l<target>&c&l đã hết hạn!"
+
+#=======================
+# Homes
+#=======================
+home.list_header: "&a&lDanh sách home:"
+home.set_success: "&a&lHome &6&l<target>&a&l đã được đặt"
+home.default_set_success: "&a&lHome mặc định được đặt thành &6&l<target>"
+home.delete_success: "&a&lHome &6&l<target>&a&l đã bị xoá"
+home.teleport_success: "&a&lDịch chuyển đến home &6&l<target>"
+home.max_limit_error: "&c&lTối đa &6&l<max_home_amount>&c&l home được phép!"
+error.default_home_already_set: "&6&l<target>&c&l đã là home mặc định rồi"
+
+#=======================
+# Warps
+#=======================
+warp.list_header: "&a&lDanh sách warp:"
+warp.set_success: "&a&lWarp &6&l<target>&a&l đã được đặt"
+warp.delete_success: "&a&lWarp &6&l<target>&a&l đã bị xoá"
+warp.teleport_success: "&a&lDịch chuyển đến warp &6&l<target>"
+
+#=======================
+# Spawn
+#=======================
+spawn.set_success: "&a&lĐiểm hồi sinh đã được đặt"
+spawn.delete_success: "&a&lĐiểm hồi sinh đã bị xoá"
+spawn.teleport_success: "&a&lDịch chuyển đến điểm hồi sinh!"
+
+#=======================
+# Last Location
+#=======================
+back.teleport_success: "&a&lDịch chuyển đến vị trí cuối cùng!"
+
+#=======================
+# Random Teleport
+#=======================
+rtp.generating: "&a&lĐang tạo vị trí ngẫu nhiên..."
+rtp.success: "&a&lDịch chuyển đến vị trí ngẫu nhiên!"
+rtp.failed: "&c&lKhông thể tạo vị trí!"
+
+#=======================
+# Blacklist
+#=======================
+blacklist.list_header: "&a&lDanh sách chặn của bạn:"
+blacklist.add_success: "&a&lĐã thêm &6&l<target>&a&l vào danh sách chặn"
+blacklist.remove_success: "&a&lĐã gỡ &6&l<target>&a&l khỏi danh sách chặn"
+
+#=======================
+# Error Messages
+#=======================
+## Command Status
+error.command_disabled: "&c&lLệnh này đã bị tắt!"
+error.world_disabled: "&c&lLệnh bị vô hiệu trong thế giới này!"
+error.command_cooldown: "&c&lChờ &6&l<seconds>&c&l giây để sử dụng lại!"
+
+## Permissions
+error.console_restricted: "&c&lChỉ người chơi mới sử dụng được!"
+error.permission_denied: "&c&lKhông có quyền!"
+
+## Player Status
+error.no_online_players: "&c&lKhông có người chơi nào trực tuyến!"
+error.target_offline: "&c&lNgười chơi &6&l<target>&c&l đang ngoại tuyến!"
+error.self_operation: "&c&lKhông thể thao tác với chính mình!"
+
+## Requests
+error.no_pending_request: "&c&lKhông có yêu cầu nào đang chờ!"
+error.request_pending: "&c&lĐã có yêu cầu đang chờ xử lý!"
+
+## Blacklist
+error.already_blacklisted: "&c&lĐã có trong danh sách chặn!"
+error.blocked_by_target: "&c&lBạn đã bị chặn bởi người chơi này!"
+error.blacklist_empty: "&c&lDanh sách chặn trống!"
+error.not_blacklisted: "&c&lKhông có trong danh sách chặn!"
+
+## Homes
+error.home_not_found: "&c&lHome &6&l<target>&c&l không tồn tại!"
+error.no_homes_set: "&c&lBạn chưa đặt home nào!"
+error.no_default_home: "&c&lChưa có home mặc định!"
+
+## Warps
+error.warp_not_found: "&c&lWarp &6&l<target>&c&l không tồn tại!"
+error.no_warps_set: "&c&lChưa có warp nào được đặt!"
+
+## Locations
+error.last_location_missing: "&c&lKhông có vị trí cuối cùng!"
+error.logout_location_missing: "&c&lKhông có vị trí đăng xuất!"
+error.spawn_not_set: "&c&lChưa đặt điểm hồi sinh!"
+
+## Syntax
+error.syntax_generic: "&c&lLỗi cú pháp! Cú pháp: /<command>"
+error.syntax_tpa: "&c&lLỗi cú pháp! Cú pháp: /<command> <người chơi>"
+error.syntax_tpall: "&c&lLỗi cú pháp! Cú pháp: /<command> [người chơi/warp/spawn] [tên]"
+error.syntax_warp: "&c&lLỗi cú pháp! Cú pháp: /<command> <warp>"
+error.syntax_home: "&c&lLỗi cú pháp! Cú pháp: /<command> <home>"
+
+## System
+error.config_not_found: "&c&lTệp cấu hình đã được tạo lại!"
+error.runtime: "&c&lLỗi plugin: <message>"
+error.forwarded_error: "&c&lLỗi từ &6&l<target>:"
+
+#=======================
+# Teleport Process
+#=======================
+teleport.accept.self: "&a&lĐã chấp nhận yêu cầu từ &6&l<target>!"
+teleport.accept.target: "&a&lNgười chơi &6&l<target>&a&l đã chấp nhận yêu cầu của bạn!"
+teleport.deny.self: "&c&lĐã từ chối yêu cầu từ &6&l<target>!"
+teleport.deny.target: "&c&lNgười chơi &6&l<target>&c&l đã từ chối yêu cầu của bạn!"
+teleport.countdown: "&a&lDịch chuyển sau &6&l<seconds>&a&l giây đến &6&l<target>"
+teleport.cancel_on_move: "&a&lDi chuyển sẽ huỷ dịch chuyển!"
+teleport.canceled.self: "&c&lDịch chuyển bị huỷ!"
+teleport.canceled.target: "&c&lNgười chơi huỷ dịch chuyển!"
+teleport.generic_success: "&a&lĐã dịch chuyển đến &6&l<target>"
+teleport.tpall.to_target: "&a&lQuản trị viên đã dịch chuyển bạn đến &6&l<target>"
+teleport.tpall.to_self: "&a&lQuản trị viên đã dịch chuyển tất cả đến bạn"
+teleport.tpall.success: "&a&lĐã dịch chuyển tất cả đến &6&l<target>"
+teleport.logout_location: "&a&lDịch chuyển đến vị trí đăng xuất của &6&l<target>"
+
+#=======================
+# System Messages
+#=======================
+system.config_reloaded: "&a&lCấu hình đã được tải lại!"
+system.plugin_loaded: "&a&lPlugin đã được tải! Phiên bản: &6&l<target>"
+system.plugin_unloaded: "&c&lPlugin đã bị ngắt!"
+system.config_migrated_success: "&a&lChuyển đổi cấu hình hoàn tất!"
+system.config_migrated: "&a&lĐang chuyển đổi cấu hình cũ (đã sao lưu)"
+system.debug_warning: "&c&lChế độ gỡ lỗi đang bật - hãy tắt khi không dùng!"
+
+#=======================
+# Updates
+#=======================
+update.checking: "&a&lĐang kiểm tra cập nhật..."
+update.available: "&a&lPhiên bản mới: &6&lTPA-v<target>&a&l tại &6&lhttps://modrinth.com/plugin/tpa.66666/versions"
+update.latest: "&a&lĐã là phiên bản mới nhất"
+update.failed: "&c&lKiểm tra cập nhật thất bại!"

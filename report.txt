@@ -1,0 +1,264 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         SENSITIVE DATA SCAN REPORT                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌───────────────────────────────────┐
+│           SCAN SUMMARY            │
+├───────────────────────────────────┤
+┌───────────────────────────┬───────┐
+│ Metric                    │ Count │
+├───────────────────────────┼───────┤
+│ Files Scanned             │ 6755  │
+│ Files with Sensitive Data │ 78    │
+│ Total Findings            │ 197   │
+└───────────────────────────┴───────┘
+
+┌──────────────────────────────────┐
+│         FINDINGS BY TYPE         │
+├──────────────────────────────────┤
+┌─────────────┬───────┬────────────┐
+│ Data Type   │ Count │ Percentage │
+├─────────────┼───────┼────────────┤
+│ Phone       │ 120   │ 60.9%      │
+│ Password    │ 44    │ 22.3%      │
+│ Ip Address  │ 29    │ 14.7%      │
+│ Email       │ 2     │ 1.0%       │
+│ Credit Card │ 2     │ 1.0%       │
+└─────────────┴───────┴────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                          Credit Card Details                                          │
+├───────────────────────────────────────────────────────────────────────────────────────────────────────┤
+┌──────────────────────────────────────────┬──────┬─────┬──────────────────┬────────────────────────────┐
+│ File                                     │ Line │ Col │ Match            │ Context                    │
+├──────────────────────────────────────────┼──────┼─────┼──────────────────┼────────────────────────────┤
+│ ...ns\Essentials\warps\noteblock_hub.yml │ 7    │ 11  │ 8421999216079712 │ pitch: -1.8421999216079712 │
+│ ...rSMP SS25\plugins\HuskHomes\spawn.yml │ 10   │ 11  │ 9702908992767334 │ pitch: -2.9702908992767334 │
+└──────────────────────────────────────────┴──────┴─────┴──────────────────┴────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                           Email Details                                                           │
+├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+┌──────────────────────────────────────────┬──────┬─────┬──────────────────────┬────────────────────────────────────────────────────┐
+│ File                                     │ Line │ Col │ Match                │ Context                                            │
+├──────────────────────────────────────────┼──────┼─────┼──────────────────────┼────────────────────────────────────────────────────┤
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 596  │ 28  │ my.email@example.com │ #  original email: my.email@example.com            │
+│ ...SrvAddon\built-in\Default\LICENSE.txt │ 1    │ 140 │ jamesloohp@gmail.com │ This pack is part of InteractiveChatDiscordSRVA... │
+└──────────────────────────────────────────┴──────┴─────┴──────────────────────┴────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                   Ip Address Details                                                    │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+┌──────────────────────────────────────────┬──────┬─────┬────────────┬────────────────────────────────────────────────────┐
+│ File                                     │ Line │ Col │ Match      │ Context                                            │
+├──────────────────────────────────────────┼──────┼─────┼────────────┼────────────────────────────────────────────────────┤
+│ ...arSMP\LunarSMP SS25\server.properties │ 54   │ 11  │ 0.0.0.0    │ server-ip=0.0.0.0                                  │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 11   │ 16  │ 127.0.0.1  │ mySQLHost: 127.0.0.1                               │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 232  │ 28  │ 127.0.0.1  │ #     - playername;127.0.0.1                       │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 235  │ 23  │ 127.0.0.1  │ - server_land;127.0.0.1                            │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 236  │ 18  │ 127.0.0.1  │ - server;127.0.0.1                                 │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 237  │ 18  │ 127.0.0.1  │ - bukkit;127.0.0.1                                 │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 238  │ 18  │ 127.0.0.1  │ - purpur;127.0.0.1                                 │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 239  │ 18  │ 127.0.0.1  │ - system;127.0.0.1                                 │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 240  │ 17  │ 127.0.0.1  │ - admin;127.0.0.1                                  │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 241  │ 16  │ 127.0.0.1  │ - md_5;127.0.0.1                                   │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 242  │ 25  │ 127.0.0.1  │ - administrator;127.0.0.1                          │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 243  │ 17  │ 127.0.0.1  │ - notch;127.0.0.1                                  │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 244  │ 18  │ 127.0.0.1  │ - spigot;127.0.0.1                                 │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 245  │ 23  │ 127.0.0.1  │ - bukkitcraft;127.0.0.1                            │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 246  │ 21  │ 127.0.0.1  │ - paperclip;127.0.0.1                              │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 247  │ 19  │ 127.0.0.1  │ - papermc;127.0.0.1                                │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 248  │ 20  │ 127.0.0.1  │ - spigotmc;127.0.0.1                               │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 249  │ 16  │ 127.0.0.1  │ - root;127.0.0.1                                   │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 250  │ 19  │ 127.0.0.1  │ - console;127.0.0.1                                │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 251  │ 18  │ 127.0.0.1  │ - authme;127.0.0.1                                 │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 252  │ 17  │ 127.0.0.1  │ - owner;127.0.0.1                                  │
+│ ...SS25\plugins\Geyser-Spigot\config.yml │ 17   │ 13  │ 0.0.0.0    │ #address: 0.0.0.0                                  │
+│ ...SS25\plugins\Geyser-Spigot\config.yml │ 43   │ 39  │ 127.0.0.1  │ #proxy-protocol-whitelisted-ips: [ "127.0.0.1",... │
+│ ...SS25\plugins\Geyser-Spigot\config.yml │ 43   │ 52  │ 172.18.0.0 │ #proxy-protocol-whitelisted-ips: [ "127.0.0.1",... │
+│ ...SS25\plugins\Geyser-Spigot\config.yml │ 46   │ 79  │ 127.0.0.1  │ # If it is "auto", for standalone version the r... │
+│ ...25\plugins\InteractiveChat\config.yml │ 2    │ 16  │ 4.3.0.0    │ ConfigVersion: 4.3.0.0                             │
+│ ...activeChatDiscordSrvAddon\hashes.json │ 3    │ 15  │ 4.3.0.0    │ "version": "4.3.0.0",                              │
+│ ...narSMP SS25\plugins\KitPvP\config.yml │ 98   │ 11  │ 127.0.0.1  │ Host: 127.0.0.1                                    │
+│ ...MP SS25\plugins\PvPManager\config.yml │ 262  │ 11  │ 127.0.0.1  │ Host: 127.0.0.1                                    │
+└──────────────────────────────────────────┴──────┴─────┴────────────┴────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                         Password Details                                                          │
+├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+┌──────────────────────────────────────────┬──────┬─────┬──────────────────────┬────────────────────────────────────────────────────┐
+│ File                                     │ Line │ Col │ Match                │ Context                                            │
+├──────────────────────────────────────────┼──────┼─────┼──────────────────────┼────────────────────────────────────────────────────┤
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 35   │ 10  │ Password: '12345'    │ mySQLPassword: '12345'                             │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 47   │ 16  │ Password: password   │ mySQLColumnPassword: password                      │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 258  │ 20  │ Password: false      │ kickOnWrongPassword: false                         │
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 368  │ 11  │ PASSWORD = account   │ # PASSWORD = account is registered with a passw... │
+│ ...ugins\AuthMe\messages\messages_en.yml │ 19   │ 11  │ password: '&cKhông   │ name_in_password: '&cKhông được sử dụng tên ngư... │
+│ ...ugins\AuthMe\messages\messages_en.yml │ 20   │ 10  │ password: '&cMật     │ unsafe_password: '&cMật khẩu bạn chọn không an ... │
+│ ...ugins\AuthMe\messages\messages_en.yml │ 23   │ 9   │ password: '&cMật     │ pwned_password: '&cMật khẩu này đã bị rò rỉ %pw... │
+│ ...ugins\AuthMe\messages\messages_en.yml │ 28   │ 9   │ password: '&cSai     │ wrong_password: '&cSai mật khẩu!'                  │
+│ ...ugins\AuthMe\messages\messages_en.yml │ 65   │ 16  │ password: '&cCách    │ usage_change_password: '&cCách sử dụng: /change... │
+│ ...MP SS25\plugins\BetterRTP\lang\br.yml │ 6    │ 7   │ pass: '&aVocê        │ Bypass: '&aVocê foi teleportado para&7 x=%x% y=... │
+│ ...P SS25\plugins\BetterRTP\lang\chs.yml │ 6    │ 7   │ pass: '&a你被传送到了&7    │ Bypass: '&a你被传送到了&7 x=%x% y=%y% z=%z%。共尝试&f%att... │
+│ ...P SS25\plugins\BetterRTP\lang\cht.yml │ 6    │ 7   │ pass: '&a您被傳送到了&7    │ Bypass: '&a您被傳送到了&7 x=%x% y=%y% z=%z%。一共嘗試&f%at... │
+│ ...MP SS25\plugins\BetterRTP\lang\cs.yml │ 6    │ 7   │ pass: '&aByl/a       │ Bypass: '&aByl/a jsi teleportován/a na&7 x=%x% ... │
+│ ...MP SS25\plugins\BetterRTP\lang\da.yml │ 6    │ 7   │ pass: '&aDu          │ Bypass: '&aDu er blevet tp''et til&7 x=%x% y=%y... │
+│ ...MP SS25\plugins\BetterRTP\lang\de.yml │ 7    │ 7   │ pass: '&aDu          │ Bypass: '&aDu wurdest teleportiert zu&7 x=%x% y... │
+│ ...MP SS25\plugins\BetterRTP\lang\en.yml │ 6    │ 7   │ pass: '&aYou         │ Bypass: '&aYou have been tp''d to&7 x=%x% y=%y%... │
+│ ...MP SS25\plugins\BetterRTP\lang\es.yml │ 6    │ 7   │ pass: '&aHas         │ Bypass: '&aHas sido teletransportado a&7 x=%x% ... │
+│ ...MP SS25\plugins\BetterRTP\lang\fr.yml │ 8    │ 7   │ pass: '&aVous        │ Bypass: '&aVous avez été téléporté aux cooordon... │
+│ ...MP SS25\plugins\BetterRTP\lang\he.yml │ 7    │ 7   │ pass: '&aשוגרתם      │ Bypass: '&aשוגרתם ל&f x=%x% y=%y% z=%z% המערכת ... │
+│ ...MP SS25\plugins\BetterRTP\lang\hu.yml │ 6    │ 7   │ pass: '&aÁttelepítve │ Bypass: '&aÁttelepítve ide&7 x=%x% y=%y% z=%z%'    │
+│ ...MP SS25\plugins\BetterRTP\lang\it.yml │ 7    │ 7   │ pass: '&aSei         │ Bypass: '&aSei stato teletrasportato a&7 x=%x% ... │
+│ ...MP SS25\plugins\BetterRTP\lang\ja.yml │ 13   │ 7   │ pass: '&aあなたは&7x=%x% │ Bypass: '&aあなたは&7x=%x% y=%y% z=%z% に&f%attempts... │
+│ ...MP SS25\plugins\BetterRTP\lang\nl.yml │ 6    │ 7   │ pass: '&aJe          │ Bypass: '&aJe bent random geteleporteerd naar&7... │
+│ ...MP SS25\plugins\BetterRTP\lang\pl.yml │ 6    │ 7   │ pass: '&aZostałeś    │ Bypass: '&aZostałeś przeniesiony do&7 x=%x% y=%... │
+│ ...MP SS25\plugins\BetterRTP\lang\ro.yml │ 5    │ 7   │ pass: '&aAi          │ Bypass: '&aAi fost teleportat la coordonatele &... │
+│ ...MP SS25\plugins\BetterRTP\lang\ru.yml │ 7    │ 7   │ pass: '&aВы          │ Bypass: '&aВы были телепортированы по координат... │
+│ ...MP SS25\plugins\BetterRTP\lang\tr.yml │ 5    │ 7   │ pass: '&aSizi        │ Bypass: '&aSizi x=%x% y=%y% z=%z% konumuna taşı... │
+│ ...MP SS25\plugins\BetterRTP\lang\vi.yml │ 7    │ 7   │ pass: '&aBạn         │ Bypass: '&aBạn đã được dịch chuyển tới&7 x=%x% ... │
+│ ...P SS25\plugins\BetterTeams\config.yml │ 59   │ 4   │ password: password   │ password: password                                 │
+│ ...P SS25\plugins\BetterTeams\config.yml │ 268  │ 6   │ Password: true       │ allowPassword: true                                │
+│ ...SS25\plugins\BetterTeams\messages.yml │ 211  │ 10  │ Password: '&4Mật     │ invalidPassword: '&4Mật khẩu không đúng cho điể... │
+│ ...arSMP SS25\plugins\BetterTeams\vi.yml │ 224  │ 10  │ Password: '&4Sai     │ invalidPassword: '&4Sai pass của /team warp đó ... │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 45   │ 16  │ Password: "password" │ Experiment_JdbcPassword: "password"                │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 330  │ 6   │ Password: "PASSWORD" │ ProxyPassword: "PASSWORD"                          │
+│ ...SMP SS25\plugins\Essentials\worth.yml │ 156  │ 6   │ pass: 22.0           │ compass: 22.0                                      │
+│ ...arSMP SS25\plugins\GSit\data\data.yml │ 8    │ 3   │ password: "root"     │ password: "root"                                   │
+│ ...SMP SS25\plugins\HuskHomes\config.yml │ 23   │ 5   │ password: pa55w0rd   │ password: pa55w0rd                                 │
+│ ...5\plugins\InteractiveChat\storage.yml │ 9    │ 3   │ Password: password   │ Password: password                                 │
+│ ...MP SS25\plugins\KcLoginGui\config.yml │ 6    │ 9   │ password: "&cMật     │ wrong-password: "&cMật khẩu không đúng, vui lòn... │
+│ ...narSMP SS25\plugins\KitPvP\config.yml │ 102  │ 5   │ Password: password   │ Password: password                                 │
+│ ...SMP SS25\plugins\LuckPerms\config.yml │ 287  │ 3   │ password: 'guest'    │ password: 'guest'                                  │
+│ ...MP SS25\plugins\PvPManager\config.yml │ 265  │ 5   │ Password: '12345'    │ Password: '12345'                                  │
+│ ...SS25\plugins\SkinsRestorer\config.yml │ 64   │ 5   │ password: pass       │ password: pass                                     │
+│ ...SMP SS25\plugins\Spartan\settings.yml │ 11   │ 8   │ pass: true           │ op_bypass: true                                    │
+└──────────────────────────────────────────┴──────┴─────┴──────────────────────┴────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                       Phone Details                                                       │
+├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+┌──────────────────────────────────────────┬──────┬─────┬──────────────┬────────────────────────────────────────────────────┐
+│ File                                     │ Line │ Col │ Match        │ Context                                            │
+├──────────────────────────────────────────┼──────┼─────┼──────────────┼────────────────────────────────────────────────────┤
+│ ...narSMP SS25\plugins\AuthMe\config.yml │ 349  │ 12  │ 1234567890   │ - '1234567890'                                     │
+│ ...unarSMP SS25\plugins\AuthMe\spawn.yml │ 3    │ 7   │ 206.3880590  │ x: -206.38805909995                                │
+│ ...unarSMP SS25\plugins\AuthMe\spawn.yml │ 5    │ 9   │ 5295585299   │ z: 83.52955852992031                               │
+│ ...P SS25\plugins\BetterTeams\config.yml │ 163  │ 68  │ 0123456789   │ allowedChars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef... │
+│ ...P SS25\plugins\BetterTeams\config.yml │ 170  │ 36  │ 0123456789   │ # Possible Values: any number of: '0123456789ab... │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 30   │ 24  │ 13648710439  │ Channels: { "global": "1364871043952672843" }      │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 33   │ 27  │ 13648710641  │ DiscordConsoleChannelId: "1364871064181674044"     │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 145  │ 34  │ 0000000000   │ DiscordChatChannelBlockedIds: [ "00000000000000... │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 145  │ 56  │ 0000000000   │ DiscordChatChannelBlockedIds: [ "00000000000000... │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 145  │ 78  │ 0000000000   │ DiscordChatChannelBlockedIds: [ "00000000000000... │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 147  │ 39  │ 0000000000   │ DiscordChatChannelBlockedRolesIds: [ "000000000... │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 147  │ 61  │ 0000000000   │ DiscordChatChannelBlockedRolesIds: [ "000000000... │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 147  │ 83  │ 0000000000   │ DiscordChatChannelBlockedRolesIds: [ "000000000... │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 262  │ 15  │ 13648710160  │ - ChannelId: "1364871016047968337"                 │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 266  │ 15  │ 13648710088  │ - ChannelId: "1364871008812531844"                 │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 270  │ 15  │ 13648710120  │ - ChannelId: "1364871012025499648"                 │
+│ ...MP SS25\plugins\DiscordSRV\config.yml │ 295  │ 36  │ 12345678901  │ #                         example: 123456789012... │
+│ ...P SS25\plugins\DiscordSRV\linking.yml │ 44   │ 13  │ 13563459057  │ #     ex: 135634590575493120                       │
+│ ...P SS25\plugins\DiscordSRV\linking.yml │ 46   │ 14  │ 13563459057  │ #     ex: [135634590575493120, 690411863766466590] │
+│ ...P SS25\plugins\DiscordSRV\linking.yml │ 46   │ 34  │ 6904118637   │ #     ex: [135634590575493120, 690411863766466590] │
+│ ...P SS25\plugins\DiscordSRV\linking.yml │ 54   │ 26  │ 0000000000   │ Subscriber roles: [ "00000000000000000", "00000... │
+│ ...P SS25\plugins\DiscordSRV\linking.yml │ 54   │ 47  │ 0000000000   │ Subscriber roles: [ "00000000000000000", "00000... │
+│ ...P SS25\plugins\DiscordSRV\linking.yml │ 54   │ 68  │ 0000000000   │ Subscriber roles: [ "00000000000000000", "00000... │
+│ ...5\plugins\DiscordSRV\messages_old.yml │ 30   │ 31  │ 10810049468  │ #                    example: 1081004946872352958  │
+│ ...5\plugins\DiscordSRV\messages_old.yml │ 47   │ 30  │ 10810049468  │ #                   example: 1081004946872352958   │
+│ ...5\plugins\DiscordSRV\messages_old.yml │ 401  │ 79  │ 12345678901  │ #                        you can @mention users... │
+│ ...5\plugins\DiscordSRV\messages_old.yml │ 402  │ 81  │ 12345678901  │ #                        you can @mention roles... │
+│ ...lugins\DiscordSRV\synchronization.yml │ 37   │ 60  │ 0000000000   │ GroupRoleSynchronizationGroupsAndRolesToSync: {... │
+│ ...lugins\DiscordSRV\synchronization.yml │ 37   │ 89  │ 0000000000   │ GroupRoleSynchronizationGroupsAndRolesToSync: {... │
+│ ...SMP SS25\plugins\DiscordSRV\voice.yml │ 14   │ 17  │ 0000000000   │ Voice category: 000000000000000000                 │
+│ ...SMP SS25\plugins\DiscordSRV\voice.yml │ 18   │ 16  │ 0000000000   │ Lobby channel: 000000000000000000                  │
+│ ...MP SS25\plugins\Essentials\config.yml │ 842  │ 12  │ 10000000000  │ max-money: 10000000000000                          │
+│ ...ns\Essentials\warps\noteblock_hub.yml │ 3    │ 6   │ 1.4563475141 │ x: -41.45634751414556                              │
+│ ...ns\Essentials\warps\noteblock_hub.yml │ 5    │ 5   │ 324.9677292  │ z: -324.9677292206422                              │
+│ ...ns\Essentials\warps\noteblock_hub.yml │ 6    │ 6   │ 179.5128784  │ yaw: 179.51287841796875                            │
+│ ...ns\Essentials\warps\noteblock_hub.yml │ 7    │ 9   │ 1.8421999216 │ pitch: -1.8421999216079712                         │
+│ ...25\plugins\Essentials\warps\spawn.yml │ 3    │ 5   │ 206.0785619  │ x: -206.07856198602252                             │
+│ ...25\plugins\Essentials\warps\spawn.yml │ 5    │ 7   │ 5636087209   │ z: 83.56360872095206                               │
+│ ...25\plugins\Essentials\warps\spawn.yml │ 6    │ 9   │ 9730052947   │ yaw: 20.973005294799805                            │
+│ ...25\plugins\Essentials\warps\spawn.yml │ 7    │ 11  │ 6374483108   │ pitch: -2.637448310852051                          │
+│ ...gins\Essentials\warps\world_spawn.yml │ 3    │ 5   │ 638.1417620  │ x: -638.141762055855                               │
+│ ...gins\Essentials\warps\world_spawn.yml │ 5    │ 5   │ 1619.6251100 │ z: -1619.625110079763                              │
+│ ...gins\Essentials\warps\world_spawn.yml │ 6    │ 6   │ 173.2245941  │ yaw: 173.22459411621094                            │
+│ ...gins\Essentials\warps\world_spawn.yml │ 7    │ 11  │ 4041099548   │ pitch: 19.404109954833984                          │
+│ ...\plugins\FancyHolograms\holograms.yml │ 8    │ 13  │ 12000083923  │ y: 28.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 40   │ 11  │ 213.5246124  │ x: -213.5246124267578                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 41   │ 13  │ 12000083923  │ y: 28.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 42   │ 10  │ 104.6235885  │ z: 104.62358856201172                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 73   │ 13  │ 12000083923  │ y: 30.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 103  │ 13  │ 12000083923  │ y: 30.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 133  │ 13  │ 12000083923  │ y: 30.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 163  │ 13  │ 12000083923  │ y: 30.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 194  │ 13  │ 12000083923  │ y: 30.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 224  │ 13  │ 12000083923  │ y: 30.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 256  │ 13  │ 12000083923  │ y: 30.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 286  │ 13  │ 12000083923  │ y: 30.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 316  │ 13  │ 12000083923  │ y: 27.1200008392334                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 350  │ 10  │ 124.1200027  │ y: 124.12000274658203                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 383  │ 10  │ 124.1200027  │ y: 124.12000274658203                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 414  │ 10  │ 124.1200027  │ y: 124.12000274658203                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 446  │ 10  │ 124.1200027  │ y: 124.12000274658203                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 476  │ 10  │ 124.1200027  │ y: 124.12000274658203                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 506  │ 10  │ 124.1200027  │ y: 124.12000274658203                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 537  │ 10  │ 124.1200027  │ y: 124.12000274658203                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 569  │ 10  │ 124.1200027  │ y: 124.12000274658203                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 599  │ 10  │ 124.1200027  │ y: 124.12000274658203                              │
+│ ...\plugins\FancyHolograms\holograms.yml │ 631  │ 11  │ 306.9780273  │ x: -306.97802734375                                │
+│ ...\plugins\FancyHolograms\holograms.yml │ 632  │ 13  │ 12000274658  │ y: 74.12000274658203                               │
+│ ...\plugins\FancyHolograms\holograms.yml │ 633  │ 11  │ 271.0982055  │ z: -271.09820556640625                             │
+│ ...\plugins\FancyHolograms\holograms.yml │ 665  │ 13  │ 12000274658  │ y: 72.12000274658203                               │
+│ ...\plugins\FancyHolograms\holograms.yml │ 698  │ 13  │ 12000274658  │ y: 72.12000274658203                               │
+│ ...\plugins\FancyHolograms\holograms.yml │ 731  │ 13  │ 12000274658  │ y: 72.12000274658203                               │
+│ ...\plugins\FancyHolograms\holograms.yml │ 767  │ 13  │ 12000083923  │ y: 28.1200008392334                                │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 207  │ 58  │ 11210986776  │ identifier: https://cdn.discordapp.com/attachme... │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 207  │ 78  │ 13855954680  │ identifier: https://cdn.discordapp.com/attachme... │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 230  │ 26  │ 2147483647   │ visibility_distance: 2147483647                    │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 247  │ 11  │ 213.5246049  │ x: -213.5246049371538                              │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 249  │ 10  │ 104.6235871  │ z: 104.6235871466987                               │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 261  │ 26  │ 2147483647   │ visibility_distance: 2147483647                    │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 292  │ 26  │ 2147483647   │ visibility_distance: 2147483647                    │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 364  │ 23  │ 728-2637864  │ 0d50387f-5f6c-4e6f-a728-2637864ec346:              │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 588  │ 11  │ 306.9780375  │ x: -306.97803752878406                             │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 590  │ 11  │ 271.0982075  │ z: -271.09820759743945                             │
+│ ...arSMP SS25\plugins\FancyNpcs\npcs.yml │ 727  │ 26  │ 2147483647   │ visibility_distance: 2147483647                    │
+│ ...dHVuZy0tMjE2NDYyNDAucG5nP3Y4NTY=.json │ 8    │ 18  │ 17532144748  │ "lastUpdated": 1753214474882,                      │
+│ ...ZHJhZ29uLTIyMDQ2ODIxLnBuZz92ODU2.json │ 8    │ 18  │ 17532144704  │ "lastUpdated": 1753214470413,                      │
+│ ...dGljZS0tMjMwNjI5NzAucG5nP3Y4NTY=.json │ 8    │ 18  │ 17532145195  │ "lastUpdated": 1753214519551,                      │
+│ ...ZXJmaXNoLTIzMDY2NDYzLnBuZz92ODU2.json │ 8    │ 18  │ 17532144583  │ "lastUpdated": 1753214458364,                      │
+│ ...ZmVsbGEtMjMwODc1MjcucG5nP3Y4NTY=.json │ 8    │ 18  │ 17504221452  │ "lastUpdated": 1750422145290,                      │
+│ ...aW1wYWN0LTIyOTg0MDg5LnBuZz92ODU2.json │ 8    │ 18  │ 17532144489  │ "lastUpdated": 1753214448939,                      │
+│ ...MC9sb2wtMjMzMjgyMjQucG5nP3Y4NTY=.json │ 8    │ 18  │ 17533008699  │ "lastUpdated": 1753300869941,                      │
+│ ...Ny9kdWNrLTIzMzQzMTQ2LnBuZz92ODU2.json │ 8    │ 18  │ 17532145144  │ "lastUpdated": 1753214514418,                      │
+│ ...MC9naXJsLTIzMzQ4MDU1LnBuZz92ODU2.json │ 8    │ 18  │ 17532145240  │ "lastUpdated": 1753214524095,                      │
+│ ...ZS1raW5nLTIzMjk0MDc1LnBuZz92ODU2.json │ 8    │ 18  │ 17532145099  │ "lastUpdated": 1753214509996,                      │
+│ ...NWIwNmNkYTFhOWU3ODU4Yzk4ODY5Jg==.json │ 3    │ 59  │ 11210986776  │ "identifier": "https://cdn.discordapp.com/attac... │
+│ ...NWIwNmNkYTFhOWU3ODU4Yzk4ODY5Jg==.json │ 3    │ 79  │ 13855954680  │ "identifier": "https://cdn.discordapp.com/attac... │
+│ ...NWIwNmNkYTFhOWU3ODU4Yzk4ODY5Jg==.json │ 8    │ 18  │ 17504223149  │ "lastUpdated": 1750422314956,                      │
+│ ...aS84Njk0ZTBmZDViMjM5YWJjLnBuZw==.json │ 8    │ 18  │ 17532144843  │ "lastUpdated": 1753214484384,                      │
+│ ...aS9lZGE4YWEyYjAzNTJmNzU5LnBuZw==.json │ 8    │ 18  │ 17528635637  │ "lastUpdated": 1752863563727,                      │
+│ ...ncyNpcs\.data\skins\Q2hlel9aYWs=.json │ 8    │ 18  │ 17529769191  │ "lastUpdated": 1752976919107,                      │
+│ ...cmFudC0yMjcyOTI4Ny5wbmc\djg1Ng==.json │ 8    │ 18  │ 17532144796  │ "lastUpdated": 1753214479629,                      │
+│ ...b3VuZC0yMzIzNzMxNi5wbmc\djg1Ng==.json │ 8    │ 18  │ 17532144539  │ "lastUpdated": 1753214453959,                      │
+│ ...cnMtLS0yMzMwOTc0OS5wbmc\djg1Ng==.json │ 8    │ 18  │ 17528635590  │ "lastUpdated": 1752863559053,                      │
+│ ...aXJlLS0yMzI4OTc1Mi5wbmc\djg1Ng==.json │ 8    │ 18  │ 17532144652  │ "lastUpdated": 1753214465216,                      │
+│ ...SS25\plugins\Geyser-Spigot\config.yml │ 115  │ 42  │ 6131701256   │ # https://cdn.discordapp.com/attachments/613170... │
+│ ...SS25\plugins\Geyser-Spigot\config.yml │ 115  │ 61  │ 9570756822   │ # https://cdn.discordapp.com/attachments/613170... │
+│ ...gins\Geyser-Spigot\locales\en_us.json │ 2734 │ 91  │ 2147483646   │ "commands.random.error.range_too_large": "The r... │
+│ ...gins\Geyser-Spigot\locales\vi_vn.json │ 2734 │ 97  │ 2147483646   │ "commands.random.error.range_too_large": "Phạm ... │
+│ ...rSMP SS25\plugins\HuskHomes\spawn.yml │ 6    │ 5   │ 206.5067204  │ x: -206.5067204118969                              │
+│ ...rSMP SS25\plugins\HuskHomes\spawn.yml │ 8    │ 7   │ 5177334366   │ z: 83.51773343666056                               │
+│ ...rSMP SS25\plugins\HuskHomes\spawn.yml │ 9    │ 6   │ 1.9974670410 │ yaw: 1.997467041015625                             │
+│ ...rSMP SS25\plugins\HuskHomes\spawn.yml │ 10   │ 11  │ 9702908992   │ pitch: -2.9702908992767334                         │
+│ ...ractiveChat\lang\languages\en_us.json │ 2693 │ 91  │ 2147483646   │ "commands.random.error.range_too_large": "The r... │
+│ ...activeChatDiscordSrvAddon\hashes.json │ 4    │ 17  │ 0575011141   │ "Default": "af0575011141cd29e1fd8853a3b387ecdd8... │
+│ ...ault\assets\minecraft\lang\en_us.json │ 2693 │ 91  │ 2147483646   │ "commands.random.error.range_too_large": "The r... │
+│ ...t\assets\minecraft\texts\splashes.txt │ 130  │ 1   │ 4815162342   │ 4815162342 lines of code!                          │
+│ ...s\translations\repository\status.json │ 2    │ 18  │ 17529768897  │ "lastRefresh": 1752976889766                       │
+│ ...25\plugins\Multiverse-Core\worlds.yml │ 28   │ 10  │ 14055070823  │ seed: -1405507082383022335                         │
+│ ...05a7a-701b-3fa0-9c65-b8e406e6431d.yml │ 6    │ 9   │ 3546987025   │ x: 10.354698702534785                              │
+│ ...05a7a-701b-3fa0-9c65-b8e406e6431d.yml │ 8    │ 7   │ 319.3497747  │ z: -319.3497747258962                              │
+└──────────────────────────────────────────┴──────┴─────┴──────────────┴────────────────────────────────────────────────────┘

@@ -1,0 +1,7 @@
+This pack is part of InteractiveChatDiscordSRVAddon and it consists of official Minecraft resources and custom resources created by LOOHP <jamesloohp@gmail.com>
+
+The license for official Minecraft resources can be found on https://account.mojang.com/documents/minecraft_eula
+
+All other resources not part of official Minecraft resource packs are licensed under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0), its legal code can be found on https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+InteractiveChatDiscordSRVAddon is licensed under GNU General Public License v3.0, its legal code can be found on https://github.com/LOOHP/InteractiveChat-DiscordSRV-Addon/blob/master/LICENSE

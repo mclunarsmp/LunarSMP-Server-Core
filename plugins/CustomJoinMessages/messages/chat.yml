@@ -1,0 +1,56 @@
+# Toggles whether chat messages should be sent.
+Enabled: true
+
+Public:
+  # Whether public chat messages should be sent to the server's console.
+  Send-To-Console: true
+  First-Join:
+    1:
+      Permission: cjm.default
+      Radius: -1
+      Max-Players: -1
+      Messages:
+        1:
+        - "&a%name% đã tham gia server lần đầu tiên! &8(&a#%uniquejoins%&8)"
+  Join:
+    1:
+      Permission: cjm.default
+      Messages:
+        1:
+        - "&x&F&F&F&F&F&F[&x&0&0&F&F&0&0+&x&F&F&F&F&F&F] &a%name% &7"
+  Quit:
+    1:
+      Permission: cjm.default
+      Messages:
+        1:
+        - "&x&F&F&F&F&F&F[&x&F&F&0&0&0&0-&x&F&F&F&F&F&F] &a%name% &7"
+
+Private:
+  First-Join:
+    1:
+      Permission: cjm.default
+      Messages:
+        1:
+        - "&b&lChào mừng bạn đến với &dLunarSMP&b&l!"
+        - "&7Có thắc mắc hay muốn giao lưu? Hãy ghé &9Discord &7hoặc &aBox Messenger &7nhé!"
+        - ""
+        - "&c⚠️ &lLưu ý:&r &fServer hiện tại &echưa được ổn định &fvà còn tồn tại một số &clỗi ẩn &fhoặc &cTPS bị giảm&r lúc nào không hay. Nếu có vấn đề hãy tạo &bticket &ftại Discord &9LunarSMP&f nha!"
+
+        - ""
+        - "&fServer hiện tại chỉ có  &bChez_&f là dev duy nhất của server ở mùa này."
+        - "&fVì chỉ có một mình &bChez_&f là dev nên server có thể còn &ehạn chế một số chỗ &fhoặc &c một số lỗi không đáng muốn&f có thể xảy ra."
+        - "&fMình xin lỗi nếu nó có ảnh hưởng trải nghiệm của bạn, nhưng mình &a&lsẽ cố gắng hết sức để khắc phục!"
+        - ""
+        - "&dLunarSMP &fduy trì hoàn toàn nhờ &6kinh phí tự túc&f,"
+        - "&fkhông thu phí và hoàn toàn vì đam mê của bọn mình!"
+        - "&fMọi &a&lủng hộ &fđều là &b&lđộng lực to lớn &fgiúp server duy trì & phát triển!"
+        - ""
+        - "&7Nếu có vấn đề hay trải nghiệm chưa tốt, rất mong bạn &e&lthông cảm &7và &a&lgóp ý &7cho bọn mình nhé."
+        - "&f&lMột lần nữa, &d&lcảm ơn bạn rất nhiều &f&lđã chọn &dLunarSMP&f&l!"
+        - "&7Bấᴍ [T] ʜᴏặᴄ ᴍở ᴄʜᴀᴛ để xᴇᴍ đầʏ đủ ᴛɪɴ ɴʜắɴ ɴʜé!"
+  Join:
+    1:
+      Permission: cjm.default
+      Messages:
+        1:
+        - "&7Chào mừng bạn đã trở lại, &a%name% &7!"

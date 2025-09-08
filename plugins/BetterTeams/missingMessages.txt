@@ -1,0 +1,48 @@
+# Please translate these messages and then submit them to the Booksaw Development (https://discord.gg/JF9DNs3) in the #messages-submissions channel for a special rank
+# Your translations will be included in the next update
+invite.hover: &6Nhấp để tham gia &b{0}
+info.online: &a
+info.offline: &c
+admin.versiononline: &6Chế độ trực tuyến: &b{0}
+admin.versionplayers: &6Số lượng người chơi: &b{0}
+admin.teleport.player.success: &6Người chơi đó đã được dịch chuyển
+admin.ally.same: &4Bạn không thể làm một đội đồng minh với chính nó
+admin.ally.already: &4Những đội đó đã là đồng minh
+admin.ally.success: &6Hai đội đó bây giờ là đồng minh
+admin.neutral.same: &4Bạn không thể nhập cùng một đội hai lần
+admin.neutral.not: &4Những đội đó không phải đồng minh
+admin.neutral.success: &6Những đội đó không còn là đồng minh
+help.header: &6---- &bTrợ giúp BetterTeams &6----
+help.footer: &6---- &bTrang {0}/{1} - /{2} help <trang> &6----
+helpArg.bal: 
+helpArg.ban: <người chơi>
+helpArg.promote: <người chơi>
+helpArg.warps: 
+helpArg.top: 
+helpArg.ally: <đội>
+helpArg.rankup: 
+helpArg.leave: 
+helpArg.sethome: 
+helpArg.rank: [đội]
+helpArg.join: <đội>
+helpArg.tag: [thẻ]
+helpArg.disband: 
+helpArg.info: [đội/người chơi]
+helpArg.delwarp: <tên> [mật khẩu]
+helpArg.chest: 
+helpArg.neutral: <đội>
+helpArg.pvp: 
+helpArg.baltop: 
+helpArg.list: [trang]
+helpArg.home: 
+helpArg.help: 
+helpArg.unban: <người chơi>
+helpArg.demote: <người chơi>
+helpArg.kick: <người chơi>
+helpArg.chat: [tin nhắn]
+helpArg.name: <tên>
+helpArg.invite: <người chơi>
+helpArg.open: 
+helpArg.warp: <tên>
+helpArg.withdraw: <số tiền>
+command.debug: debug

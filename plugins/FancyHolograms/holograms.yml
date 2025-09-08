@@ -1,0 +1,797 @@
+version: 2 # DO NOT CHANGE
+holograms:
+  rtp_spawn:
+    type: TEXT
+    location:
+      world: spawn
+      x: -209.5
+      y: 28.1200008392334
+      z: 104.5
+      yaw: -180.0
+      pitch: 1.0
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: rtp_spawn
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#12F3E5>&lD<#11F2DB>&lị<#10F0D2>&lᴄ<#0FEFC8>&lʜ <#0EECB5>&lᴄ<#0DEBAC>&lʜ<#0CEAA2>&lᴜ<#0BE899>&lʏ<#0AE78F>&lể<#09E686>&lɴ
+      <#08E373>&lɴ<#07E269>&lɢ<#06E060>&lẫ<#05DF56>&lᴜ <#03DC43>&lɴ<#03DB3A>&lʜ<#02DA30>&lɪ<#01D827>&lê<#00D71D>&lɴ
+    - ' '
+    - <#A0A0A0>Nhấp vào NPC để được
+    - <#A0A0A0>Dịch chuyển ngẫu nhiên
+    
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  world_teleport:
+    type: TEXT
+    location:
+      world: spawn
+      x: -213.5246124267578
+      y: 28.1200008392334
+      z: 104.62358856201172
+      yaw: -179.03436
+      pitch: -1.8272047
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: world_teleport
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#E5584E>&lD<#E25D50>&lị<#DF6251>&lc<#DD6653>&lh <#D77057>&lc<#D47558>&lh<#D2795A>&lu<#CF7E5C>&ly<#CC835E>&lể<#C9885F>&ln
+      <#C49163>&lt<#C19665>&lớ<#BE9B66>&li <#B8A56A>&lt<#B6A96C>&lh<#B3AE6D>&lế <#ADB871>&lg<#ABBC73>&li<#A8C174>&lớ<#A5C676>&li
+    - ' '
+    - <#A0A0A0>Nhấp vào NPC để được
+    - <#A0A0A0>Dịch chuyển tới thế giới sinh tồn
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Sumerken_Owner:
+    type: TEXT
+    location:
+      world: spawn
+      x: -203.5
+      y: 30.1200008392334
+      z: 212.5
+      yaw: -179.21008
+      pitch: 1.0237828
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: Sumerken
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#E5584E>&lS<#DC6854>&lᴜ<#D37759>&lᴍ<#CA875F>&lᴇ<#C09765>&lʀ<#B7A76B>&lᴋ<#AEB670>&lᴇ<#A5C676>&lɴ
+    - ' '
+    - <#FFFF00>Admin
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  tung20cm:
+    type: TEXT
+    location:
+      world: spawn
+      x: -205.5
+      y: 30.1200008392334
+      z: 211.5
+      yaw: -179.65625
+      pitch: -0.52121466
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: Tung20cm
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#535AC3>&lT<#474DBB>&lu<#3C40B4>&ln<#3033AC>&lg<#2427A4>&l2<#181A9C>&l0<#0D0D95>&lc<#01008D>&lm
+    - ' '
+    - <#aeaca8> Admin hỗ trợ
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  dung:
+    type: TEXT
+    location:
+      world: spawn
+      x: -207.5
+      y: 30.1200008392334
+      z: 210.5
+      yaw: -177.8711
+      pitch: 0.89169645
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: Dung
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#E15B41>&lY<#D8633D>&lA<#CF6B39>&l_<#C67434>&lD<#BD7C30>&lu<#B4842C>&ln<#AC8C28>&lg<#A39423>&l2<#9A9C1F>&l0<#91A51B>&l1<#88AD17>&l9<#7FB512>&lV<#76BD0E>&lN
+    - ' '
+    - <#c37dbf>Admin<#FFFFFF> &<#FFFFFF><#9635c2> Dev
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  eddie:
+    type: TEXT
+    location:
+      world: spawn
+      x: -209.5
+      y: 30.1200008392334
+      z: 209.5
+      yaw: -178.49805
+      pitch: -5.513529
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: Eddie
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#8B109A>&lE<#842C94>&ld<#7C498F>&ld<#756589>&li<#6D8183>&le
+    - ' '
+    - <#CC5E11>&lA<#C65F1D>&ld<#C15F29>&lm<#BB6034>&li<#B56040>&ln <#AA6258>&l& <#9F636F>&lN<#99647B>&lh<#936487>&là
+      <#88659E>&lt<#8266AA>&là<#7D67B6>&li <#7168CD>&lt<#6C68D9>&lr<#6669E5>&lợ
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  HmioZr:
+    type: TEXT
+    location:
+      world: spawn
+      x: -201.5
+      y: 30.1200008392334
+      z: 211.5
+      yaw: -175.63208
+      pitch: -3.5354514
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: HmioZr
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#BE14B2>&lH<#B92A9B>&lm<#B44085>&li<#B0566E>&lo<#AB6C57>&lZ<#A68241>&lr<#A1982A>&l_
+    - ' '
+    - <#9D9101> Admin
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Chez_:
+    type: TEXT
+    location:
+      world: spawn
+      x: -199.5
+      y: 30.1200008392334
+      z: 210.5
+      yaw: 179.29272
+      pitch: -1.3689954
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: Chez_
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#ADEEE7>&lC<#B9EDE5>&lh<#C6ECE2>&le<#D2EBE0>&lz<#DEEADD>&l_
+    - ' '
+    - <#84D3C8>A<#82D0C8>d<#80CDC8>m<#7EC9C9>i<#7BC6C9>n<#79C3C9>, <#75BDCA>D<#73BACA>e<#71B6CA>v
+      <#6CB0CA>& <#68AACB>C<#66A6CB>o<#64A3CB>n<#62A0CC>t<#5F9DCC>e<#5D9ACC>n<#5B96CC>t
+      <#5790CD>C<#558DCD>r<#538ACD>e<#5087CD>a<#4E83CE>t<#4C80CE>o<#4A7DCE>r
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  xRitoMc:
+    type: TEXT
+    location:
+      world: spawn
+      x: -197.5
+      y: 30.1200008392334
+      z: 209.5
+      yaw: 179.56006
+      pitch: 0.76094383
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: xRitoMc
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#A31CA5>&lx<#8F32A7>&lR<#7B47AA>&li<#675DAC>&lt<#5372AE>&lo<#3F88B1>&lM<#2B9DB3>&lc
+    - ' '
+    - <#1E213D> Admin
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  TiiYangDii:
+    type: TEXT
+    location:
+      world: spawn
+      x: -194.5
+      y: 30.1200008392334
+      z: 206.5
+      yaw: 91.30792
+      pitch: 2.4564536
+    visibility_distance: 50
+    visibility: ALL
+    persistent: true
+    linkedNpc: TiiYangDii
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#CBE261>&lT<#CDCA65>&li<#CFB269>&li<#D19B6D>&lY<#D38371>&la<#D56B75>&ln<#D75379>&lg<#D93C7D>&lD<#DB2481>&li<#DD0C85>&li
+    - ''
+    - <#008F39> Admin
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  noteblock_tele:
+    type: TEXT
+    location:
+      world: spawn
+      x: -242.5
+      y: 27.1200008392334
+      z: 2.5
+      yaw: -33.911224
+      pitch: -4.28901
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    linkedNpc: noteblock_teleport_spawn
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#E15B41>&lD<#DD5F3F>&lị<#D9623D>&lc<#D6663C>&lh <#CE6D38>&lc<#CA7036>&lh<#C67434>&lu<#C27732>&ly<#BF7B31>&lể<#BB7E2F>&ln
+      <#B3852B>&lđ<#AF8929>&lế<#AC8C28>&ln <#A49324>&lc<#A09722>&lh<#9C9A20>&lỗ <#95A11D>&ln<#91A51B>&lg<#8DA819>&lh<#89AC17>&le
+      <#81B313>&ln<#7EB612>&lh<#7ABA10>&lạ<#76BD0E>&lc
+    - ' '
+    - <#FFFFFF>N<#FFFFFF>g<#FFFFFF>h<#FFFFFF>e <#FFFFFF>n<#FFFFFF>h<#FFFFFF>ạ<#FFFFFF>c
+      <#FFFFFF>b<#FFFFFF>ằ<#FFFFFF>n<#FFFFFF>g <#FFFFFF>N<#FFFFFF>o<#FFFFFF>t<#FFFFFF>e<#FFFFFF>b<#FFFFFF>l<#FFFFFF>o<#FFFFFF>c<#FFFFFF>k
+    
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  back_2_nb:
+    type: TEXT
+    location:
+      world: spawn
+      x: -41.5
+      y: 124.12000274658203
+      z: -330.5
+      yaw: -0.6113281
+      pitch: 7.4853377
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    linkedNpc: back_2_nb
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#C43712>&lQ<#BC421E>&lu<#B54D29>&la<#AD5935>&ly <#9E6F4C>&lv<#967A58>&lề <#879170>&lc<#7F9C7B>&lh<#77A787>&lỗ
+      <#68BD9E>&ls<#60C8AA>&lp<#58D4B6>&la<#51DFC1>&lw<#49EACD>&ln
+    - ' '
+    - <#FFFFFF>B<#FFFFFF>ấ<#FFFFFF>m <#FFFFFF>v<#FFFFFF>à<#FFFFFF>o <#FFFFFF>N<#FFFFFF>P<#FFFFFF>C
+      <#FFFFFF>đ<#FFFFFF>ể <#FFFFFF>d<#FFFFFF>ị<#FFFFFF>c<#FFFFFF>h <#FFFFFF>c<#FFFFFF>h<#FFFFFF>u<#FFFFFF>y<#FFFFFF>ể<#FFFFFF>n
+      <#FFFFFF>v<#FFFFFF>ề <#FFFFFF>v<#FFFFFF>ị <#FFFFFF>t<#FFFFFF>r<#FFFFFF>í <#FFFFFF>c<#FFFFFF>ũ
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  TLO:
+    type: TEXT
+    location:
+      world: spawn
+      x: -35.5
+      y: 124.12000274658203
+      z: -328.5
+      yaw: 87.8916
+      pitch: 1.6451435
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    linkedNpc: TLO
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#7CF62D>&lT<#7CEB2A>&lh<#7BE028>&li<#7BD425>&lê<#7BC923>&ln <#7AB31D>&lL<#7AA81B>&lý
+      <#799116>&lƠ<#798613>&li
+    - ' '
+    - <#FFFFFF>J<#FFFFFF>9<#FFFFFF>7
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  dlttad:
+    type: TEXT
+    location:
+      world: spawn
+      x: -35.5
+      y: 124.12000274658203
+      z: -324.5
+      yaw: 88.552246
+      pitch: 3.6232347
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    linkedNpc: DLTTAAD
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#E1A98F>&lĐ<#DCA393>&lừ<#D79D96>&ln<#D2979A>&lg <#C88BA1>&lL<#C386A5>&là<#BD80A9>&lm
+      <#B374B0>&lT<#AE6EB4>&lr<#A968B7>&lá<#A462BB>&li <#9A56C2>&lT<#9550C6>&li<#904ACA>&lm
+      <#863FD1>&lA<#8039D5>&ln<#7B33D8>&lh <#7127E0>&lĐ<#6C21E3>&la<#671BE7>&lu
+    - ' '
+    - <#FFFFFF>S<#FFFFFF>ơ<#FFFFFF>n <#FFFFFF>T<#FFFFFF>ù<#FFFFFF>n<#FFFFFF>g <#FFFFFF>M<#FFFFFF>-<#FFFFFF>T<#FFFFFF>P
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  nang_tho:
+    type: TEXT
+    location:
+      world: spawn
+      x: -35.5
+      y: 124.12000274658203
+      z: -320.5
+      yaw: 84.59424
+      pitch: 5.3187375
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    linkedNpc: Nang_Tho
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#7AC2F2>&lN<#83AAE1>&là<#8C93CF>&ln<#957BBE>&lg <#A64B9B>&lt<#AF3489>&lh<#B81C78>&lơ
+    - ''
+    - <#FFFFFF>H<#FFFFFF>o<#FFFFFF>à<#FFFFFF>n<#FFFFFF>g <#FFFFFF>D<#FFFFFF>ũ<#FFFFFF>n<#FFFFFF>g
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  enemy:
+    type: TEXT
+    location:
+      world: spawn
+      x: -39.5
+      y: 124.12000274658203
+      z: -318.5
+      yaw: 175.99756
+      pitch: -0.05025384
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    linkedNpc: Enemy
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#C64B32>&lE<#B94449>&ln<#AC3C60>&le<#9E3576>&lm<#912D8D>&ly
+    - ' '
+    - <#FFFFFF>I<#FFFFFF>m<#FFFFFF>a<#FFFFFF>g<#FFFFFF>i<#FFFFFF>n<#FFFFFF>e <#FFFFFF>D<#FFFFFF>r<#FFFFFF>a<#FFFFFF>g<#FFFFFF>o<#FFFFFF>n<#FFFFFF>s
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Aria_math:
+    type: TEXT
+    location:
+      world: spawn
+      x: -47.5
+      y: 124.12000274658203
+      z: -320.5
+      yaw: -94.55054
+      pitch: 4.2827272
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#FF8C00>&lA<#DF7B00>&lr<#BF6900>&li<#9F5800>&la <#603500>&lM<#402300>&la<#201200>&lt<#000000>&lh
+    - ' '
+    - <#FFFFFF>D<#FFFFFF>a<#FFFFFF>n<#FFFFFF>i<#FFFFFF>e<#FFFFFF>l <#FFFFFF>R<#FFFFFF>o<#FFFFFF>s<#FFFFFF>e<#FFFFFF>n<#FFFFFF>f<#FFFFFF>e<#FFFFFF>l<#FFFFFF>d
+      <#FFFFFF>(<#FFFFFF>C<#FFFFFF>4<#FFFFFF>1<#FFFFFF>8<#FFFFFF>)
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    linkedNpc: Aria_Math
+    background: transparent
+  ticking_away:
+    type: TEXT
+    location:
+      world: spawn
+      x: -47.5
+      y: 124.12000274658203
+      z: -328.5
+      yaw: -87.015625
+      pitch: 1.8336521
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#FFA11B>&lT<#EF9726>&li<#E08C31>&lc<#D0823D>&lk<#C07848>&li<#B06D53>&ln<#A1635E>&lg
+      <#814E74>&lA<#714480>&lw<#62398B>&la<#522F96>&ly
+    - ' '
+    - <#FFFFFF>b<#FFFFFF>b<#FFFFFF>n<#FFFFFF>o<#FFFFFF>$<#FFFFFF>, <#FFFFFF>G<#FFFFFF>r<#FFFFFF>a<#FFFFFF>b<#FFFFFF>b<#FFFFFF>i<#FFFFFF>t<#FFFFFF>z<#FFFFFF>,
+      <#FFFFFF>V<#FFFFFF>A<#FFFFFF>L<#FFFFFF>O<#FFFFFF>R<#FFFFFF>A<#FFFFFF>N<#FFFFFF>T
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    linkedNpc: Ticking_Away
+    background: transparent
+  wildfire:
+    type: TEXT
+    location:
+      world: spawn
+      x: -47.5
+      y: 124.12000274658203
+      z: -324.5
+      yaw: -92.57349
+      pitch: 1.4567338
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#8AAEC8>&lW<#7F9EB8>&li<#738EA8>&ll<#687E98>&ld<#5C6F87>&lf<#515F77>&li<#454F67>&lr<#3A3F57>&le
+    - ' '
+    - <#FFFFFF>H<#FFFFFF>O<#FFFFFF>Y<#FFFFFF>O<#FFFFFF>-<#FFFFFF>M<#FFFFFF>i<#FFFFFF>X
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    linkedNpc: Wildfire
+    background: transparent
+  bad_apple:
+    type: TEXT
+    location:
+      world: spawn
+      x: -43.5
+      y: 124.12000274658203
+      z: -318.5
+      yaw: 179.19922
+      pitch: 7.6736403
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#FFFFFF>&lB<#DFDFDF>&la<#BFBFBF>&ld <#808080>&lA<#606060>&lp<#404040>&lp<#202020>&ll<#000000>&le
+    - ' '
+    - <#FFFFFF>Z<#FFFFFF>U<#FFFFFF>N <#FFFFFF>(<#FFFFFF>T<#FFFFFF>o<#FFFFFF>u<#FFFFFF>h<#FFFFFF>o<#FFFFFF>u
+      <#FFFFFF>"<#FFFFFF>L<#FFFFFF>o<#FFFFFF>t<#FFFFFF>u<#FFFFFF>s <#FFFFFF>L<#FFFFFF>a<#FFFFFF>n<#FFFFFF>d
+      <#FFFFFF>S<#FFFFFF>t<#FFFFFF>o<#FFFFFF>r<#FFFFFF>y<#FFFFFF>" <#FFFFFF>(<#FFFFFF>T<#FFFFFF>o<#FFFFFF>u<#FFFFFF>h<#FFFFFF>o<#FFFFFF>u
+      <#FFFFFF>4<#FFFFFF>)
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    linkedNpc: Bad_Apple
+    background: transparent
+  back2nb_hub:
+    type: TEXT
+    location:
+      world: spawn
+      x: -306.97802734375
+      y: 74.12000274658203
+      z: -271.09820556640625
+      yaw: -96.72925
+      pitch: -11.269293
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#CBE261>&lQ<#CCD763>&lu<#CDCD65>&la<#CEC266>&ly <#D0AD6A>&lv<#D0A26C>&lề <#D28C6F>&lc<#D38271>&lh<#D47773>&lỗ
+      <#D66277>&lc<#D75778>&lh<#D84C7A>&lọ<#D9427C>&ln <#DA2C80>&ln<#DB2181>&lh<#DC1783>&lạ<#DD0C85>&lc
+    - ' '
+    - <#FFFFFF>B<#FFFFFF>ấ<#FFFFFF>m <#FFFFFF>đ<#FFFFFF>ể <#FFFFFF>d<#FFFFFF>ị<#FFFFFF>c<#FFFFFF>h
+      <#FFFFFF>c<#FFFFFF>h<#FFFFFF>u<#FFFFFF>y<#FFFFFF>ể<#FFFFFF>n <#FFFFFF>v<#FFFFFF>ề
+      <#FFFFFF>c<#FFFFFF>h<#FFFFFF>ỗ <#FFFFFF>c<#FFFFFF>h<#FFFFFF>ọ<#FFFFFF>n <#FFFFFF>n<#FFFFFF>h<#FFFFFF>ạ<#FFFFFF>c
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+    linkedNpc: back2nb_hub
+  world_rtp:
+    type: TEXT
+    location:
+      world: world
+      x: -642.5
+      y: 72.12000274658203
+      z: -1626.5
+      yaw: -67.67615
+      pitch: -4.665791
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    linkedNpc: world_rtp
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#4D33E0>&lD<#5131D5>&lị<#542FCB>&lc<#582DC0>&lh <#5F2AAB>&lc<#6228A1>&lh<#662696>&lu<#6A248C>&ly<#6D2281>&lể<#712077>&ln
+      <#781D62>&ln<#7B1B57>&lg<#7F194D>&lẫ<#831742>&lu <#8A132D>&ln<#8D1223>&lh<#911018>&li<#940E0E>&lê<#980C03>&ln
+    - ' '
+    - <#FFFFFF>B<#FFFFFF>ấ<#FFFFFF>m <#FFFFFF>v<#FFFFFF>à<#FFFFFF>o <#FFFFFF>N<#FFFFFF>P<#FFFFFF>C
+      <#FFFFFF>đ<#FFFFFF>ể <#FFFFFF>đ<#FFFFFF>ư<#FFFFFF>ợ<#FFFFFF>c <#FFFFFF>d<#FFFFFF>ị<#FFFFFF>c<#FFFFFF>h
+      <#FFFFFF>c<#FFFFFF>h<#FFFFFF>u<#FFFFFF>y<#FFFFFF>ể<#FFFFFF>n
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  back2spawn:
+    type: TEXT
+    location:
+      world: world
+      x: -633.5
+      y: 72.12000274658203
+      z: -1627.5
+      yaw: 65.138756
+      pitch: -8.998737
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    linkedNpc: back2spawn
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#A4E27F>&lD<#A6E480>&lị<#A9E580>&lc<#ABE781>&lh <#AFEA82>&lc<#B2EB83>&lh<#B4ED84>&lu<#B6EE84>&ly<#B8F085>&lể<#BBF186>&ln
+      <#BFF487>&lv<#C1F688>&lề <#C6F989>&ls<#C8FA8A>&lp<#CAFC8B>&la<#CDFD8B>&lw<#CFFF8C>&ln
+    - ''
+    - <#FFFFFF>B<#FFFFFF>ấ<#FFFFFF>m <#FFFFFF>v<#FFFFFF>à<#FFFFFF>o <#FFFFFF>N<#FFFFFF>P<#FFFFFF>C
+      <#FFFFFF>đ<#FFFFFF>ể <#FFFFFF>đ<#FFFFFF>ư<#FFFFFF>ợ<#FFFFFF>c <#FFFFFF>d<#FFFFFF>ị<#FFFFFF>c<#FFFFFF>h
+      <#FFFFFF>c<#FFFFFF>h<#FFFFFF>u<#FFFFFF>y<#FFFFFF>ể<#FFFFFF>n
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  skin_world:
+    type: TEXT
+    location:
+      world: world
+      x: -644.5
+      y: 72.12000274658203
+      z: -1615.5
+      yaw: -87.2685
+      pitch: -7.7742014
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    linkedNpc: skins_world
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#7843CA>&lĐ<#6B55BD>&lổ<#5D68B1>&li <#428D97>&ls<#359F8A>&lk<#27B27E>&li<#1AC471>&ln
+    - ''
+    - <#AAAAAA>B<#AAAAAA>ấ<#AAAAAA>m <#AAAAAA>v<#AAAAAA>à<#AAAAAA>o <#AAAAAA>N<#AAAAAA>P<#AAAAAA>C
+    - <#AAAAAA>đ<#AAAAAA>ể <#AAAAAA>đ<#AAAAAA>ổ<#AAAAAA>i <#AAAAAA>s<#AAAAAA>k<#AAAAAA>i<#AAAAAA>n
+    - <#AAAAAA>h<#AAAAAA>o<#AAAAAA>ặ<#AAAAAA>c <#AAAAAA>n<#AAAAAA>h<#AAAAAA>ậ<#AAAAAA>p
+    - <#AAAAAA>l<#AAAAAA>ệ<#AAAAAA>n<#AAAAAA>h <#AAAAAA>/<#AAAAAA>s<#AAAAAA>k<#AAAAAA>i<#AAAAAA>n
+    - <#AAAAAA>đ<#AAAAAA>ể <#AAAAAA>c<#AAAAAA>ó <#AAAAAA>n<#AAAAAA>h<#AAAAAA>i<#AAAAAA>ề<#AAAAAA>u
+    - <#AAAAAA>l<#AAAAAA>ự<#AAAAAA>a <#AAAAAA>c<#AAAAAA>h<#AAAAAA>ọ<#AAAAAA>n <#AAAAAA>h<#AAAAAA>ơ<#AAAAAA>n
+    
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  skin_spawn:
+    type: TEXT
+    location:
+      world: spawn
+      x: -217.5
+      y: 28.1200008392334
+      z: 104.5
+      yaw: 176.9126
+      pitch: 7.137838
+    visibility_distance: 25
+    visibility: ALL
+    persistent: true
+    linkedNpc: skin_spawn
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <#7843CA>&lĐ<#6B55BD>&lổ<#5D68B1>&li <#428D97>&ls<#359F8A>&lk<#27B27E>&li<#1AC471>&ln
+    - ''
+    - <#AAAAAA>B<#AAAAAA>ấ<#AAAAAA>m <#AAAAAA>v<#AAAAAA>à<#AAAAAA>o <#AAAAAA>N<#AAAAAA>P<#AAAAAA>C
+    - <#AAAAAA>đ<#AAAAAA>ể <#AAAAAA>đ<#AAAAAA>ổ<#AAAAAA>i <#AAAAAA>s<#AAAAAA>k<#AAAAAA>i<#AAAAAA>n
+    - <#AAAAAA>h<#AAAAAA>o<#AAAAAA>ặ<#AAAAAA>c <#AAAAAA>n<#AAAAAA>h<#AAAAAA>ậ<#AAAAAA>p
+    - <#AAAAAA>l<#AAAAAA>ệ<#AAAAAA>n<#AAAAAA>h <#AAAAAA>/<#AAAAAA>s<#AAAAAA>k<#AAAAAA>i<#AAAAAA>n
+    - <#AAAAAA>đ<#AAAAAA>ể <#AAAAAA>c<#AAAAAA>ó <#AAAAAA>n<#AAAAAA>h<#AAAAAA>i<#AAAAAA>ề<#AAAAAA>u
+    - <#AAAAAA>l<#AAAAAA>ự<#AAAAAA>a <#AAAAAA>c<#AAAAAA>h<#AAAAAA>ọ<#AAAAAA>n <#AAAAAA>h<#AAAAAA>ơ<#AAAAAA>n
+    
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent

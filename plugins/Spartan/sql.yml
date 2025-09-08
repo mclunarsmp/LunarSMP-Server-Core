@@ -1,0 +1,11 @@
+host: ''
+user: ''
+password: ''
+database: ''
+table: spartan_logs
+port: '3306'
+driver: mysql
+tls_Version: ''
+use_SSL: true
+allow_public_key_retrieval: false
+escape_special_characters: false

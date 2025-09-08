@@ -1,0 +1,38 @@
+# Toggles whether action bar messages should be sent.
+Enabled: false
+
+Public:
+  First-Join:
+    1:
+      Permission: cjm.default
+      Radius: -1
+      Max-Players: -1
+      Messages:
+        1:
+          Message: "Người chơi mới &a%name% &7 đã tham gia server!"
+  Join:
+    1:
+      Permission: cjm.default
+      Messages:
+        1:
+          Message: "&x&F&F&F&F&F&F[&x&0&0&F&F&0&0+&x&F&F&F&F&F&F] &a%name% &7"
+  Quit:
+    1:
+      Permission: cjm.default
+      Messages:
+        1:
+          Message: "&a%name% &7has left!"
+
+Private:
+  First-Join:
+    1:
+      Permission: cjm.default
+      Messages:
+        1:
+          Message: "&7Welcome to our server!"
+  Join:
+    1:
+      Permission: cjm.default
+      Messages:
+        1:
+          Message: "&7Welcome back!"

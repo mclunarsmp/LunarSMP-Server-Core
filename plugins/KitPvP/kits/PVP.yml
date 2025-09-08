@@ -1,0 +1,50 @@
+Kit:
+  Permission: kp.kit.pvp
+  Cooldown: 0
+  Level: 0
+  Health: 20
+Inventory:
+  Items:
+    '0':
+      Material: DIAMOND_SWORD
+    '1':
+      Material: DIAMOND_HELMET
+    '2':
+      Material: DIAMOND_CHESTPLATE
+    '3':
+      Material: DIAMOND_LEGGINGS
+    '4':
+      Material: DIAMOND_BOOTS
+    '5':
+      Material: SHIELD
+    '6':
+      Material: BOW
+    '7':
+      Material: CROSSBOW
+    '9':
+      Material: SPECTRAL_ARROW
+      Amount: 64
+    '10':
+      Material: SPECTRAL_ARROW
+      Amount: 64
+    '11':
+      Material: SPECTRAL_ARROW
+      Amount: 64
+    '12':
+      Material: SPECTRAL_ARROW
+      Amount: 64
+    '13':
+      Material: SPECTRAL_ARROW
+      Amount: 64
+    '14':
+      Material: SPECTRAL_ARROW
+      Amount: 64
+    '15':
+      Material: SPECTRAL_ARROW
+      Amount: 64
+    '16':
+      Material: SPECTRAL_ARROW
+      Amount: 64
+    '17':
+      Material: SPECTRAL_ARROW
+      Amount: 64

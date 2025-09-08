@@ -1,0 +1,28 @@
+header-footer:
+  enabled: true
+  header:
+  - ''
+  - '&#4D6C92&lL&#566C92&lề&#5E6D91&lu &#706D90&lC&#796E90&lá&#816E8F&ln&#8A6E8F&lh &#9C6F8E&lC&#A46F8D&lụ&#AD708D&lt &#BF708C&lS&#C7718B&lM&#D0718B&lP'
+  - ''
+  footer:
+  - ''
+  - '<#0079FF>☁ &fTPS: %server_tps_1_colored% <#FFFFFF>| %ping_colored%'
+
+scoreboard:
+  enabled: true
+  title: <#0079FF>&lLều Cánh Cụt
+  lines:
+  - ''
+  - '&7⌚ %server_time_kk:mm% | %server_time_dd/MM%'
+  - <#0079FF>%player_name%</#0079FF>
+  - '<#0079FF>|</#0079FF> 🗡 &fKills: &c%statistic_player_kills%'
+  - '<#0079FF>|</#0079FF> ☠ &fDeaths: &4%statistic_deaths%'
+  - <#0079FF>Server Info</#0079FF>
+  - '<#0079FF>|</#0079FF> 🌐 &fOnline: %server_online%/%server_max_players%'
+  - '<#0079FF>|</#0079FF> ☁ &fTPS: %server_tps_1_colored%'
+  - '<#0079FF>|</#0079FF> 🛜 &fPing: %ping_colored%'
+
+placeholder-refresh-intervals:
+  '%server_tps_1_colored%': 350
+  '%player_ping%': 500
+  '%ping_colored%': 500

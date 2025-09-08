@@ -1,0 +1,4 @@
+feature-flags:
+  player-npcs: false # Every player can only manage the npcs they have created
+  use-native-threads: false # Use native threads instead of virtual threads.
+  enable-debug-mode: false # Enable debug mode

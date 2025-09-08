@@ -1,0 +1,168 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                   ----[ClientDetectorPlus]----                                    #
+#                                     ----[By Loving11ish]----                                      #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                 ----[Plugin GUI Config File]----                                  #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#ClientDetectorPlus GUI config for 1.0.1
+
+general:
+  #Message sent when your on the first page.
+  #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: "&7You are on the first page."
+  GUI-first-page: "&7You are on the first page."
+  #Message sent when your on the last page.
+  #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: "&7You are on the last page."
+  GUI-last-page: "&7You are on the last page."
+
+  #Menu controls options
+  menu-controls:
+    #The name of the previous page icon
+    #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: "&2Previous Page"
+    previous-page-icon-name: "&2Previous Page"
+    #The name of the next page icon
+    #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: "&2Next Page"
+    next-page-icon-name: "&2Next Page"
+    #The name of the close/go back icon
+    #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: "&4Close/Go Back"
+    close-go-back-icon-name: "&4Close/Go Back"
+
+  gui-fillers:
+    #Do you want to use the GUI fillers?
+    #These are the items that fill the GUI's to make them look better.
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enabled: true
+    #What material do you want to use for the GUI fillers?
+    #OPTIONS: 'material', PLACEHOLDERS: none, DEFAULT:'BLACK_STAINED_GLASS_PANE'
+    material: 'BLACK_STAINED_GLASS_PANE'
+    #What is the name of the GUI fillers?
+    #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT:' '
+    name: " "
+    #What lore do you want to use for the GUI fillers?
+    #OPTIONS: 'anyList', PLACEHOLDERS: none, DEFAULT:[]
+    lore: [ ]
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#This is the options for the Java Client List GUI
+java-client-list:
+  #What name would you like the gui to have?
+  #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: "&3Java Clients"
+  title: "&3Java Clients"
+
+  icons:
+    #What Bukkit material do you want to use to represent each client in the GUI?
+    #Use Bukkit material names in the recipes. (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
+    #Material CANNOT be either 'STONE_BUTTON' or 'BARRIER' as they are used for the menu controls.
+    #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: 'PAPER'
+    icon-material: PAPER
+
+    icon-display-name:
+      #Do you want to use the Player Name as the title for the icon?
+      #If below is 'false' the name can be set below.
+      #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+      use-player-name: true
+      #What name would you like the icon to have? (If above is 'false')
+      #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: "&dJava Player"
+      display-name: "&dJava Player"
+
+    #This allows you to customise the lore text for the player head icons in the client list GUI.
+    #OPTIONS: 'anyList', PLACEHOLDERS: ['%client_uuid%', '%client_name%', '%client_version%', '%channel_name%']
+    lore:
+      - "&7----------"
+      - "&3UUID: &d%client_uuid%"
+      - "&3Client Name: &d%client_name%"
+      - "&3Client Version: &d%client_version%"
+      - "&3Channel: &d%channel_name%"
+      - "&7----------"
+      - "&d&oClick for actions"
+      - "&7----------"
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#This is the options for the Geyser Client List GUI
+geyser-client-list:
+  #What name would you like the gui to have?
+  #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: "&3Geyser Clients"
+  title: "&3Geyser Clients"
+
+  icons:
+    #What Bukkit material do you want to use to represent each client in the GUI?
+    #Use Bukkit material names in the recipes. (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
+    #Material CANNOT be either 'STONE_BUTTON' or 'BARRIER' as they are used for the menu controls.
+    #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: 'PAPER'
+    icon-material: PAPER
+
+    icon-display-name:
+      #Do you want to use the Player Name as the title for the icon?
+      #If below is 'false' the name can be set below.
+      #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+      use-player-name: true
+      #What name would you like the icon to have? (If above is 'false')
+      #OPTIONS: 'anyString', PLACEHOLDERS: none, DEFAULT: "&dGeyser Player"
+      display-name: "&dGeyser Player"
+
+    #This allows you to customise the lore text for the player head icons in the client list GUI.
+    #OPTIONS: 'anyList', PLACEHOLDERS: ['%client_uuid%', '%client_version%', '%client_xuid%']
+    lore:
+      - "&7----------"
+      - "&3UUID: &d%client_uuid%"
+      - "&3Client Version: &d%client_version%"
+      - "&3XUID: &d%client_xuid%"
+      - "&7----------"
+      - "&d&oClick for actions"
+      - "&7----------"
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#This is the options for the Geyser Client List GUI
+actions-menu:
+  #What name would you like the gui to have?
+  #OPTIONS: 'anyString', PLACEHOLDERS: ['%player_name%'], DEFAULT: "&3Actions: %player_name%"
+  title: "&3Actions: %player_name%"
+
+  features:
+    #Do you wish to auto vanish before teleporting to a target?
+    #This will only work if you have SuperVanish or PremiumVanish installed.
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enable-vanish-before-teleport: true
+    #What game mode do you want to be in before teleporting to a target?
+    #OPTIONS: 'SURVIVAL', 'CREATIVE', 'ADVENTURE', 'SPECTATOR', PLACEHOLDERS: none, DEFAULT:'SPECTATOR'
+    game-mode-for-teleport: SPECTATOR
+
+    #Do you wish to use the GUI based /op feature?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enable-target-op: true
+    #Do you wish to use the GUI based /deop feature?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enable-target-deop: true
+
+    #Do you wish to use the GUI based player inventory view feature?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enable-target-inventory: true
+    #Do you wish to use the GUI based player Enderchest view feature?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enable-target-enderchest: true
+
+    #Do you wish to use the GUI based /mute feature?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enable-target-mute: true
+    #Do you wish to use the GUI based /unmute feature?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enable-target-unmute: true
+    #OPTIONS: 'anyString', PLACEHOLDERS: ['%player_name%'], DEFAULT:'mute %target% You have been muted by an operator'
+    mute-command: 'mute %player_name% You have been muted by an operator'
+    #OPTIONS: 'anyString', PLACEHOLDERS: ['%player_name%'], DEFAULT:'mute %player_name%'
+    unmute-command: 'mute %player_name%'
+
+    #Do you wish to use the GUI based /kick feature?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enable-target-kick: true
+    #OPTIONS: 'anyString', PLACEHOLDERS: ['%player_name%'], DEFAULT:'kick %player_name% You were kicked by an operator'
+    kick-command: 'kick %player_name% You were kicked by an operator'
+
+    #Do you wish to use the GUI based /ban feature?
+    #OPTIONS: 'true'/'false', PLACEHOLDERS: none, DEFAULT:'true'
+    enable-target-ban: true
+    #OPTIONS: 'anyString', PLACEHOLDERS: ['%player_name%'], DEFAULT:'ban %player_name% You were banned by an operator'
+    ban-command: 'ban %player_name% You were banned by an operator'
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#

@@ -1,0 +1,65 @@
+prefix: "&bGrim &8»"
+
+alerts-enabled: "%prefix% &fThông báo đã bật"
+alerts-disabled: "%prefix% &fThông báo đã tắt"
+verbose-enabled: "%prefix% &fChế độ chi tiết đã bật"
+verbose-disabled: "%prefix% &fChế độ chi tiết đã tắt"
+brands-enabled: "%prefix% &fTheo dõi Brand đã bật"
+brands-disabled: "%prefix% &fTheo dõi Brand đã tắt"
+# client-brand-format: "%prefix% &f%player% đã tham gia bằng %brand%"
+console-specify-target: "%prefix% &cBạn phải chỉ định mục tiêu khi dùng trong bảng điều khiển!"
+reloading: "%prefix% &7Đang tải lại cấu hình..."
+reloaded: "%prefix% &fĐã tải lại cấu hình."
+reload-failed: "%prefix% &cTải lại cấu hình thất bại."
+player-not-found: "%prefix% &cNgười chơi đã miễn trừ hoặc không trực tuyến!"
+player-not-this-server: "%prefix% &cNgười chơi không có trong máy chủ này!"
+spectate-return: "<click:run_command:/grim stopspectating><hover:show_text:\"/grim stopspectating\">
+
+  %prefix% &fNhấn vào đây để quay lại vị trí trước đó
+
+  </hover></click>"
+cannot-spectate-return: "%prefix% &cChỉ có thể thực hiện điều này sau khi theo dõi một người chơi"
+cannot-run-on-self: "%prefix% &cBạn không thể dùng lệnh này lên chính mình!"
+upload-log: "%prefix% &fĐã tải log lên: %url%"
+upload-log-start: "%prefix% &fĐang tải log lên... vui lòng chờ"
+upload-log-not-found: "%prefix% &cKhông tìm thấy log"
+upload-log-upload-failure: "%prefix% &cXảy ra lỗi khi tải log, xem thêm thông tin trong bảng điều khiển"
+disconnect:
+  timeout: "<lang:disconnect.timeout>"
+  closed: "<lang:disconnect.closed>"
+run-as-player: "%prefix% &cLệnh này chỉ có thể sử dụng bởi người chơi!"
+run-as-player-or-console: "%prefix% &cLệnh này chỉ có thể sử dụng bởi người chơi hoặc bảng điều khiển!"
+
+alerts-format: "%prefix% &f%player% &bđã không vượt qua &f%check_name%%experimental% &f(x&c%vl%&f) &7%verbose%"
+alerts-format-proxy: "%prefix% &f[&cproxy&f] &f%player% &bđã không vượt qua &f%check_name%%experimental% &f(x&c%vl%&f) &7%verbose%"
+experimental-symbol: "*"
+
+profile:
+- "&7======================"
+- "%prefix% &bThông tin của &f%player%"
+- "&bPing: &f%ping%"
+- "&bPhiên bản: &f%version%"
+- "&bClient Brand: &f%brand%"
+- "&bĐộ nhạy ngang: &f%h_sensitivity%%"
+- "&bĐộ nhạy dọc: &f%v_sensitivity%%"
+- "&bFastMath bật: &f%fast_math%"
+- "&7======================"
+
+help:
+- "&7======================"
+- "/grim alerts &f- &7Bật/tắt thông báo"
+- "/grim brands &f- &7Bật/tắt theo dõi brand"
+- "/grim profile <người chơi> &f- &7Xem thông tin người chơi"
+- "/grim help &f- &7Hiển thị hướng dẫn"
+- "/grim debug <người chơi> &f- &7Xuất dự đoán dành cho nhà phát triển"
+- "/grim perf &f- &7Hiệu suất dự đoán theo ms"
+- "/grim reload &f- &7Tải lại cấu hình"
+- "/grim spectate <người chơi> &f- &7Theo dõi người chơi"
+- "/grim verbose &f- &7Hiển thị mọi cờ kiểm tra mà không đệm"
+- "/grim log [0-255] &f- &7Tải log chẩn đoán về cờ dự đoán"
+- "/grim history <người chơi> [trang] &f- &7Xem lịch sử cảnh báo"
+- "&7======================"
+
+grim-history-disabled: "%prefix% &cChức năng lịch sử đã bị vô hiệu hóa!"
+grim-history-header: "%prefix% &bĐang hiển thị log của &f%player% (&f%page%&b/&f%maxPages%&f)"
+grim-history-entry: "%prefix% &8[&f%server%&8] &bKhông vượt qua &f%check% (x&c%vl%&f) &7%verbose% (&b%timeago% trước&7)"

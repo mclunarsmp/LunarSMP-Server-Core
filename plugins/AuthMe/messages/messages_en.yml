@@ -1,0 +1,173 @@
+# Danh sách các thẻ toàn cục:
+# %nl% - Xuống dòng mới.
+# %username% - Tên người chơi nhận thông báo.
+# %displayname% - Biệt danh của người chơi nhận thông báo (có thể có màu).
+
+# Đăng ký
+registration:
+  disabled: '&cTính năng đăng ký trong game đã bị vô hiệu hóa!'
+  name_taken: '&cBạn đã đăng ký tên người dùng này rồi!'
+  register_request: '&3Vui lòng đăng ký tài khoản với lệnh: /register <mật khẩu> <XácNhậnMậtKhẩu>'
+  command_usage: '&cCách sử dụng: /register <mật khẩu> <XácNhậnMậtKhẩu>'
+  reg_only: '&4Chỉ người chơi đã đăng ký mới có thể vào server! Vui lòng truy cập https://example.com để đăng ký!'
+  success: '&2Đăng ký thành công!'
+  kicked_admin_registered: 'Một quản trị viên đã đăng ký tài khoản cho bạn; vui lòng đăng nhập lại.'
+
+# Lỗi mật khẩu khi đăng ký
+password:
+  match_error: '&cHai mật khẩu không trùng khớp, hãy kiểm tra lại!'
+  name_in_password: '&cKhông được sử dụng tên người dùng trong mật khẩu, hãy chọn mật khẩu khác...'
+  unsafe_password: '&cMật khẩu bạn chọn không an toàn, vui lòng chọn mật khẩu khác...'
+  forbidden_characters: '&4Mật khẩu chứa ký tự không hợp lệ. Các ký tự hợp lệ: %valid_chars'
+  wrong_length: '&cMật khẩu quá ngắn hoặc quá dài! Hãy thử mật khẩu khác!'
+  pwned_password: '&cMật khẩu này đã bị rò rỉ %pwned_count lần rồi! Vui lòng sử dụng mật khẩu mạnh hơn...'
+
+# Đăng nhập
+login:
+  command_usage: '&cCách sử dụng: /login <mật khẩu>'
+  wrong_password: '&cSai mật khẩu!'
+  success: '&2Đăng nhập thành công!'
+  login_request: '&cVui lòng đăng nhập với lệnh: /login <mật khẩu>'
+  timeout_error: '&4Hết thời gian đăng nhập, bạn đã bị đá khỏi server. Hãy thử lại!'
+
+# Lỗi chung
+error:
+  denied_command: '&cBạn cần đăng nhập để sử dụng lệnh này!'
+  denied_chat: '&cBạn cần đăng nhập để trò chuyện!'
+  unregistered_user: '&cNgười dùng này chưa đăng ký!'
+  not_logged_in: '&cBạn chưa đăng nhập!'
+  no_permission: '&4Bạn không có quyền thực hiện hành động này!'
+  unexpected_error: '&4Đã xảy ra lỗi không mong muốn, hãy liên hệ quản trị viên!'
+  max_registration: '&cBạn đã vượt quá số tài khoản đăng ký tối đa (%reg_count/%max_acc %reg_names) cho kết nối của mình!'
+  logged_in: '&cBạn đã đăng nhập rồi!'
+  kick_for_vip: '&3Một người chơi VIP vừa tham gia khi server đã đầy!'
+  kick_unresolved_hostname: '&cLỗi xảy ra: không thể xác định hostname của người chơi!'
+  tempban_max_logins: '&cBạn đã bị cấm tạm thời do đăng nhập sai quá nhiều lần.'
+
+# Chống bot
+antibot:
+  kick_antibot: 'Chế độ bảo vệ AntiBot đang bật! Vui lòng chờ vài phút trước khi vào lại server.'
+  auto_enabled: '&4[AntiBotService] Đã bật AntiBot vì số lượng kết nối quá lớn!'
+  auto_disabled: '&2[AntiBotService] Đã tắt AntiBot sau %m phút!'
+
+# Hủy đăng ký
+unregister:
+  success: '&cĐã hủy đăng ký thành công!'
+  command_usage: '&cCách sử dụng: /unregister <mật khẩu>'
+
+# Khác
+misc:
+  account_not_activated: '&cTài khoản của bạn chưa được kích hoạt, vui lòng kiểm tra email!'
+  not_activated: '&cTài khoản chưa được kích hoạt, hãy đăng ký và kích hoạt trước khi thử lại.'
+  password_changed: '&2Đã đổi mật khẩu thành công!'
+  logout: '&2Đăng xuất thành công!'
+  reload: '&2Cấu hình và cơ sở dữ liệu đã được tải lại thành công!'
+  usage_change_password: '&cCách sử dụng: /changepassword <mật khẩuCũ> <mật khẩuMới>'
+  accounts_owned_self: 'Bạn đang sở hữu %count tài khoản:'
+  accounts_owned_other: 'Người chơi %name có %count tài khoản:'
+
+# Phiên đăng nhập
+session:
+  invalid_session: '&cĐịa chỉ IP của bạn đã thay đổi và phiên đăng nhập đã hết hạn!'
+  valid_session: '&2Đăng nhập lại thành công nhờ Session Reconnection.'
+
+# Lỗi khi vào server
+on_join_validation:
+  same_ip_online: 'Đã có người chơi khác đang online từ cùng địa chỉ IP!'
+  same_nick_online: '&4Tên người dùng này đã có người chơi khác đang sử dụng!'
+  name_length: '&4Tên người dùng quá ngắn hoặc quá dài!'
+  characters_in_name: '&4Tên người dùng chứa ký tự không hợp lệ. Các ký tự hợp lệ: %valid_chars'
+  kick_full_server: '&4Server đã đầy, vui lòng thử lại sau!'
+  country_banned: '&4Quốc gia của bạn bị chặn truy cập server!'
+  not_owner_error: 'Bạn không phải chủ sở hữu tài khoản này. Hãy chọn tên khác!'
+  invalid_name_case: 'Bạn nên đăng nhập bằng tên %valid, không phải %invalid.'
+  quick_command: 'Bạn đã sử dụng lệnh quá nhanh! Hãy vào lại server và đợi một chút trước khi dùng lệnh.'
+
+# Email
+email:
+  add_email_request: '&3Vui lòng thêm email vào tài khoản của bạn bằng lệnh: /email add <emailCủaBạn> <xácNhậnEmail>'
+  usage_email_add: '&cCách sử dụng: /email add <email> <xácNhậnEmail>'
+  usage_email_change: '&cCách sử dụng: /email change <emailCũ> <emailMới>'
+  new_email_invalid: '&cEmail mới không hợp lệ, hãy thử lại!'
+  old_email_invalid: '&cEmail cũ không hợp lệ, hãy thử lại!'
+  invalid: '&cĐịa chỉ email không hợp lệ, hãy thử lại!'
+  added: '&2Thêm email thành công vào tài khoản!'
+  add_not_allowed: '&cKhông được phép thêm email.'
+  request_confirmation: '&cVui lòng xác nhận địa chỉ email của bạn!'
+  changed: '&2Đã thay đổi địa chỉ email thành công!'
+  change_not_allowed: '&cKhông được phép thay đổi email.'
+  email_show: '&2Email hiện tại của bạn là: &f%email'
+  no_email_for_account: '&2Tài khoản này hiện không có email nào được liên kết.'
+  already_used: '&4Email này đã được sử dụng cho tài khoản khác.'
+  incomplete_settings: 'Lỗi: Chưa cấu hình đầy đủ để gửi email. Hãy liên hệ quản trị viên.'
+  send_failure: 'Không thể gửi email. Hãy liên hệ quản trị viên.'
+  change_password_expired: 'Bạn không thể đổi mật khẩu bằng lệnh này nữa.'
+  email_cooldown_error: '&cMột email đã được gửi gần đây. Bạn cần đợi %time trước khi gửi email mới.'
+
+# Khôi phục mật khẩu qua email
+recovery:
+  forgot_password_hint: '&3Quên mật khẩu? Hãy dùng lệnh: /email recovery <emailCủaBạn>'
+  command_usage: '&cCách sử dụng: /email recovery <Email>'
+  email_sent: '&2Đã gửi email khôi phục thành công! Vui lòng kiểm tra hộp thư!'
+  code:
+    code_sent: 'Một mã khôi phục đã được gửi tới email của bạn.'
+    incorrect: 'Mã khôi phục không đúng! Bạn còn %count lần thử.'
+    tries_exceeded: 'Bạn đã nhập sai mã quá số lần cho phép. Dùng "/email recovery [email]" để tạo mã mới.'
+    correct: 'Mã khôi phục chính xác!'
+    change_password: 'Hãy dùng lệnh /email setpassword <mật khẩu mới> để đổi mật khẩu ngay.'
+
+# Mã Captcha
+captcha:
+  usage_captcha: '&3Để đăng nhập, bạn cần giải mã captcha, dùng lệnh: /captcha %captcha_code'
+  wrong_captcha: '&cSai captcha, vui lòng nhập: "/captcha %captcha_code" vào khung chat!'
+  valid_captcha: '&2Captcha đúng!'
+  captcha_for_registration: 'Để đăng ký, bạn cần giải captcha trước. Hãy dùng lệnh: /captcha %captcha_code'
+  register_captcha_valid: '&2Captcha hợp lệ! Bạn có thể đăng ký với /register'
+
+# Mã xác thực
+verification:
+  code_required: '&3Lệnh này yêu cầu xác minh qua email! Kiểm tra hộp thư và làm theo hướng dẫn.'
+  command_usage: '&cCách sử dụng: /verification <mã>'
+  incorrect_code: '&cSai mã, hãy nhập "/verification <mã>" đúng như email bạn nhận.'
+  success: '&2Xác minh thành công! Bạn có thể thực hiện các lệnh bảo mật trong phiên này!'
+  already_verified: '&2Bạn đã được xác minh và có thể thực hiện mọi lệnh bảo mật trong phiên!'
+  code_expired: '&3Mã xác minh đã hết hạn! Hãy thực hiện lại lệnh để nhận mã mới!'
+  email_needed: '&3Bạn cần liên kết email với tài khoản để xác minh danh tính!'
+
+# Đơn vị thời gian
+time:
+  second: 'giây'
+  seconds: 'giây'
+  minute: 'phút'
+  minutes: 'phút'
+  hour: 'giờ'
+  hours: 'giờ'
+  day: 'ngày'
+  days: 'ngày'
+
+# Xác thực hai bước
+two_factor:
+  code_created: '&2Mã bảo mật của bạn là %code. Bạn có thể quét mã tại %url'
+  confirmation_required: 'Vui lòng xác nhận mã với /2fa confirm <mã>'
+  code_required: 'Vui lòng nhập mã xác thực hai bước với /2fa code <mã>'
+  already_enabled: 'Xác thực hai bước đã được bật cho tài khoản của bạn!'
+  enable_error_no_code: 'Chưa có mã xác thực hoặc đã hết hạn. Hãy chạy /2fa add'
+  enable_success: 'Bật xác thực hai bước thành công!'
+  enable_error_wrong_code: 'Mã không đúng hoặc đã hết hạn. Hãy chạy lại /2fa add'
+  not_enabled_error: 'Bạn chưa bật xác thực hai bước. Hãy chạy /2fa add'
+  removed_success: 'Đã tắt xác thực hai bước khỏi tài khoản của bạn thành công'
+  invalid_code: 'Mã không hợp lệ!'
+
+# Tính năng bên thứ ba: Tự động đăng nhập Bedrock
+bedrock_auto_login:
+  success: '&aĐăng nhập tự động Bedrock thành công!'
+
+# Tính năng bên thứ ba: Sửa lỗi vị trí khi đăng nhập
+login_location_fix:
+  fix_portal: '&aBạn đang bị kẹt trong cổng khi đăng nhập.'
+  fix_underground: '&aBạn đang bị kẹt dưới lòng đất khi đăng nhập.'
+  cannot_fix_underground: '&aBạn bị kẹt dưới lòng đất khi đăng nhập và không thể sửa được.'
+
+# Tính năng bên thứ ba: Sửa lỗi đăng nhập kép
+double_login_fix:
+  fix_message: '&cBạn đã bị ngắt kết nối do đăng nhập kép.'

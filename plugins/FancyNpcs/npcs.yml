@@ -1,0 +1,736 @@
+npcs:
+  89e1c75c-c68a-4bef-ae01-9a4a7978034c:
+    name: TiiYangDii
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -194.5
+      y: 28.0
+      z: 206.5
+      yaw: 91.30792
+      pitch: 2.4564536
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 15
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+  a54b757e-a616-490e-880f-3ece3cc9467e:
+    name: HmioZr
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -201.5
+      y: 28.0
+      z: 211.5
+      yaw: -175.63208
+      pitch: -3.5354514
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 15
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/01/08/yae-miko---genshin-impact-22984089.png?v856
+      variant: SLIM
+  9e864ce2-e79a-4d4c-b854-4b660465ddb2:
+    name: Tung20cm
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -205.5
+      y: 28.0
+      z: 211.5
+      yaw: -179.65625
+      pitch: -0.52121466
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 15
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+  44f8c4b7-b117-40f0-a008-befc8d696527:
+    name: xRitoMc
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -197.5
+      y: 28.0
+      z: 209.5
+      yaw: 179.56006
+      pitch: 0.76094383
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 15
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+  22778ba8-3b4d-41d4-8e84-5445e7f1581a:
+    name: Dung
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -207.5
+      y: 28.0
+      z: 210.5
+      yaw: -177.8711
+      pitch: 0.89169645
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 15
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/04/30/georgenotfound-23237316.png?v856
+      variant: AUTO
+  03d7f3fe-2d91-4a0d-ba63-1ee3547b5290:
+    name: Eddie
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -209.5
+      y: 28.0
+      z: 209.5
+      yaw: -178.49805
+      pitch: -5.513529
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 15
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/02/17/pufferfish-23066463.png?v856
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: message
+          value: Chơi Valorant không?
+  8f96bb41-9aa8-4ee8-8e38-7b560a22a2ae:
+    name: Chez_
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -199.5
+      y: 28.0
+      z: 210.5
+      yaw: 179.29272
+      pitch: -1.3689954
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 15
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: Chez_Zak
+      variant: AUTO
+  6779c8c4-3c91-4922-a897-0ac88f882354:
+    name: Sumerken
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -203.5
+      y: 28.0
+      z: 212.5
+      yaw: -179.21008
+      pitch: 1.0237828
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 15
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://cdn.discordapp.com/attachments/1121098677663043626/1385595468070912040/IMG_4222.png?ex=68632a16&is=6861d896&hm=021048c8365ab6d4d25328ebc73996b0263b29168849b6bb04aeba83773473c9&
+      variant: AUTO
+  d6bf8bb8-7492-4a2a-9009-cac5e68ac07b:
+    name: rtp_spawn
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -209.5
+      y: 26.0
+      z: 104.5
+      yaw: 176.64801
+      pitch: -4.00642
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 30
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      mirrorSkin: false
+      identifier: Chez_Zak
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: brtp world world
+  2c39265d-a0b4-438e-a95d-adf538d83877:
+    name: world_teleport
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -213.5246049371538
+      y: 26.0
+      z: 104.6235871466987
+      yaw: -179.03436
+      pitch: -1.8272047
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 30
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/05/23/pyre--pyre--pants-on-fire--23289752.png?v856
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: world teleport overworld
+  827135d7-a124-4e58-bd21-37dc5ba77f77:
+    name: noteblock_teleport_spawn
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -242.5
+      y: 25.0
+      z: 2.5
+      yaw: -33.911224
+      pitch: -4.28901
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/06/01/noteblock-in-a-suit--jukebox-vers---23309749.png?v856
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -42 123 -325
+  ceb37b05-039d-4ccf-b667-3fa55124dd62:
+    name: Aria_Math
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -47.5
+      y: 122.0
+      z: -320.5
+      yaw: -94.55054
+      pitch: 4.2827272
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://s.namemc.com/i/eda8aa2b0352f759.png
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -389 134 -525
+  bde30271-78b4-4110-acfe-43c5b425c55b:
+    name: Enemy
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -39.5
+      y: 122.0
+      z: -318.5
+      yaw: 175.99756
+      pitch: -0.05025384
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2023/10/15/headlight-dragon-22046821.png?v856
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -283 78 -393
+  0d50387f-5f6c-4e6f-a728-2637864ec346:
+    name: DLTTAAD
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -35.5
+      y: 122.0
+      z: -324.5
+      yaw: 88.552246
+      pitch: 3.6232347
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2023/05/30/-lac-troi---son-tung--21646240.png?v856
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -754 184 -464
+  1789154c-487f-443f-806b-11881548e097:
+    name: Ticking_Away
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -47.5
+      y: 122.0
+      z: -328.5
+      yaw: -87.015625
+      pitch: 1.8336521
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2024/07/27/gecko-valorant-22729287.png?v856
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -567 270 -329
+  3256196c-6424-451b-8c11-e25883389a4a:
+    name: Wildfire
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -47.5
+      y: 122.0
+      z: -324.5
+      yaw: -92.57349
+      pitch: 1.4567338
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://s.namemc.com/i/8694e0fd5b239abc.png
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -306 73 -271
+  c1cd8314-1d8a-4857-9ff6-6cd6c49f93f4:
+    name: Nang_Tho
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -35.5
+      y: 122.0
+      z: -320.5
+      yaw: 84.59424
+      pitch: 5.3187375
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/06/20/girl-23348055.png?v856
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -603 143 -246
+  2a4931c9-9b33-49ea-834b-33a6214bd8f5:
+    name: TLO
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -35.5
+      y: 122.0
+      z: -328.5
+      yaw: 87.8916
+      pitch: 1.6451435
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/06/10/lol-23328224.png?v856
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -563 140 -513
+  b4faccea-744b-4f31-b69c-ed1107aa05ee:
+    name: Bad_Apple
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -43.5
+      y: 122.0
+      z: -318.5
+      yaw: 179.19922
+      pitch: 7.6736403
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/05/25/apple-king-23294075.png?v856
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -397 80 -259
+  be7975da-6863-4e58-9a28-013b51e01fff:
+    name: back_2_nb
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -41.5
+      y: 122.0
+      z: -330.5
+      yaw: -0.6113281
+      pitch: 7.4853377
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/06/17/duck-23343146.png?v856
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -242 25 4
+  1023e956-97a6-4816-ac11-fa40fb722092:
+    name: back2nb_hub
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -306.97803752878406
+      y: 72.0
+      z: -271.09820759743945
+      yaw: -96.72925
+      pitch: -11.269293
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/06/17/duck-23343146.png?v856
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: tp -43 123 -326
+  237b0980-c272-43dd-8c10-a095048530c6:
+    name: world_rtp
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -642.5
+      y: 70.0
+      z: -1626.5
+      yaw: -67.67615
+      pitch: -4.665791
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 10
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/05/23/pyre--pyre--pants-on-fire--23289752.png?v856
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: brtp
+  a10fc994-8a03-4095-8787-59ce860e9849:
+    name: back2spawn
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -633.5
+      y: 70.0
+      z: -1627.5
+      yaw: 65.138756
+      pitch: -8.998737
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: play_sound
+          value: spawn
+        '2':
+          action: player_command
+          value: warp spawn
+  dfa49cf7-5316-4b25-94b1-5462db8b80d7:
+    name: skins_world
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: world
+      x: -644.5
+      y: 70.0
+      z: -1615.5
+      yaw: -87.2685
+      pitch: -7.7742014
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 20
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/02/15/--nuevillette--water-and-justice--23062970.png?v856
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: skins
+  6b825e7a-2514-4f08-8fae-b2ae2e4b1892:
+    name: skin_spawn
+    creator: fd205a7a-701b-3fa0-9c65-b8e406e6431d
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: -217.5
+      y: 26.0
+      z: 104.5
+      yaw: 176.9126
+      pitch: 7.137838
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 20
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/02/15/--nuevillette--water-and-justice--23062970.png?v856
+      variant: SLIM
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: skins

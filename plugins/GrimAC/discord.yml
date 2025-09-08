@@ -1,0 +1,12 @@
+enabled: true
+webhook: ""
+embed-title: "**Anti Cheat - GrimAC**"
+embed-color: "#00FFFF"
+violation-content:
+- "**Người chơi**: %player%"
+- "**Kiểm tra**: %check%"
+- "**Lỗi vi phạm**: %violations%"
+- "**Phiên bản client**: %version%"
+- "**Brand**: %brand%"
+- "**Ping**: %ping%"
+- "**TPS**: %server_tps%"

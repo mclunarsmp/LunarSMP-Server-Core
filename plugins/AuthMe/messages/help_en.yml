@@ -1,0 +1,45 @@
+# Cấu hình dịch cho phần trợ giúp của AuthMe, ví dụ khi gọi /authme help hoặc /authme help register
+
+# -------------------------------------------------------
+# Danh sách các văn bản được sử dụng trong phần trợ giúp
+common:
+    header: '==========[ TRỢ GIÚP AuthMeReloaded ]=========='
+    optional: 'Tùy chọn'
+    hasPermission: 'Bạn có quyền'
+    noPermission: 'Không có quyền'
+    default: 'Mặc định'
+    result: 'Kết quả'
+    defaultPermissions:
+        notAllowed: 'Không có quyền'
+        opOnly: 'Chỉ dành cho OP'
+        allowed: 'Mọi người đều được phép'
+
+# -------------------------------------------------------
+# Tiêu đề của các phần trợ giúp riêng lẻ
+# Đặt văn bản dịch thành chuỗi rỗng để tắt phần đó, ví dụ để ẩn các lựa chọn thay thế:
+#   alternatives: ''
+section:
+    command: 'Lệnh'
+    description: 'Mô tả ngắn'
+    detailedDescription: 'Mô tả chi tiết'
+    arguments: 'Tham số'
+    permissions: 'Quyền hạn'
+    alternatives: 'Lựa chọn thay thế'
+    children: 'Các lệnh con'
+
+# -------------------------------------------------------
+# Bạn có thể dịch dữ liệu cho tất cả các lệnh bằng mẫu dưới đây.
+# Ví dụ để dịch /authme reload, tạo một mục "authme.reload", hoặc "login" cho /login
+# Nếu lệnh có tham số, bạn có thể dùng arg1 như dưới đây để dịch tham số thứ nhất, và cứ thế tiếp tục
+# Các phần dịch không cần phải đầy đủ; bất kỳ phần nào thiếu sẽ được lấy từ mặc định mà không thông báo
+# Quan trọng: Đặt các lệnh chính như "authme" trước các lệnh con của nó (ví dụ "authme.reload")
+commands:
+    authme.register:
+        description: 'Đăng ký người chơi'
+        detailedDescription: 'Đăng ký người chơi được chỉ định với mật khẩu đã chỉ định.'
+        arg1:
+            label: 'người chơi'
+            description: 'Tên người chơi'
+        arg2:
+            label: 'mật khẩu'
+            description: 'Mật khẩu'

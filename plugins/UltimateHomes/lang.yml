@@ -1,0 +1,56 @@
+prefix: '&b&lUltimateHomes&8:'
+command:
+  noPermission: '&cYou don''t have permission to do that.'
+  reloaded: '&aUltimateHomes reloaded successfully!'
+  sethome:
+    usage: '&fInvalid usage! Use &3/sethome <name>'
+    invalidSender: '&cYou have to be a player to set a home.'
+    createdHome: '&fSet your home to your current location.'
+    createdNamedHome: '&fCreated a home named &3%arg1&f at your current location.'
+    noMoreHomes: '&fYou can''t set any more homes. Use /delhome <name> to remove a
+      home. (Limit: &3%arg1&f)'
+    nameAlreadyExists: '&fYou already have a home with the name &3%arg1&f! Try again
+      with a different name.'
+    nonAlphanumeric: '&fYour home name must be alphanumeric; try again with the name
+      &3%arg2 &for choose a different one.'
+    nonAlphanumericNoSuggestion: '&fYour home name must be alphanumeric; please choose
+      a different name.'
+    unsafeLocation: '&cYou can''t set a home here because it''s unsafe!'
+  home:
+    usage: '&fInvalid usage! Use &3/home <name>'
+    invalidSender: '&cYou have to be a player to teleport to a home.'
+    invalidHome: '&fYou don''t have a home named &3%arg1&f. Type &3/homes&f to see
+      your homes.'
+    teleportedHome: '&fTeleported home. (&bx&3%arg3&f, &by&3%arg4&f, &bz&3%arg5&f,
+      &fin &3%arg2&f)'
+    teleportedHomeNamed: '&fTeleported to home &3%arg1&f. (&bx&3%arg3&f, &by&3%arg4&f,
+      &bz&3%arg5&f, &fin &3%arg2&f)'
+    teleportedOther: '&fTeleported to &3%arg6&f''s home &3%arg1&f. (&bx&3%arg3&f,
+      &by&3%arg4&f, &bz&3%arg5&f, &fin &3%arg2&f)'
+    invalidHomeOther: '&3%arg2&f doesn''t have a home named &3%arg1&f. Type &3/homes
+      %arg2&f to see their homes.'
+    unknownPlayer: '&fUnknown player &3%arg1&f.'
+    warmup: '&fTeleporting in &3%arg1 &fseconds. Remain still...'
+    teleportationCancelled: '&cYou moved! Teleportation cancelled.'
+    unsafeTeleport: '&cWarning: the destination location is unsafe! To confirm you
+      want to teleport, quickly run the command again.'
+  homes:
+    usage: '&fInvalid usage! Use &3/homes <player>'
+    invalidSender: '&cYou have to be a player to see homes.'
+    unknownPlayer: '&fUnknown player &3%arg1&f.'
+    homes: '&fHomes &8(&f%arg1&8) &f- %arg2'
+    homesOther: '&3%arg1&f''s homes &8(&f%arg2&8)&f: %arg3'
+    homeListSeparator: '&f, '
+    homeListColor: '&3'
+    noHomes: '&fYou don''t have any homes set! Set one with &3/sethome <name>'
+    noHomesOther: '&3%arg1&f doesn''t have any homes set.'
+  delhome:
+    usage: '&fInvalid usage! Use &3/delhome [player] <name>'
+    invalidHome: '&fYou don''t have a home named &3%arg1&f. Type &3/homes&f to see
+      your homes.'
+    invalidHomeOther: '&3%arg2&f doesn''t have a home named &3%arg1&f. Type &3/homes
+      %arg2&f to see their homes.'
+    deleted: '&fYour home &3%arg1 &fwas deleted.'
+    deletedOther: '&3%arg2&f''s home &3%arg1 &fwas deleted.'
+    unknownPlayer: '&fUnknown player &3%arg1&f.'
+    invalidSender: '&cYou have to be a player to delete a home.'

@@ -1,0 +1,27 @@
+messages:
+  # Cửa sổ đăng nhập
+  login-title: "Đăng nhập"
+  login-password-title: "Mật khẩu"
+  login-password-placeholder: "Vui lòng nhập mật khẩu của bạn"
+  wrong-password: "&cMật khẩu không đúng, vui lòng thử lại"
+
+  # Cửa sổ đăng ký
+  reg-title: "Đăng ký"
+  reg-password-title: "Mật khẩu"
+  reg-password-placeholder: "Vui lòng nhập mật khẩu của bạn"
+  reg-confirmPassword-title: "Xác nhận mật khẩu"
+  reg-confirmPassword-placeholder: "Vui lòng nhập lại mật khẩu"
+  passwords-not-match: "&cMật khẩu không khớp, vui lòng thử lại"
+  password-empty: "&cMật khẩu không được để trống, vui lòng thử lại"
+
+  # Thông báo chung
+  close-window: "&cCửa sổ đã bị đóng, quá trình đăng nhập/đăng ký đã bị huỷ bỏ"
+
+# Có đá người chơi sau khi đóng cửa sổ không
+close-kick: true
+
+# Độ trễ gửi cửa sổ, nếu quá nhanh người chơi có thể chưa tải xong. Đơn vị: tick
+delay-time: 45
+
+# Ghi log cho người chơi Bedrock khi đăng nhập và gửi cửa sổ, dùng để xác định độ trễ
+debug: false

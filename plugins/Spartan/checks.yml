@@ -1,0 +1,546 @@
+hit-reach:
+  cancelled_event: false
+  name: hit-reach
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+criticals:
+  cancelled_event: false
+  name: criticals
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+fast-clicks:
+  cancelled_event: false
+  name: fast-clicks
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+velocity:
+  cancelled_event: false
+  name: velocity
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+kill-aura:
+  cancelled_event: false
+  name: kill-aura
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+irregular-movements:
+  cancelled_event: false
+  name: irregular-movements
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+gravity-simulation:
+  cancelled_event: false
+  name: gravity-simulation
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: false
+    bedrock: false
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': ''
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+speed-simulation:
+  cancelled_event: false
+  name: speed-simulation
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: false
+    bedrock: false
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+exploits:
+  cancelled_event: false
+  name: exploits
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+more-packets:
+  cancelled_event: false
+  name: more-packets
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: false
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+x-ray:
+  cancelled_event: false
+  name: x-ray
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+impossible-actions:
+  cancelled_event: false
+  name: impossible-actions
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+fast-break:
+  cancelled_event: false
+  name: fast-break
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+fast-place:
+  cancelled_event: false
+  name: fast-place
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+block-reach:
+  cancelled_event: false
+  name: block-reach
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+no-swing:
+  cancelled_event: false
+  name: no-swing
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+auto-respawn:
+  cancelled_event: false
+  name: auto-respawn
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+inventory-clicks:
+  cancelled_event: false
+  name: inventory-clicks
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+fast-heal:
+  cancelled_event: false
+  name: fast-heal
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+impossible-inventory:
+  cancelled_event: false
+  name: impossible-inventory
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''
+fast-eat:
+  cancelled_event: false
+  name: fast-eat
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punishments:
+    enabled:
+      java: true
+      bedrock: true
+    commands:
+      '1': spartan kick {player} {detections}
+      '2': ''
+      '3': ''
+      '4': ''
+      '5': ''
+      '6': ''
+      '7': ''
+      '8': ''
+      '9': ''
+      '10': ''

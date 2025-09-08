@@ -1,0 +1,205 @@
+
+[experiment]
+
+	[experiment.ray_tracking_entity_tracker]
+		check_interval_ms = 10
+		skip_marker_armor_stands = true
+		hitbox_limit = 50
+		tracing_distance = 48
+		enabled = false
+
+	[experiment.force_enable_command_block_execution]
+		enable = false
+
+	[experiment.force_cleanup_drop_non_owned_entity_memory_module]
+		#When enabled, the entity's brain will clean the memory which is typed of entity and not belong to current tickregion
+		enabled_for_entity = false
+		#When enabled, the entity's brain will clean the memory which is typed of block_pos and not belong to current tickregion
+		enabled_for_block_pos = false
+
+	[experiment.force_the_data_command_to_be_enabled]
+		enable = false
+
+	[experiment.disable_entity_exception_catchers]
+		enabled = false
+
+	[experiment.entity-damage-source-trace]
+		#Allow trace damage source cross different Region Scheduler.
+		enabled = false
+
+	[experiment.enable_tick_command]
+		#Allow to use tick command
+		enabled = false
+
+	[experiment.disable_async_catchers]
+		enabled = false
+
+[fixes]
+
+	[fixes.allow_unsafe_teleportation]
+		#Allow non player entities enter end portals if enabled.
+		#If you want to use sand duping,please turn on this.
+		#Warning: This would cause some unsafe issues, you could learn more on : https://github.com/PaperMC/Folia/issues/297
+		enabled = false
+
+	[fixes.folia]
+
+		[fixes.folia.fix_poi_access_off_region]
+			#The POIManager of folia has something which has not been patched 
+			#for regionized ticking and these would trigger the async catcher 
+			#and make the server crash.If you would like to prevent it and didn't 
+			#mind the side effect(currently unknown), you can enable this
+			enabled = false
+
+		[fixes.folia.fix_high_velocity_issue]
+			#A simple fix of an issue on folia 
+			#(Sometimes the entity would 
+			#have a large moment that cross the 
+			#different tick regions, and it would 
+			#make the server crashed) but sometimes it might doesn't work
+			enabled = false
+			warn_on_detected = true
+
+	[fixes.use_vanilla_random_source]
+		#Related with RNG cracks
+		enable_for_player_entity = false
+
+[optimizations]
+
+	[optimizations.skip_goal_selector_tick_in_inactive_tick]
+		enabled = false
+
+	[optimizations.alternative_keepalive_handling]
+		enabled = false
+
+	[optimizations.use_simd]
+		enabled = true
+
+	[optimizations.lobotomize_villager]
+		check_interval = 100
+		wait_until_trade_locked = false
+		enabled = false
+
+	[optimizations.projectile]
+		max-loads-per-projectile = 0
+		max-loads-per-tick = 0
+
+	[optimizations.variable_entity_waking_up]
+		entity_wakeup_duration_ratio_standard_deviation = 0.2
+
+	[optimizations.suffocation_optimization]
+		enabled = false
+
+	[optimizations.reduce_sensor_work]
+		delay_ticks = 10
+		enabled = true
+
+[misc]
+
+	[misc.warn_on_offline_mode]
+		enabled = true
+
+	[misc.server_mod_name]
+		name = "Luminol"
+		vanilla_spoof = false
+
+	[misc.container_expansion]
+		#range: 1~6 
+		barrel_rows = 3
+		#range: 1~6 
+		enderchest_rows = 3
+
+	[misc.tripwire_dupe]
+		#Allowed Value:
+		#VANILLA20
+		#VANILLA21
+		#MIXED
+		behavior-mode = "VANILLA21"
+		enabled = false
+
+	[misc.username_checks]
+		enabled = true
+
+	[misc.revert-raid-changes]
+		#Enable players to obtain an ominous omen 
+		#effect when killing the patrol team captain
+		give-bad-omen-when-kill-patrol-leader = false
+		#Enable bad omen effect infinite time
+		#    --- this config is not old version's function
+		bad-omen-infinite = false
+		#Disable raid self check 
+		#    --- this config is not old version's function
+		skip-self-raid-check = false
+		#Revert Old raid's find spawn position logic
+		#    --- This revert MC-274911
+		revert-274911 = false
+		#Allow players with ominous signs to skip a 
+		#30-second cooldown and trigger attacks directly
+		allow-bad-omen-trigger-raid = false
+		#Disable y <= 96 check.
+		#If you enabled revert_274911, this config will useless
+		#and always behavior of enabled
+		skip-height-check = false
+
+	[misc.mojang_out_of_order_chat_check]
+		enabled = true
+
+	[misc.region_format]
+		linear_compression_level = 1
+		linear_io_flush_delay_ms = 100
+		linear_io_thread_count = 6
+		format = "MCA"
+		linear_use_virtual_thread = true
+
+	[misc.tpsbar]
+		ping_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		chunkhot_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		format = "<gray>TPS<yellow>:</yellow> <tps> MSPT<yellow>:</yellow> <mspt> Ping<yellow>:</yellow> <ping>ms ChunkHot<yellow>:</yellow> <chunkhot>"
+		tps_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		enabled = false
+		update_interval_ticks = 15
+
+	[misc.regionbar]
+		util_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		format = "<gray>Util<yellow>:</yellow> <util> Chunks<yellow>:</yellow> <green><chunks></green> Players<yellow>:</yellow> <green><players></green> Entities<yellow>:</yellow> <green><entities></green>"
+		enabled = false
+		update_interval_ticks = 15
+
+	[misc.disable_moved_wrongly_threshold]
+		enabled = false
+
+	[misc.folia_watchdog]
+		tick_region_time_out_ms = 5000
+
+	[misc.end_crystal]
+		#Disable paper's End Crystal position check.
+		#It reverts to vanilla respawn dragon logic.
+		disable_end_crystal_check = false
+
+	[misc.heightmap_warn_disable]
+		#Disable heightmap-check's warning
+		enabled = false
+
+	[misc.verify_publickey_only_in_online_mode]
+		enabled = false
+
+	[misc.membar]
+		format = "<gray>Memory usage <yellow>:</yellow> <used>MB<yellow>/</yellow><available>MB"
+		memory_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		enabled = false
+		update_interval_ticks = 15
+
+	[misc.secure_seed]
+		#Once you enable secure seed, all ores and structures are generated with 1024-bit seed
+		#instead of using 64-bit seed in vanilla, made seed cracker become impossible.
+		enabled = false
+
+	[misc.sentry]
+		# Logs with a level higher than or equal to this level will be recorded.
+		log_level = "WARN"
+		# Only log with a Throwable will be recorded after enabling this.
+		only_log_thrown = true
+		# Sentry DSN for improved error logging, leave blank to disable,
+		# Obtain from https://sentry.io/
+		dsn = ""
+

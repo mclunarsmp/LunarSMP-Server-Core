@@ -1,0 +1,121 @@
+command-block-overrides: []
+ignore-vanilla-permissions: false
+
+aliases:
+  msg:
+    - "essentials:msg $1-"
+  tell:
+    - "essentials:msg $1-"
+  whisper:
+    - "essentials:msg $1-"
+  w:
+    - "essentials:msg $1-"
+  pm:
+    - "essentials:msg $1-"
+  pl:
+    - "help"
+  plugins:
+    - "help"
+  ver:
+    - "version $1-"
+  version:
+    - "version $1-"
+  icanhasbukkit:
+    - "version $1-"
+  brtp:
+    - "rtp $1-"
+  l:
+    - "login $1-"
+  unreg:
+    - "unregister"
+
+global:
+  commands:
+    - pl
+    - plugins
+    - ver
+    - version
+    - icanhasbukkit
+
+groups:
+  member:
+    priority: 10
+    commands:
+      - register
+      - login
+      - tpaacept
+      - tpadeny
+      - tpayes
+      - tpano
+      - logout
+      - unregister
+      - changepassword
+      - changepass
+      - email
+      - 2fa
+      - verification
+      - captcha
+      - l
+      - unreg
+      - back
+      - sethome
+      - home
+      - delhome
+      - remhome
+      - listhome
+      - homelist
+      - rtp
+      - brtp
+      - warp
+      - setwarp
+      - delwarp
+      - remwarp
+      - warplist
+      - waprlist
+      - spawn
+      - tpa
+      - tpahere
+      - tpaaccept
+      - tpadeny
+      - tpadecline
+      - tpacancel
+      - tpaignore
+      - tp2p
+      - tpyes
+      - tpno
+      - reply
+      - r
+      - replytoggle
+      - rules
+      - sit
+      - lay
+      - grave
+      - axgrave
+      - axgraves
+      - kit
+      - team
+      - skin
+      - skins
+      - pvp
+      - kits
+      - huskhomes:back
+      - discord
+  trail_staff:
+    priority: 200
+    commands:
+      - tp
+      - tphere
+      - kick
+      - ban
+      - unban
+      - fly
+      - sb
+      - tempban
+      - mute
+      - unmute
+      - warn
+      - clear
+      - jail
+      - unjail
+      - back
+      - spawn

@@ -1,0 +1,192 @@
+ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: 'Server đã tắt! | Số người
+  chơi: 404'
+ChannelTopicUpdaterChatChannelTopicFormat: 'Số người chơi: %playercount% / %playermax% | Server đã hoạt động %uptimemins% phút | Cập nhật lần cuối:: %date%'
+ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: Server đã tắt! | %serverversion%
+ChannelTopicUpdaterConsoleChannelTopicFormat: 'TPS: %tps% | RAM: %usedmemorygb%GB
+  used/%freememorygb%GB trống / %maxmemorygb%GB tối đa | %serverversion%'
+ChatChannelHookMessageFormat: '%channelcolor%[%channelnickname%]&r %message%'
+ClickToCopyCode: Bấm để sao chép
+CodeGenerated: Mã liên kết của bạn là %code%. Hãy nhắn tin riêng cho bot trên Discord
+  (%botname%) chỉ với mã này để liên kết tài khoản.
+DiscordAccountAlreadyLinked: Bạn đã liên kết với %username% (%uuid%) rồi.
+DiscordAccountLinked: Tài khoản Discord của bạn đã được liên kết với %name% (%uuid%)
+DiscordChatChannelConsoleCommandNotifyErrorsFormat: '**%user%**, bạn đã chạy lệnh
+  nhưng mà nó bị lỗi: %error%'
+DiscordChatChannelListCommandAllPlayersSeparator: ', '
+DiscordChatChannelListCommandFormatNoOnlinePlayers: '**Không ai trong server cả**'
+DiscordChatChannelListCommandFormatOnlinePlayers: '**Số người chơi: (%playercount%):**'
+DiscordChatChannelListCommandPlayerFormat: '%displayname%'
+DiscordChatChannelServerShutdownMessage: ':octagonal_sign: **Server đã tắt**. Nếu
+  như admin không có thông báo tắt, đó có thể là do **server bị crash**. Vui lòng
+  báo cho admin nếu server tự nhiên bị đóng!'
+DiscordChatChannelServerStartupMessage: ':white_check_mark: **Server đã khởi động!**'
+DiscordCommandFormat: '&bTham gia Discord của server tại {INVITE}&b. Để xem trợ giúp
+  lệnh, hãy dùng "/discord ?"'
+DiscordConsoleChannelPadding: 0
+DiscordConsoleChannelPrefix: '[{date} {level}{name}] '
+DiscordConsoleChannelSuffix: ''
+DiscordConsoleChannelTimestampFormat: EEE HH:mm:ss
+DiscordLinkedAccountCheckFailed: Không thể kiểm tra trạng thái liên kết tài khoản,
+  vui lòng thử lại sau.
+DiscordLinkedAccountRequired: 'Bạn đã cố gửi tin nhắn sau vào game chat, nhưng máy
+  chủ này yêu cầu bạn phải liên kết tài khoản Minecraft với tài khoản Discord. Hãy
+  liên kết bằng cách gõ `/discord link` trong game.
+
+
+  ```%message%```'
+DiscordToMinecraftAllRolesSeparator: ' | '
+DiscordToMinecraftChatMessageFormat: '[<aqua>Discord</aqua> | %toprolecolor%%toprolealias%<reset>]
+  %name%%reply% » %message%'
+DiscordToMinecraftChatMessageFormatNoRole: '[<aqua>Discord</aqua>] %name%%reply% »
+  %message%'
+DiscordToMinecraftMessageReplyFormat: ' (đang trả lời %name%)'
+DynmapChatFormat: '%message%'
+DynmapDiscordFormat: '[Dynmap] %name% » %message%'
+DynmapNameFormat: '[Discord | %toprolealias%] %username%'
+InvalidCode: Bạn chắc chắn mã đó đúng chứ? Mã liên kết gồm 4 chữ số.
+LinkedCommandSuccess: '&bTài khoản Minecraft của bạn hiện đã được liên kết với %name%.'
+LinkingError: '&cHiện không thể liên kết tài khoản do lỗi nội bộ. Vui lòng liên hệ
+  với quản trị viên máy chủ.'
+MinecraftAccountAlreadyLinked: '&bTài khoản Minecraft của bạn đã được liên kết với
+  một tài khoản Discord khác. Nếu bạn có quyền, bạn có thể hủy liên kết bằng lệnh
+  /discord unlink.'
+MinecraftAccountLinked: '&bUUID của bạn đã được liên kết với người dùng Discord %username%
+  (%id%)'
+MinecraftChatToDiscordMessageFormat: '**%primarygroup%** %displayname% » %message%'
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: '%displayname% » %message%'
+MinecraftNoLinkedAccount: '&cTài khoản Minecraft của bạn chưa được liên kết với tài
+  khoản Discord nào.'
+MinecraftNobodyFound: '&cKhông tìm thấy người nào có Discord ID/Tên Discord/Tên Minecraft/UUID
+  Minecraft trùng với "%target%".'
+MinecraftPlayerAchievementMessage:
+  Content: ''
+  Embed:
+    Author:
+      ImageUrl: '%embedavatarurl%'
+      Name: '%username% đã đạt được tiến trình %achievement%!'
+      Url: ''
+    Color: '#ffd700'
+    Description: ''
+    Enabled: true
+    Fields: []
+    Footer:
+      IconUrl: ''
+      Text: ''
+    ImageUrl: ''
+    ThumbnailUrl: ''
+    Timestamp: false
+    Title:
+      Text: ''
+      Url: ''
+  Enabled: true
+  Webhook:
+    AvatarUrl: '%botavatarurl%'
+    Enable: false
+    Name: '%botname%'
+MinecraftPlayerDeathMessage:
+  Content: ''
+  Embed:
+    Author:
+      ImageUrl: '%embedavatarurl%'
+      Name: '%deathmessage%'
+      Url: ''
+    Color: '#000000'
+    Description: ''
+    Enabled: true
+    Fields: []
+    Footer:
+      IconUrl: ''
+      Text: ''
+    ImageUrl: ''
+    ThumbnailUrl: ''
+    Timestamp: false
+    Title:
+      Text: ''
+      Url: ''
+  Enabled: true
+  Webhook:
+    AvatarUrl: '%botavatarurl%'
+    Enable: false
+    Name: '%botname%'
+MinecraftPlayerFirstJoinMessage:
+  Content: ''
+  Embed:
+    Author:
+      ImageUrl: '%embedavatarurl%'
+      Name: '%username% đã tham gia server lần đầu'
+      Url: ''
+    Color: '#ffd700'
+    Description: ''
+    Enabled: true
+    Fields: []
+    Footer:
+      IconUrl: ''
+      Text: ''
+    ImageUrl: ''
+    ThumbnailUrl: ''
+    Timestamp: false
+    Title:
+      Text: ''
+      Url: ''
+  Enabled: true
+  Webhook:
+    AvatarUrl: '%botavatarurl%'
+    Enable: false
+    Name: '%botname%'
+MinecraftPlayerJoinMessage:
+  Content: ''
+  Embed:
+    Author:
+      ImageUrl: '%embedavatarurl%'
+      Name: '%username% đã vào server'
+      Url: ''
+    Color: '#00ff00'
+    Description: ''
+    Enabled: true
+    Fields: []
+    Footer:
+      IconUrl: ''
+      Text: ''
+    ImageUrl: ''
+    ThumbnailUrl: ''
+    Timestamp: false
+    Title:
+      Text: ''
+      Url: ''
+  Enabled: true
+  Webhook:
+    AvatarUrl: '%botavatarurl%'
+    Enable: false
+    Name: '%botname%'
+MinecraftPlayerLeaveMessage:
+  Content: ''
+  Embed:
+    Author:
+      ImageUrl: '%embedavatarurl%'
+      Name: '%username% đã rời server'
+      Url: ''
+    Color: '#ff0000'
+    Description: ''
+    Enabled: true
+    Fields: []
+    Footer:
+      IconUrl: ''
+      Text: ''
+    ImageUrl: ''
+    ThumbnailUrl: ''
+    Timestamp: false
+    Title:
+      Text: ''
+      Url: ''
+  Enabled: true
+  Webhook:
+    AvatarUrl: '%botavatarurl%'
+    Enable: false
+    Name: '%botname%'
+NoPermissionMessage: '&cBạn không có quyền để thực hiện lệnh này.'
+ServerWatchdogMessage: '<t:%timestamp%:R> %guildowner%, máy chủ đã không phản hồi
+  trong %timeout% giây rồi :fire::bangbang:'
+UnknownCode: Mã bạn nhập không hợp lệ, vui lòng thử lại.
+UnknownCommandMessage: '&bLệnh này không tồn tại!'
+UnlinkCommandSuccess: '&bTài khoản Minecraft của bạn hiện không còn được liên kết
+  với %name%.'

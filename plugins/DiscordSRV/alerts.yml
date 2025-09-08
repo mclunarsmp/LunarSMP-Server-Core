@@ -1,0 +1,102 @@
+# Đây là một tính năng /nâng cao/ của DiscordSRV cho phép bạn gửi tin nhắn đến Discord khi một sự kiện trong game xảy ra
+# hoặc khi một lệnh được chạy. Bạn cần có kiến thức về cách hoạt động của các sự kiện Bukkit và thuộc tính của chúng.
+# Nếu bạn không chắc mình đang làm gì, hãy hỏi một lập trình viên hoặc tham gia máy chủ hỗ trợ của chúng tôi tại discordsrv.com/discord
+# Tạo được cấu hình hay ho? Chia sẻ ở kênh #alerts của máy chủ Discord chính thức!
+
+# Tài liệu API Bukkit (tìm sự kiện và thuộc tính): 
+# https://hub.spigotmc.org/javadocs/bukkit
+
+# Học cách dùng SpEL (Spring Expression Language):
+# https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/expressions.html
+# https://dzone.com/articles/learn-spring-expression-language-with-examples
+
+# Bạn có thể dùng các placeholder sau:
+# {tps}, {time}, {date}, {name}, {ping}, {username}, {displayname}
+# {usernamenoescapes}, {displaynamenoescapes}, {world}
+# {embedavatarurl}, {botavatarurl}, {botname}
+# %placeholder% – bất kỳ PlaceholderAPI placeholder nào (chỉ player placeholder khi là sự kiện người chơi)
+
+# Cũng có thể dùng biểu thức SpEL như:
+# ${#player.address.address.hostAddress} – IP người chơi
+# ${#player.gameMode.name()} – chế độ chơi của người chơi
+# ${#discordsrv.accountLinkManager.getDiscordId(#player.uniqueId)} – ID Discord liên kết
+# ${#server.onlinePlayers.size()} – số người đang online
+# ${#jda.status.name()} – trạng thái kết nối DiscordSRV
+
+# Các tham chiếu dùng được trong biểu thức:
+# #plugins.<plugin>, #event, #server, #discordsrv, #player, #sender, #command
+# #args, #allArgs, #channel, #jda
+
+# Cú pháp mặc định:
+# - Trigger: <tên sự kiện hoặc /lệnh>
+#   Async: true (tuỳ chọn, mặc định là true)
+#   Conditions: (các điều kiện lọc sự kiện)
+#   Channel: <tên kênh DiscordSRV>
+#   IgnoreCancelled: true (chỉ cho sự kiện)
+#   Content: "" (tin nhắn đơn giản không dùng embed)
+#   Webhook: (nếu muốn gửi qua webhook)
+#     Enabled: false
+#     AvatarUrl: "{botavatarurl}"
+#     Name: "{botname}"
+#   Embed:
+#     Enabled: true
+#     Color: "#00ff00"
+#     Author:
+#       ImageUrl: "{embedavatarurl}"
+#       Name: "{username} đã làm gì đó..."
+#     ThumbnailUrl: ""
+#     Title:
+#       Text: ""
+#       Url: ""
+#     Description: ""
+#     Fields: [] # "Tiêu đề;Giá trị;có_inline_không" hoặc "blank"
+#     ImageUrl: ""
+#     Footer:
+#       Text: ""
+#       IconUrl: ""
+#     Timestamp: false # true để chèn thời gian hiện tại, hoặc epoch timestamp cụ thể
+
+Alerts:
+  # Cấu hình ví dụ: gửi tin nhắn đến kênh "fish" khi người chơi câu cá thành công
+  #- Trigger: PlayerFishEvent
+  #  Channel: fish
+  #  Conditions:
+  #    - state.name() == 'CAUGHT_FISH'
+  #  Embed:
+  #    Color: "#00ff00"
+  #    Author:
+  #      ImageUrl: "{embedavatarurl}"
+  #      Name: "{name} đã câu được ${caught.itemStack.type.name()}!"
+
+  # Gửi tin nhắn cảnh báo từ Matrix Anti-Cheat
+  #- Trigger: PlayerViolationEvent
+  #  Channel: matrix
+  #  Conditions:
+  #    - violations >= 5
+  #  Embed:
+  #    Color: "#ff0000"
+  #    Author:
+  #      ImageUrl: "{embedavatarurl}"
+  #      Name: "{username} vi phạm ${hackType.name().toLowerCase()} | ${component} | vl:${violations} ping:${player.handle.ping} tps:{tps}"
+
+  # Gửi tin nhắn khi dùng lệnh /gamemode
+  #- Trigger: /gamemode
+  #  Channel: gamemode
+  #  Conditions:
+  #    - '#player.hasPermission("minecraft.command.gamemode") == true'
+  #  Embed:
+  #    Color: "#ff0000"
+  #    Author:
+  #      ImageUrl: "{embedavatarurl}"
+  #      Name: "{username} đã đổi chế độ chơi thành ${#args.get(0)}"
+
+  # Gửi tin nhắn khi dùng lệnh /me
+  #- Trigger: /me
+  #  Channel: me
+  #  Conditions:
+  #    - '#player.hasPermission("minecraft.command.me") == true || #player.hasPermission("essentials.me") == true'
+  #  Embed:
+  #    Color: "#00ff00"
+  #    Author:
+  #      ImageUrl: "{embedavatarurl}"
+  #      Name: "* {username} ${#allArgs}"

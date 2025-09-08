@@ -1,0 +1,7 @@
+{
+	"credit": "Created by LOOHP",
+	"parent": "interactivechatdiscordsrvaddon/builtin_entity/template_bed",
+	"textures": {
+		"texture": "entity/bed/magenta"
+	}
+}

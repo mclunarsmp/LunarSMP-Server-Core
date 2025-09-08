@@ -1,0 +1,13 @@
+config_version: 1 # Config version, do not modify.
+saving:
+  autosave:
+    enabled: true # Whether autosave is enabled.
+    interval: 15 # The interval at which autosave is performed in minutes.
+  save_on_changed: true # Whether the plugin should save holograms when they are changed.
+logging:
+  log_level: INFO # The log level for the plugin (DEBUG, INFO, WARN, ERROR).
+  log_on_world_load: true # Whether hologram loading should be logged on world loading. Disable this if you load worlds dynamically to prevent console spam.
+  version_notifications: true # Whether the plugin should send notifications for new updates.
+visibility_distance: 20 # The default visibility distance for holograms.
+register_commands: true # Whether the plugin should register its commands.
+update_visibility_interval: 100 # The interval at which hologram visibility is updated in ticks.

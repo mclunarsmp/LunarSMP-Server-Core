@@ -1,0 +1,28 @@
+{
+  "biome": "minecraft:windswept_hills",
+  "lakes": false,
+  "features": true,
+  "decoration": false,
+  "layers": [
+    {
+      "block": "minecraft:bedrock",
+      "height": 1
+    },
+    {
+      "block": "minecraft:stone",
+      "height": 230
+    },
+    {
+      "block": "minecraft:dirt",
+      "height": 5
+    },
+    {
+      "block": "minecraft:grass_block",
+      "height": 1
+    }
+  ],
+  "structure_overrides": [
+    "minecraft:mineshafts",
+    "minecraft:strongholds"
+  ]
+}

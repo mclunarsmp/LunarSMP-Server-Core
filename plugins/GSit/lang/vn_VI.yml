@@ -1,0 +1,50 @@
+Plugin:
+
+  plugin-enabled: '[P]&a Plugin đã được bật thành công.'
+  plugin-link: '[P]&a Liên kết với&6 %Link%&a thành công!'
+  plugin-update: '[P]&a Có phiên bản mới:&6 %NewVersion%&a! [P]&a Phiên bản hiện tại:&6 %Version%&a! [P]&a Tải phiên bản mới nhất tại: [P]&6 %Path%'
+  plugin-data: '[P]&c Không thể kết nối đến kho lưu trữ dữ liệu. Vui lòng kiểm tra bảng điều khiển máy chủ!'
+  plugin-version: '[P]&c Plugin không thể sử dụng với phiên bản máy chủ này! (&b%Version%&c)'
+  plugin-reload: '[P]&a Plugin đã được tải lại thành công.'
+  plugin-disabled: '[P]&a Plugin đã được tắt thành công.'
+  plugin-prefix: '&7[&6GSit&7]'
+
+Messages:
+
+  command-permission-error: '[P]&c Bạn không có quyền sử dụng lệnh này!'
+  command-sender-error: '[P]&c Bạn không thể chạy lệnh này!'
+  command-version-error: '[P]&c Phiên bản máy chủ quá cũ! (&b%Version%&c) [P]&c Hãy nâng cấp máy chủ để sử dụng tính năng này!'
+
+  command-gsit-toggle-on: '[P]&a Bạn đã bật tương tác ngồi bằng cách nhấp chuột&6.'
+  command-gsit-toggle-off: '[P]&a Bạn đã tắt tương tác ngồi bằng cách nhấp chuột&6.'
+  command-gsit-playertoggle-on: '[P]&a Bạn đã bật tương tác ngồi lên người chơi bằng cách nhấp chuột&6.'
+  command-gsit-playertoggle-off: '[P]&a Bạn đã tắt tương tác ngồi lên người chơi bằng cách nhấp chuột&6.'
+  command-gcrawl-toggle-on: '[P]&a Bạn đã bật chế độ bò bằng cách nhấn shift hai lần&6.'
+  command-gcrawl-toggle-off: '[P]&a Bạn đã tắt chế độ bò bằng cách nhấn shift hai lần&6.'
+
+  action-sit-now-error: '[P]&c Hiện tại bạn không thể ngồi!'
+  action-sit-world-error: '[P]&c Bạn không thể ngồi trong thế giới này!'
+  action-sit-location-error: '[P]&c Bạn không thể ngồi tại vị trí này!'
+  action-sit-safe-error: '[P]&c Ngồi ở đây không an toàn!'
+  action-sit-region-error: '[P]&c Bạn không thể ngồi trong khu vực này!'
+  action-sit-kick-error: '[P]&c Ai đó đang ngồi ở vị trí này!'
+  action-sit-error: '[P]&c Đã xảy ra lỗi, bạn không thể ngồi ở đây!'
+  action-sit-info: '&6<lang:key.sneak>&a để đứng dậy'
+
+  action-playersit-info: '&6<lang:key.sneak>&a để đứng dậy'
+
+  action-pose-now-error: '[P]&c Hiện tại bạn không thể tạo dáng!'
+  action-pose-world-error: '[P]&c Bạn không thể tạo dáng trong thế giới này!'
+  action-pose-location-error: '[P]&c Bạn không thể tạo dáng tại vị trí này!'
+  action-pose-safe-error: '[P]&c Không an toàn để tạo dáng ở đây!'
+  action-pose-region-error: '[P]&c Bạn không thể tạo dáng trong khu vực này!'
+  action-pose-kick-error: '[P]&c Ai đó đang tạo dáng ở vị trí này!'
+  action-pose-error: '[P]&c Đã xảy ra lỗi, bạn không thể tạo dáng ở đây!'
+  action-pose-info: '&6<lang:key.sneak>&a để đứng dậy'
+
+  action-crawl-now-error: '[P]&c Hiện tại bạn không thể bò!'
+  action-crawl-world-error: '[P]&c Bạn không thể bò trong thế giới này!'
+  action-crawl-region-error: '[P]&c Bạn không thể bò trong khu vực này!'
+  action-crawl-info: '&6<lang:key.sneak>&a để đứng dậy'
+
+  action-blocked-error: '[P]&c Bạn không được phép sử dụng lệnh này ngay bây giờ!'
