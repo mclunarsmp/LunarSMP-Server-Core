@@ -21,7 +21,7 @@
 
 ## 📖 Giới thiệu
 
-**LunarSMP** từng là một server sinh tồn lâu đời với chế độ chơi **SMP và RPG**, nơi quy tụ cộng đồng vui vẻ, mod tích cực và đầy niềm vui! 
+**LunarSMP** từng là một server sinh tồn với chế độ chơi **SMP và RPG**, nơi quy tụ cộng đồng vui vẻ, mod tích cực và đầy niềm vui! 
 **README này được tạo bằng AI! Vui lòng kiểm tra thông tin trước khi chạy**
 
 Repo này được tạo ra để **chia sẻ cấu hình và core server** cho những ai muốn:
